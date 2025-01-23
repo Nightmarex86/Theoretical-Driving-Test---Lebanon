@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Quiz App</h1>
+    <div class="config">
+        <label for="questionCount">Number of Questions (safety, law, ED):</label>
+        <input type="number" id="questionCount" min="15" max="212" placeholder="Enter a number 15-212">
+
+        <label for="pictureQuestionCount">Number of Signs:</label>
+        <input type="number" id="pictureQuestionCount" min="15" max="100" placeholder="Enter a number 15-100">
+
+        <div class="button-container">
+        <button id="startQuiz">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- The quiz section which includes the buttons -->
+    <div id="quizContainer" class="hidden">
+        <div id="quiz"></div>
+        <!-- These buttons will be shown after the quiz starts -->
+        <button id="prevQuestion" class="hidden">Previous</button>
+        <button id="nextQuestion" class="hidden">Next</button>
+        <button id="submitQuiz" class="hidden">Submit</button>
+    </div>
+
+    <div id="result" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
