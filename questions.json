@@ -1,0 +1,27 @@
+[
+    {
+    "question": "What is the capital of France?",
+    "options": ["Paris", "London", "Berlin", "Madrid"],
+    "answer": "Paris"
+    },
+    {
+    "question": "What is 2 + 2?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4"
+    },
+    {
+    "question": "Who wrote 'Hamlet'?",
+    "options": ["Shakespeareaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Dickens", "Austen", "Tolkien"],
+    "answer": "Shakespeare"
+    }
+    ,{
+    "question": "michel gay'?",
+    "options": ["Shakespeare", "Dickens", "Austen", "Tolkien"],
+    "answer": "Shakespeare"
+    },
+    {
+    "question": "youssef gay'?",
+    "options": ["Shakespeare", "Dickens", "Austen", "Tolkien"],
+    "answer": "Shakespeare"
+    }
+]

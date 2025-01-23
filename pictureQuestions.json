@@ -1,0 +1,20 @@
+[
+    {
+    "question": "What is this monument called?",
+    "image": "images/eiffel_tower.jpg",
+    "options": ["Eiffel Tower", "Big Ben", "Statue of Liberty", "Colosseum"],
+    "answer": "Eiffel Tower"
+    },
+    {
+    "question": "Which country does this flag belong to?",
+    "image": "images/canada_flag.jpg",
+    "options": ["USA", "Canada", "UK", "Australia"],
+    "answer": "Canada"
+    },
+    {
+    "question": "What animal is shown in the image?",
+    "image": "images/lion.jpg",
+    "options": ["Lion", "Tiger", "Cheetah", "Leopard"],
+    "answer": "Lion"
+    }
+]
