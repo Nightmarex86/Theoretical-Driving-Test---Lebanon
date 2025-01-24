@@ -124,19 +124,11 @@ document.getElementById("quiz").addEventListener("change", (event) => {
 // Load questions on page load
 loadQuestions();
 
-// Add a return button to the HTML inside the quiz container
-const returnButton = document.createElement("button");
-returnButton.id = "returnButton";
-returnButton.textContent = "Return to Settings";
-returnButton.classList.add("hidden");
-document.getElementById("quizContainer").appendChild(returnButton);
 
-// Event listener for the return button
-returnButton.addEventListener("click", () => {
-    document.getElementById("quizContainer").classList.add("hidden");
-    document.getElementById("result").classList.add("hidden");
-    document.querySelector(".config").classList.remove("hidden");
-    returnButton.classList.add("hidden");
+document.getElementById("startQuiz").addEventListener("click", () => {
+    
+    document.querySelector(".config").classList.add("hidden");
+    document.getElementById("quizContainer").classList.remove("hidden");
 });
 
 // Show the return button when the quiz starts
