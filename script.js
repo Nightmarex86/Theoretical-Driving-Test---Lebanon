@@ -108,9 +108,23 @@ document.getElementById("submitQuiz").addEventListener("click", () => {
         <h2>Quiz Results</h2>
         <p>You scored ${score} out of ${selectedQuestions.length}!</p>
         ${resultHTML}
+        <button id="restartQuiz">Restart Quiz</button>
     `;
     resultContainer.classList.remove("hidden");
     document.getElementById("quizContainer").classList.add("hidden");
+
+    // Add event listener for the restart button
+    document.getElementById("restartQuiz").addEventListener("click", () => {
+        // Reset variables
+        currentQuestionIndex = 0;
+        score = 0;
+        selectedAnswers = [];
+
+        // Hide result container and show config container
+        resultContainer.classList.add("hidden");
+        document.querySelector(".config").classList.remove("hidden");
+        document.getElementById("quizContainer").classList.add("hidden");
+    });
 });
 
 // Start quiz button event listener
@@ -124,9 +138,7 @@ document.getElementById("quiz").addEventListener("change", (event) => {
 // Load questions on page load
 loadQuestions();
 
-
 document.getElementById("startQuiz").addEventListener("click", () => {
-    
     document.querySelector(".config").classList.add("hidden");
     document.getElementById("quizContainer").classList.remove("hidden");
 });
