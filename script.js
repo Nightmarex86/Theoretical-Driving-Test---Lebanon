@@ -5,6 +5,19 @@ let selectedQuestions = []; // Subset of questions for the quiz
 let pictureQuestions = []; // Array to store picture-based questions
 let selectedPictureQuestions = []; // Subset of picture questions for the quiz
 
+let timer;
+let timeLeft = 1 * 60; // 15 minutes in seconds
+
+// Add animations to buttons
+document.querySelectorAll('button').forEach(button => {
+    button.addEventListener('mouseover', () => {
+        button.style.transform = 'scale(1.05)';
+    });
+    button.addEventListener('mouseout', () => {
+        button.style.transform = 'scale(1)';
+    });
+});
+
 // Fetch questions from JSON file
 async function loadQuestions() {
     try {
@@ -20,26 +33,36 @@ async function loadQuestions() {
 
 // Start the quiz
 function startQuiz() {
-    const textQuestionCount = parseInt(document.getElementById("questionCount").value);
-    const pictureQuestionCount = parseInt(document.getElementById("pictureQuestionCount").value);
+    const questionCount = document.getElementById('questionCount').value;
+    const pictureQuestionCount = document.getElementById('pictureQuestionCount').value;
 
-    if (isNaN(textQuestionCount) || textQuestionCount < 1 || textQuestionCount > 300) {
-        alert("Please enter a valid number for text questions (1–300).");
-        return;
+    if (questionCount >= 15 && questionCount <= 212 && pictureQuestionCount >= 15 && pictureQuestionCount <= 100) {
+        document.getElementById('timer').classList.remove('hidden');
+        startTimer();
+
+        const textQuestionCount = parseInt(document.getElementById("questionCount").value);
+        const pictureQuestionCount = parseInt(document.getElementById("pictureQuestionCount").value);
+
+        if (isNaN(textQuestionCount) || textQuestionCount < 1 || textQuestionCount > 300) {
+            alert("Please enter a valid number for text questions (1–300).");
+            return;
+        }
+        if (isNaN(pictureQuestionCount) || pictureQuestionCount < 1 || pictureQuestionCount > 50) {
+            alert("Please enter a valid number for picture questions (1–50).");
+            return;
+        }
+
+        selectedQuestions = questions.sort(() => Math.random() - 0.5).slice(0, textQuestionCount);
+        selectedPictureQuestions = pictureQuestions.sort(() => Math.random() - 0.5).slice(0, pictureQuestionCount);
+
+        currentQuestionIndex = 0;
+        document.getElementById("quizContainer").classList.remove("hidden");
+        document.querySelector(".config").classList.add("hidden");
+        displayQuestion();
+        document.getElementById("returnButton").classList.remove("hidden");
+    } else {
+        alert("Please enter valid numbers for the questions and signs.");
     }
-    if (isNaN(pictureQuestionCount) || pictureQuestionCount < 1 || pictureQuestionCount > 50) {
-        alert("Please enter a valid number for picture questions (1–50).");
-        return;
-    }
-
-    selectedQuestions = questions.sort(() => Math.random() - 0.5).slice(0, textQuestionCount);
-    selectedPictureQuestions = pictureQuestions.sort(() => Math.random() - 0.5).slice(0, pictureQuestionCount);
-
-    currentQuestionIndex = 0;
-    document.getElementById("quizContainer").classList.remove("hidden");
-    document.querySelector(".config").classList.add("hidden");
-    displayQuestion();
-    document.getElementById("returnButton").classList.remove("hidden");
 }
 
 // Display the current question
@@ -85,7 +108,8 @@ document.getElementById("nextQuestion").addEventListener("click", () => {
 });
 
 // Submit the quiz
-document.getElementById("submitQuiz").addEventListener("click", () => {
+function submitQuiz() {
+    clearInterval(timer); // Stop the timer
     const resultContainer = document.getElementById("result");
     let score = 0;
 
@@ -125,7 +149,7 @@ document.getElementById("submitQuiz").addEventListener("click", () => {
         document.querySelector(".config").classList.remove("hidden");
         document.getElementById("quizContainer").classList.add("hidden");
     });
-});
+}
 
 // Start quiz button event listener
 document.getElementById("startQuiz").addEventListener("click", startQuiz);
@@ -147,3 +171,47 @@ document.getElementById("startQuiz").addEventListener("click", () => {
 document.getElementById("startQuiz").addEventListener("click", () => {
     returnButton.classList.remove("hidden");
 });
+
+function startTimer() {
+    clearInterval(timer); // Clear any existing timer
+    timeLeft = 1 * 60; // Reset the timer
+    updateTimerDisplay();
+    updatePulseAnimation();
+    timer = setInterval(function() {
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            alert("Time's up! Do you want to restart the quiz?");
+            if (confirm("Press OK to restart the quiz.")) {
+                resetToConfig();
+            }
+        } else {
+            timeLeft--;
+            updateTimerDisplay();
+            updatePulseAnimation();
+        }
+    }, 1000);
+}
+
+function updateTimerDisplay() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    document.getElementById('time').textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+function updatePulseAnimation() {
+    const timerElement = document.getElementById('timer');
+    const animationDuration = Math.max(0.5, timeLeft / 900); // Adjust the duration based on remaining time
+    timerElement.style.animationDuration = `${animationDuration}s`;
+}
+
+function resetToConfig() {
+    timeLeft = 1 * 60; // Reset the timer
+    updateTimerDisplay();
+    clearInterval(timer); // Stop the timer
+    document.getElementById("quizContainer").classList.add("hidden");
+    document.querySelector(".config").classList.remove("hidden");
+    document.getElementById("timer").classList.add("hidden");
+}
+
+document.getElementById('startQuiz').addEventListener('click', startQuiz);
+document.getElementById('submitQuiz').addEventListener('click', submitQuiz);

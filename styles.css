@@ -1,7 +1,17 @@
+/* Define color palette */
+:root {
+    --dark-brown: #1D1616; /* 20% */
+    --dark-red: #8E1616;   /* 20% */
+    --red: #D84040;        /* 10% */
+    --light-grey: #EEEEEE; /* 50% */
+    --white: #FFFFFF;      /* Additional color for better contrast */
+}
+
+/* General styles */
 body {
+    background-color: #f4f4f4;
+    color: var(--dark-brown); /* 20% */
     font-family: 'Roboto', sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,6 +21,77 @@ body {
     flex-direction: column;
 }
 
+/* Header styles */
+header {
+    background-color: var(--dark-red); /* 20% */
+    color: var(--light-grey); /* 50% */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Quiz container styles */
+#quizContainer {
+    background-color: var(--light-grey); /* 50% */
+    border: 1px solid var(--dark-brown); /* 20% */
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+button {
+    background-color: var(--red); /* 10% */
+    border: none;
+    border-radius: 4px;
+    color: var(--light-grey); /* 50% */
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--dark-red); /* 20% */
+}
+
+/* Config section styles */
+.config {
+    background-color: var(--dark-brown); /* 20% */
+    border: 1px solid var(--dark-red); /* 20% */
+    border-radius: 8px;
+    color: var(--light-grey); /* 50% */
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Return button styles */
+.return-button {
+    background-color: var(--dark-red); /* 20% */
+    border: none;
+    border-radius: 4px;
+    color: var(--light-grey); /* 50% */
+    cursor: pointer;
+    display: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.return-button.hidden {
+    display: none;
+}
+
+.return-button:hover {
+    background-color: var(--red); /* 10% */
+}
+
+/* Taskbar styles */
 .taskbar {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -26,22 +107,51 @@ body {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .taskbar a:hover {
+    color: var(--red); /* 10% */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { top: -50px; }
+    to { top: 0; }
+}
+
+.taskbar a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.taskbar a:hover {
+    color: #ffcc00;
     text-decoration: underline;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+    background: #fff;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     box-sizing: border-box;
     margin-top: 60px; /* Adjust for taskbar height */
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 h1 {
@@ -49,46 +159,13 @@ h1 {
     color: #333;
     margin-bottom: 20px;
     font-size: 24px;
-}
-
-.contact-info {
-    font-size: 18px;
-    color: #555;
-}
-
-.contact-info ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.contact-info li {
-    margin-bottom: 10px;
-}
-
-.contact-info a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.map-container {
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.config, #quizContainer, #result {
-    margin-top: 20px;
+    font-weight: 500;
 }
 
 label {
     display: block;
     margin-bottom: 10px;
-    color: #555;
+    color: var(--white); /* 20% */
     font-weight: bold;
 }
 
@@ -102,24 +179,14 @@ input[type="number"] {
     font-size: 16px;
 }
 
+p {
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+}
+
 .button-container {
     text-align: center;
-}
-
-button {
-    padding: 12px 25px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007BFF;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
 
 .hidden {
@@ -163,4 +230,41 @@ li {
 
 input[type="radio"] {
     margin-right: 10px;
+}
+
+#timer {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: var(--dark-brown);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 20px 0;
+    text-align: center;
+    animation: pulse 1s infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+#time {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Number of questions and sign labels styles */
+.question-number, .sign-label {
+    background-color: var(--white); /* Additional color for better contrast */
+    color: var(--white); /* 20% */
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px 0;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
