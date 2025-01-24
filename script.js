@@ -8,16 +8,15 @@ let selectedPictureQuestions = []; // Subset of picture questions for the quiz
 // Fetch questions from JSON file
 async function loadQuestions() {
     try {
-    const textResponse = await fetch('questions.json');
-    questions = await textResponse.json();
+        const textResponse = await fetch('questions.json');
+        questions = await textResponse.json();
 
-    const pictureResponse = await fetch('pictureQuestions.json');
-    pictureQuestions = await pictureResponse.json();
+        const pictureResponse = await fetch('pictureQuestions.json');
+        pictureQuestions = await pictureResponse.json();
     } catch (error) {
-    console.error("Error loading questions:", error);
+        console.error("Error loading questions:", error);
     }
 }
-
 
 // Start the quiz
 function startQuiz() {
@@ -25,12 +24,12 @@ function startQuiz() {
     const pictureQuestionCount = parseInt(document.getElementById("pictureQuestionCount").value);
 
     if (isNaN(textQuestionCount) || textQuestionCount < 1 || textQuestionCount > 300) {
-    alert("Please enter a valid number for text questions (1–300).");
-    return;
+        alert("Please enter a valid number for text questions (1–300).");
+        return;
     }
     if (isNaN(pictureQuestionCount) || pictureQuestionCount < 1 || pictureQuestionCount > 50) {
-    alert("Please enter a valid number for picture questions (1–50).");
-    return;
+        alert("Please enter a valid number for picture questions (1–50).");
+        return;
     }
 
     selectedQuestions = questions.sort(() => Math.random() - 0.5).slice(0, textQuestionCount);
@@ -40,6 +39,7 @@ function startQuiz() {
     document.getElementById("quizContainer").classList.remove("hidden");
     document.querySelector(".config").classList.add("hidden");
     displayQuestion();
+    document.getElementById("returnButton").classList.remove("hidden");
 }
 
 // Display the current question
@@ -47,8 +47,8 @@ function displayQuestion() {
     const quizElement = document.getElementById("quiz");
     const isPictureQuestion = currentQuestionIndex >= selectedQuestions.length;
     const question = isPictureQuestion
-    ? selectedPictureQuestions[currentQuestionIndex - selectedQuestions.length]
-    : selectedQuestions[currentQuestionIndex];
+        ? selectedPictureQuestions[currentQuestionIndex - selectedQuestions.length]
+        : selectedQuestions[currentQuestionIndex];
 
     // Build the HTML for the current question
     quizElement.innerHTML = `
@@ -123,3 +123,23 @@ document.getElementById("quiz").addEventListener("change", (event) => {
 
 // Load questions on page load
 loadQuestions();
+
+// Add a return button to the HTML inside the quiz container
+const returnButton = document.createElement("button");
+returnButton.id = "returnButton";
+returnButton.textContent = "Return to Settings";
+returnButton.classList.add("hidden");
+document.getElementById("quizContainer").appendChild(returnButton);
+
+// Event listener for the return button
+returnButton.addEventListener("click", () => {
+    document.getElementById("quizContainer").classList.add("hidden");
+    document.getElementById("result").classList.add("hidden");
+    document.querySelector(".config").classList.remove("hidden");
+    returnButton.classList.add("hidden");
+});
+
+// Show the return button when the quiz starts
+document.getElementById("startQuiz").addEventListener("click", () => {
+    returnButton.classList.remove("hidden");
+});
