@@ -1,9 +1,9 @@
 [
     {
-    "question": "What does this sign mean?",
-    "image": "images/1.png",
-    "options": ["Caution, slippery road ahead", "Caution, speed bumps ahead", "Caution, uneven road ahead"],
-    "answer": "Caution, uneven road ahead"
+        "question": "What does this sign mean?",
+        "image": "images/1.png",
+        "options": ["Caution, slippery road ahead", "Caution, speed bumps ahead", "Caution, uneven road ahead"],
+        "answer": "Caution, uneven road ahead"
     },
     {
     "question": "What does this sign mean?",
@@ -602,7 +602,7 @@
     "image": "images/2.png",
     "options": ["Caution, right bend ahead", "Caution, road Bumps ahead", "Caution, uneven roads ahead"],
     "answer": "Caution, road Bumps ahead"
-    }
+    },
     {
     "question": "What does this sign mean?",
     "image": "images/22.png",

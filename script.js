@@ -6,7 +6,7 @@ let pictureQuestions = []; // Array to store picture-based questions
 let selectedPictureQuestions = []; // Subset of picture questions for the quiz
 
 let timer;
-let timeLeft = 1 * 60; // 15 minutes in seconds
+let timeLeft = 15 * 60; // 1 minute in seconds
 
 // Add animations to buttons
 document.querySelectorAll('button').forEach(button => {
@@ -33,26 +33,14 @@ async function loadQuestions() {
 
 // Start the quiz
 function startQuiz() {
-    const questionCount = document.getElementById('questionCount').value;
-    const pictureQuestionCount = document.getElementById('pictureQuestionCount').value;
+    const questionCount = parseInt(document.getElementById('questionCount').value);
+    const pictureQuestionCount = parseInt(document.getElementById('pictureQuestionCount').value);
 
     if (questionCount >= 15 && questionCount <= 212 && pictureQuestionCount >= 15 && pictureQuestionCount <= 100) {
         document.getElementById('timer').classList.remove('hidden');
         startTimer();
 
-        const textQuestionCount = parseInt(document.getElementById("questionCount").value);
-        const pictureQuestionCount = parseInt(document.getElementById("pictureQuestionCount").value);
-
-        if (isNaN(textQuestionCount) || textQuestionCount < 1 || textQuestionCount > 300) {
-            alert("Please enter a valid number for text questions (1–300).");
-            return;
-        }
-        if (isNaN(pictureQuestionCount) || pictureQuestionCount < 1 || pictureQuestionCount > 50) {
-            alert("Please enter a valid number for picture questions (1–50).");
-            return;
-        }
-
-        selectedQuestions = questions.sort(() => Math.random() - 0.5).slice(0, textQuestionCount);
+        selectedQuestions = questions.sort(() => Math.random() - 0.5).slice(0, questionCount);
         selectedPictureQuestions = pictureQuestions.sort(() => Math.random() - 0.5).slice(0, pictureQuestionCount);
 
         currentQuestionIndex = 0;
@@ -114,13 +102,14 @@ function submitQuiz() {
     let score = 0;
 
     // Build the result HTML
-    const resultHTML = selectedQuestions.map((question, index) => {
+    const resultHTML = [...selectedQuestions, ...selectedPictureQuestions].map((question, index) => {
         const isCorrect = selectedAnswers[index] === question.answer;
         if (isCorrect) score++;
 
         return `
             <div class="result-question">
                 <p><strong>Question ${index + 1}:</strong> ${question.question}</p>
+                ${question.image ? `<img src="${question.image}" alt="Question Image">` : ""}
                 <p>Your Answer: <span class="${isCorrect ? 'correct' : 'wrong'}">${selectedAnswers[index] || "No Answer"}</span></p>
                 <p>Correct Answer: <span class="correct">${question.answer}</span></p>
             </div>
@@ -130,8 +119,10 @@ function submitQuiz() {
     // Display the results
     resultContainer.innerHTML = `
         <h2>Quiz Results</h2>
-        <p>You scored ${score} out of ${selectedQuestions.length}!</p>
-        ${resultHTML}
+        <p>You scored ${score} out of ${selectedQuestions.length + selectedPictureQuestions.length}!</p>
+        <div class="result-content">
+            ${resultHTML}
+        </div>
         <button id="restartQuiz">Restart Quiz</button>
     `;
     resultContainer.classList.remove("hidden");
@@ -142,7 +133,7 @@ function submitQuiz() {
         // Reset variables
         currentQuestionIndex = 0;
         score = 0;
-        selectedAnswers = [];
+        selectedAnswers = {};
 
         // Hide result container and show config container
         resultContainer.classList.add("hidden");
@@ -169,12 +160,12 @@ document.getElementById("startQuiz").addEventListener("click", () => {
 
 // Show the return button when the quiz starts
 document.getElementById("startQuiz").addEventListener("click", () => {
-    returnButton.classList.remove("hidden");
+    document.getElementById("returnButton").classList.remove("hidden");
 });
 
 function startTimer() {
     clearInterval(timer); // Clear any existing timer
-    timeLeft = 1 * 60; // Reset the timer
+    timeLeft = 15 * 60; // Reset the timer
     updateTimerDisplay();
     updatePulseAnimation();
     timer = setInterval(function() {
@@ -200,12 +191,12 @@ function updateTimerDisplay() {
 
 function updatePulseAnimation() {
     const timerElement = document.getElementById('timer');
-    const animationDuration = Math.max(0.5, timeLeft / 900); // Adjust the duration based on remaining time
+    const animationDuration = Math.max(0.5, timeLeft / 60); // Adjust the duration based on remaining time
     timerElement.style.animationDuration = `${animationDuration}s`;
 }
 
 function resetToConfig() {
-    timeLeft = 1 * 60; // Reset the timer
+    timeLeft = 15 * 60; // Reset the timer
     updateTimerDisplay();
     clearInterval(timer); // Stop the timer
     document.getElementById("quizContainer").classList.add("hidden");
