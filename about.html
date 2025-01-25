@@ -7,14 +7,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <style>
+        .dot-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .dot-list li::before {
+            content: "•"; /* This adds the dot */
+            color: #2c3e50;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            margin-left: 0.8em; /* Move the dot to the right */
+        }
+        .note {
+            font-style: italic;
+            color: #e74c3c;
+        }
+    </style>
     <div class="taskbar">
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
     </div>
     <div class="container">
         <h1>About</h1>
-        <p>This is a driving quiz application to help you prepare for your driving test.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Our <strong>Driving Test Quiz Application</strong> is a user-friendly platform designed to help you confidently prepare for your driving test. With an easy-to-navigate website and straightforward content, it's perfect for all users.</p>
+    
+    <h2>Key Features:</h2>
+    <ul class="dot-list">
+        <li><strong>Customizable Quizzes:</strong> Choose the number of questions to match your study needs.</li>
+        <li><strong>Fixed Timer:</strong> A 15-minute timer, just like the real exam, helps you practice under authentic test conditions.</li>
+        <li><strong>Instant Results:</strong> Get your scores and detailed results immediately after completing a quiz.</li>
+        <li><strong>Focused Preparation:</strong> Simplified, easy-to-read questions ensure you're ready for the exam.</li>
+        <li><strong>Pass with Confidence:</strong> Designed to boost your knowledge and help you succeed.</li>
+    </ul>
+    
+    <p class="note"><em>Important Note:</em> If you notice any spelling or grammatical errors, please be aware that these come from the original PDF document. We directly copy-paste the questions without making any changes to ensure accuracy with the source material.</p>
+    
+    <p><strong>If you notice any issues or would like to provide feedback</strong>, feel free to reach out to us directly on 
+    Instagram. We're always open to hearing your thoughts and improving the experience for everyone. Thank you!</p>
+    
+    <p>Good luck with your driving test preparation!</p>
+    
+    <p>Website created by:</p>
+    <p><a href="https://www.instagram.com/tarek_houry?igsh=ZjczZDlzamlhank5" target="_blank">Tarek Houry</a>.</p>
+    <a href="https://www.instagram.com/michel.kachouh_?igsh=em43eDE1MGcwcnVo" target="_blank">Michel Kahchouh</a>.
     </div>
 </body>
 </html>

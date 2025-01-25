@@ -1,20 +1,750 @@
 [
     {
-    "question": "What is this monument called?",
-    "image": "images/eiffel_tower.jpg",
-    "options": ["Eiffel Tower", "Big Ben", "Statue of Liberty", "Colosseum"],
-    "answer": "Eiffel Tower"
+    "question": "What does this sign mean?",
+    "image": "images/1.png",
+    "options": ["Caution, slippery road ahead", "Caution, speed bumps ahead", "Caution, uneven road ahead"],
+    "answer": "Caution, uneven road ahead"
     },
     {
-    "question": "Which country does this flag belong to?",
-    "image": "images/canada_flag.jpg",
-    "options": ["USA", "Canada", "UK", "Australia"],
-    "answer": "Canada"
+    "question": "What does this sign mean?",
+    "image": "images/3.png",
+    "options": ["Roundabout ahead ", "Caution, left bend ahead", "Caution, right bend ahead"],
+    "answer": "Caution, right bend ahead"
     },
     {
-    "question": "What animal is shown in the image?",
-    "image": "images/lion.jpg",
-    "options": ["Lion", "Tiger", "Cheetah", "Leopard"],
-    "answer": "Lion"
+    "question": "What does this sign mean?",
+    "image": "images/4.png",
+    "options": ["Vehicles can go left", "Caution, left bend ahead", "Caution, right bend ahead"],
+    "answer": "Caution, left bend ahead"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/5.png",
+    "options": ["Caution, double lane road", "Caution, double bend ahead, first one to the left", "Caution, double bend ahead, first one to the right"],
+    "answer": "Caution, double bend ahead, first one to the right"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/6.png",
+    "options": ["Caution, double lane road", "Caution, double bend ahead, first one to the left", "Caution, double bend ahead, first one to the right"],
+    "answer": "Caution, double bend ahead, first one to the left"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/10.png",
+    "options": ["Caution, narrow road ahead", "Caution, dangerous slope", "Caution, slippery road ahead"],
+    "answer": "Caution, slippery road ahead"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/11.png",
+    "options": ["Unsecure crossing ", "No entry", "Caution, students or school"],
+    "answer": "Caution, students or school"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/13.png",
+    "options": ["Stray animals", "Animals not allowed", "Caution, animals"],
+    "answer": "Caution, animals"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/14.png",
+    "options": ["Travel on the right side of the road", "Caution, intersection without right of way", "Caution, double lane road"],
+    "answer": "Caution, double lane road"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/15.png",
+    "options": ["Caution, various dangers", "You cannot turn", "Caution, roundabout ahead"],
+    "answer": "Caution, roundabout ahead"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/17.png",
+    "options": ["Caution, intersection with no right of way", "Caution, vehicles coming from the opposite direction have the right of way", "Caution, intersection ahead"],
+    "answer": "Caution, intersection ahead"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/18.png",
+    "options": ["Merging with a freeway", "Caution, intersection with no right of way", "Caution, vehicles coming from the opposite direction have the right of way"],
+    "answer": "Caution, vehicles coming from the opposite direction have the right of way"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/19.png",
+    "options": ["Caution, intersection on the right", "Caution, intersection with no right of way", "Caution, vehicles coming from the opposite direction have the right of way"],
+    "answer": "Caution, intersection with no right of way"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/24.png",
+    "options": ["One-minute parking", "End of speed limit", "Road with priority right of way"],
+    "answer": "Road with priority right of way"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/25.png",
+    "options": ["Not reserved for pedestrians", "No entry for pedestrians", "Caution, pedestrian crossing"],
+    "answer": "Caution, pedestrian crossing"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/26.png",
+    "options": ["Trolley crossing", "No entry for bikes ", "Caution, cycles crossing"],
+    "answer": "Caution, cycles crossing"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/29.png",
+    "options": ["Caution, wide road ", "Caution, narrow road on the left", "Caution, narrow road ahead"],
+    "answer": "Caution, narrow road ahead"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/30.png",
+    "options": ["Priority to the right ", "Narrow road on the right", "Caution, narrow road on the left"],
+    "answer": "Caution, narrow road on the left"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/31.png",
+    "options": ["End of priority", "Caution, narrow road on the right", "Caution, vehicles coming from the opposite direction have the right of way"],
+    "answer": "Caution, narrow road on the right"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/32.png",
+    "options": ["Mountainous area ", "Caution, falling or fallen rocks ahead", "Caution, narrow road ahead"],
+    "answer": "Caution, falling or fallen rocks ahead"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/33.png",
+    "options": ["No entry to all types of motor vehicles", "Caution, electrical signs", "Caution, roundabout ahead"],
+    "answer": "Caution, electrical signs"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/37.png",
+    "options": ["No entry ", "Give way - priority road ahead", "Caution, various dangers"],
+    "answer": "Caution, various dangers"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/38.png",
+    "options": ["No entry ", "Give way - priority road ahead", "Caution, various dangers"],
+    "answer": "Give way - priority road ahead"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/39.png",
+    "options": ["No entry ", "End of priority ", "Caution, vehicles coming from the opposite direction have the right of way"],
+    "answer": "End of priority"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/40.png",
+    "options": ["No overtaking for all kinds of vehicles", "End of priority ", "Caution, vehicles coming from the opposite direction have the right of way"],
+    "answer": "Caution, vehicles coming from the opposite direction have the right of way"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/41.png",
+    "options": ["One lane road ", "No entry", "Stop"],
+    "answer": "Stop"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/42.png",
+    "options": ["One Lane road ", "No parking ", "No entry for all motor vehicles"],
+    "answer": "No entry for all motor vehicles"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/43.png",
+    "options": ["Various dangers", "No parking", "No entry"],
+    "answer": "No entry"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/44.png",
+    "options": ["No overtaking allowed for trucks", "No overtaking allowed for all kinds of vehicles", "No entry"],
+    "answer": "No overtaking allowed for all kinds of vehicles"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/45.png",
+    "options": ["Upper speed limit: 30 km/hour", "Lower Speed limit: 80 km/hour", "Give way - priority road ahead"],
+    "answer": "Upper speed limit: 30 km/hour"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/46.png",
+    "options": ["Theatre", "No parking", "You are not allowed to sound your horn"],
+    "answer": "You are not allowed to sound your horn"
+    },  
+    {
+    "question": "What does this sign mean?",
+    "image": "images/47.png",
+    "options": ["Road reserved for trucks", "Trucks can overtake", "Trucks cannot overtake"],
+    "answer": "Trucks cannot overtake"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/48.png",
+    "options": ["Animal carts allowed", "No entry for pedestrians", "No entry for animal carts"],
+    "answer": "No entry for animal carts"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/49.png",
+    "options": ["No entry to all types of motor vehicles", "Caution, Lane reserved for pedestrians", "No entry for pedestrians"],
+    "answer": "No entry for pedestrians"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/50.png",
+    "options": ["Compulsory path for motor vehicles", "Lane reserved for bikes", "No entry for bikes"],
+    "answer": "No entry for bikes"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/51.png",
+    "options": ["Cycles crossing", "Motorbikes Lane", "No entry for motorbikes"],
+    "answer": "No entry for motorbikes"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/52.png",
+    "options": ["Trolleys cannot be parked here", "Lane reserved for trolleys", "Not entry for trolleys "],
+    "answer": "Not entry for trolleys "
+    },    {
+    "question": "What does this sign mean?",
+    "image": "images/53.png",
+    "options": ["No parking", "Road reserved for motor vehicles", "No entry to all types of motor vehicles "],
+    "answer": "No entry to all types of motor vehicles "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/55.png",
+    "options": ["No entry to trucks exceeding 2.3m in height", "No entry for trucks ", "No entry to cars exceeding 2.3m in width"],
+    "answer": "No entry to cars exceeding 2.3m in width"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/56.png",
+    "options": ["Compulsory direction for trucks", "No entry to trucks exceeding 3.5 tons in weight", "No entry to trucks exceeding 3.5 m in height"],
+    "answer": "No entry to trucks exceeding 3.5 m in height"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/57.png",
+    "options": ["Cargo cannot exceed 10m", "No entry to trucks carrying more than 6.5 tons of cargo ", "No entry to trucks exceeding 10m in height"],
+    "answer": "No entry to trucks exceeding 10m in height"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/58.png",
+    "options": ["No entry to trucks exceeding 7m in height", "No entry to trucks exceeding 7 tons/wheel", "No entry to trucks carrying more than 7 tons of cargo "],
+    "answer": "No entry to trucks carrying more than 7 tons of cargo "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/60.png",
+    "options": ["Start of restriction signs", "No speeding ", "End of restriction sign"],
+    "answer": "End of restriction sign"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/61.png",
+    "options": ["Speed limit ", "Start of speed limit ", "End of speed limit"],
+    "answer": "End of speed limit"
+    },  
+    {
+    "question": "What does this sign mean?",
+    "image": "images/62.png",
+    "options": ["Compulsory direction to the left", "You cannot turn right", "Turn right "],
+    "answer": "Turn right "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/63.png",
+    "options": ["You can go straight or turn right", "You cannot turn left", "Turn left "],
+    "answer": "Turn left "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/64.png",
+    "options": ["You cannot go right or left", "You must go straight", "You can turn right or left"],
+    "answer": "You can turn right or left"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/65.png",
+    "options": ["Trucks must go right", "You cannot turn left", "You can go straight or turn right"],
+    "answer": "You can go straight or turn right"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/66.png",
+    "options": ["You cannot go left", "You can go straight or turn left", "Compulsory direction to the left"],
+    "answer": "You can go straight or turn left"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/68.png",
+    "options": ["Compulsory direction to the right", "You must go straight", "You cannot turn right"],
+    "answer": "Compulsory direction to the right"
+    },    {
+    "question": "What does this sign mean?",
+    "image": "images/67.png",
+    "options": ["Freeway lane ", "Compulsory direction to the left", "You can go right"],
+    "answer": "Compulsory direction to the left"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/69.png",
+    "options": ["Compulsory direction to the right or the left", "You cannot turn right or left", "Vehicle can only turn right"],
+    "answer": "Compulsory direction to the right or the left"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/71.png",
+    "options": ["Lane reserved for bicycles", "End of bicycle track", "Lane reserved for pedestrians and bicycles"],
+    "answer": "End of bicycle track"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/72.png",
+    "options": ["End of bicycle track ", "Lane reserved for pedestrians and bicycles", "No entry for pedestrians and bicycles"],
+    "answer": "Lane reserved for pedestrians and bicycles"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/75.png",
+    "options": ["You cannot turn right", "Traffic direction ", "Compulsory direction to the right"],
+    "answer": "You cannot turn right"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/76.png",
+    "options": ["You cannot turn", "Traffic direction ", "Compulsory turn "],
+    "answer": "You cannot turn"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/77.png",
+    "options": ["No entry to buses", "Lane reserved for buses", "End of no bus overtaking zone"],
+    "answer": "No entry to buses"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/78.png",
+    "options": ["No entry to trucks exceeding 6.5 tons in weight", "Lane reserved for trucks", "No entry to trucks "],
+    "answer": "No entry to trucks "
+    },   
+    {
+    "question": "What does this sign mean?",
+    "image": "images/79.png",
+    "options": ["No entry to trucks carrying more than 6.5 tons of cargo", "Trucks cannot park here", "Compulsory direction for trucks"],
+    "answer": "No entry to trucks carrying more than 6.5 tons of cargo"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/80.png",
+    "options": ["Compulsory direction for trucks", "Not entry to trailer trucks", "No entry for trucks carrying Hazardous Materia"],
+    "answer": "Not entry to trailer trucks"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/81.png",
+    "options": ["Agricultural machinery not allowed", "Road reserved for agricultural machinery", "One-minute parking for agricultural machinery"],
+    "answer": "Agricultural machinery not allowed"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/84.png",
+    "options": ["End of no overtaking zone", "Caution, two-lane road ", "End of no overtaking for trucks"],
+    "answer": "End of no overtaking zone"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/85.png",
+    "options": ["End of no overtaking for trucks", "Trucks only", "Caution, two lane road"],
+    "answer": "End of no overtaking for trucks"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/86.png",
+    "options": ["No parking", "No entry ", "No overtaking for all kinds of vehicles"],
+    "answer": "No parking"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/87.png",
+    "options": ["No stopping and no parking", "No parking", "No entry "],
+    "answer": "No stopping and no parking"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/88.png",
+    "options": ["You must go straight", "No entry in this direction", "No parking in this zone"],
+    "answer": "You must go straight"
+    },   
+    {
+    "question": "What does this sign mean?",
+    "image": "images/89.png",
+    "options": ["Direction to the left ", "You cannot turn left", "No parking on the left"],
+    "answer": "Direction to the left "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/90.png",
+    "options": ["Direction to the right", "You cannot turn right", "No parking on the right"],
+    "answer": "Direction to the right"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/91.png",
+    "options": ["Roundabout ahead", "Parking zone", "You cannot turn"],
+    "answer": "Roundabout ahead"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/92.png",
+    "options": ["Mandatory lower speed", "Mandatory upper speed", "You cannot park for more than 30 minutes"],
+    "answer": "Mandatory lower speed"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/93.png",
+    "options": ["End of mandatory lower speed", "You cannot park for more than 30 minutes", "Maximum speed: 30km/h"],
+    "answer": "End of mandatory lower speed"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/94.png",
+    "options": ["Vehicles equipped with metal chains only", "Tyre chains must be removed", "Caution, slippery road ahead"],
+    "answer": "Vehicles equipped with metal chains only"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/95.png",
+    "options": ["Lane reserved for pedestrians", "No entry for pedestrians", "ParK"],
+    "answer": "Lane reserved for pedestrians"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/96.png",
+    "options": ["End of pedestrian Lane", "Upper ground pedestrian crossing", "Lane reserved for pedestrians"],
+    "answer": "End of pedestrian Lane"
+    },   
+    {
+    "question": "What does this sign mean?",
+    "image": "images/97.png",
+    "options": ["Bicycles track ", "No entry for bicycles", "No parking for bicycles"],
+    "answer": "Bicycles track "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/98.png",
+    "options": ["Cannot turn left ", "No parking on the left", "Compulsory direction to the left"],
+    "answer": "Cannot turn left "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/99.png",
+    "options": ["Hospital ", "Two-lane road connected to a bridge", "Caution, moving bridge ahead"],
+    "answer": "Hospital "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/100.png",
+    "options": ["Caution, pedestrian crossing", "End of pedestrian lane", "Caution, no entry to pedestrians"],
+    "answer": "Caution, pedestrian crossing"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/104.png",
+    "options": ["Lane reseved for bike", "Bicycle track ", "No entry for bicycles "],
+    "answer": "Lane reseved for bike"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/106.png",
+    "options": ["Dead end road ", "CLanes merge ahead", "Merger with a freeway ahead"],
+    "answer": "Dead end road "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/107.png",
+    "options": ["Highway", "Caution, bridge", "Caution, airport runway"],
+    "answer": "Highway"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/108.png",
+    "options": ["End of freeway", "Bridge above the road", "Caution, narrow road ahead"],
+    "answer": "End of freeway"
+    },   
+    {
+    "question": "What does this sign mean?",
+    "image": "images/109.png",
+    "options": ["Tunnel ", "Bridge", "Caution, rough road ahead"],
+    "answer": "Tunnel "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/111.png",
+    "options": ["Help center", "For doctors only", "Parking for the disabled"],
+    "answer": "Help center"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/112.png",
+    "options": ["Parking reserved for the disabled", "One-minute parking", "No parking for the disabled"],
+    "answer": "Parking reserved for the disabled"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/113.png",
+    "options": ["Parking", "One-minute parking ", "Parking not allowed"],
+    "answer": "One-minute parking "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/116.png",
+    "options": ["Taxis not allowed to park here", "Taxi stop ", "Parking for all - not more than two taxi cars allowed"],
+    "answer": "Taxi stop "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/117.png",
+    "options": ["Remove immediately", "Police", "Inquiries"],
+    "answer": "Police"
+    },   
+    {
+    "question": "What does this sign mean?",
+    "image": "images/118.png",
+    "options": ["Internet Center", "Inquiries ", "Petrol station"],
+    "answer": "Inquiries "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/119.png",
+    "options": ["Fire Brigade", "Municipality police ", "Parking reserved for the police"],
+    "answer": "Municipality police "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/121.png",
+    "options": ["Indirect turn to the left", "Freeway", "Dangerous interesection ahead"],
+    "answer": "Freeway"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/127.png",
+    "options": ["One-minute parking", "Parking", "No parking"],
+    "answer": "Parking"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/128.png",
+    "options": ["Restaurant", "Hotel", "Repair Center"],
+    "answer": "Hotel"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/129.png",
+    "options": ["Inquiries", "Restaurant", "Refreshments "],
+    "answer": "Restaurant"
+    },   
+    {
+    "question": "What does this sign mean?",
+    "image": "images/132.png",
+    "options": ["Petrol station", "Public phone ", "Restaurant"],
+    "answer": "Public phone "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/133.png",
+    "options": ["Repair Center ", "Petrol station ", "Restaurant"],
+    "answer": "Petrol station "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/134.png",
+    "options": ["Lane reserved for buses", "Bus parking ", "Buses are not allowed to stop here"],
+    "answer": "Bus parking "
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/136.png",
+    "options": ["Help Center", "Camping & camping cars zone", "No parking"],
+    "answer": "Camping & camping cars zone"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/139.png",
+    "options": ["Reduce Speed", "Bend ahead", "Indirect bend to the left"],
+    "answer": "Bend ahead"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/141.png",
+    "options": ["Bend ahead ", "Indirect bend to the left", "Reduce Speed"],
+    "answer": "Indirect bend to the left"
+    },   
+    {
+    "question": "What does this sign mean?",
+    "image": "images/2.png",
+    "options": ["Caution, right bend ahead", "Caution, road Bumps ahead", "Caution, uneven roads ahead"],
+    "answer": "Caution, road Bumps ahead"
+    }
+    {
+    "question": "What does this sign mean?",
+    "image": "images/22.png",
+    "options": ["A roundabout ahead", "Merging traffic from the right", "Traffic signals ahead"],
+    "answer": "Merging traffic from the right"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/23.png",
+    "options": ["Pedestrian crossing", "Merging traffic from the left", "No entry"],
+    "answer": "Merging traffic from the left"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/20.png",
+    "options": ["Right turn", "Side road ahead from the right", "Merging traffic from the right"],
+    "answer": "Side road ahead from the right"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/21.png",
+    "options": ["Merging traffic from the left", "Side road ahead from the left", "Left turn ahead"],
+    "answer": "Side road ahead from the left"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/126.png",
+    "options": ["Left curve", " Right turn with a side road", "No entry for vehicles"],
+    "answer": " Right turn with a side road"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/122.png",
+    "options": ["A T-junction", "A Y-junction", "Priority road ahead"],
+    "answer": "A Y-junction"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/123.png",
+    "options": ["No left turn", "Side road merges into a curved main road", "Roundabout"],
+    "answer": "Side road merges into a curved main road"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/124.png",
+    "options": ["Level crossing ahead", "A crossroad", "No parking"],
+    "answer": "A crossroad"
+    },
+    {
+    "question": "What does this sign mean?",
+    "image": "images/125.png",
+    "options": ["No stopping", "Right turn with a connecting side road", "T-junction on a curve"],
+    "answer": "Right turn with a connecting side road"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/20.png",
+        "options": ["No entry for heavy vehicles", "Steep ascent", "Steep descent"],
+        "answer": "No entry for heavy vehicles"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/21.png",
+        "options": ["Steep ascent", "Steep descent", "No overtaking"],
+        "answer": "Steep descent"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/22.png",
+        "options": ["Airport ahead", "Steep descent", "Danger of falling rocks"],
+        "answer": "Steep descent"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/23.png",
+        "options": ["Airport ahead", "No entry", "Falling rocks zone"],
+        "answer": "Airport ahead"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/126.png",
+        "options": ["No vehicles carrying water", "Vehicles with hazardous materials prohibited", "Dangerous water levels"],
+        "answer": "Vehicles with hazardous materials prohibited"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/122.png",
+        "options": ["Weight limit of 6.5 tons", "Axle load limit of 6.5 tons", "Height limit"],
+        "answer": "Axle load limit of 6.5 tons"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/123.png",
+        "options": ["Bridge ahead", "Tunnel ahead", "Exit ramp"],
+        "answer": "Bridge ahead"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/124.png",
+        "options": ["Explosive materials prohibited", "Caution: Fire hazard", "Vehicles carrying flammable goods prohibited"],
+        "answer": "Vehicles carrying flammable goods prohibited"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/125.png",
+        "options": ["No towing zone", "Towing zone", "Parking allowed"],
+        "answer": "Towing zone"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/105.png",
+        "options": ["Residential area", "School zone", "Playground area"],
+        "answer": "Playground area"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/120.png",
+        "options": ["Truck diversion", "Truck repair zone", "Truck parking"],
+        "answer": "Truck diversion"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/130.png",
+        "options": ["Coffee available", "Rest area", "Fuel station"],
+        "answer": "Coffee available"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/131.png",
+        "options": ["Repair service available", "Hospital nearby", "Fuel station"],
+        "answer": "Repair service available"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/135.png",
+        "options": ["Picnic area", "Camping area", "Parking zone"],
+        "answer": "Picnic area"
+    },
+    {
+        "question": "What does this sign mean?",
+        "image": "images/140.png",
+        "options": ["No entry", "Turn left ahead", "Road diversion"],
+        "answer": "Turn left ahead"
     }
 ]

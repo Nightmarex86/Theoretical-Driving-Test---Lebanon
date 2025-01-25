@@ -40,6 +40,8 @@ header {
     padding: 20px;
     width: 80%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Set a fixed height for the container */
+    overflow: auto; /* Allow scrolling if content overflows */
 }
 
 /* Button styles */
@@ -53,6 +55,7 @@ button {
     margin: 10px 0;
     transition: background-color 0.3s ease;
 }
+
 
 button:hover {
     background-color: var(--dark-red); /* 20% */
@@ -211,12 +214,19 @@ p {
     font-weight: bold;
 }
 
+/* Image inside quiz box */
 #quiz img {
-    max-width: 100%;
+    max-width: 100%; /* Ensures the image will never overflow its container */
     height: auto;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* General content container inside quiz box */
+.quiz-content {
+    max-height: 300px; /* Set a max height for the content */
+    overflow-y: auto; /* Add vertical scroll if the content is too long */
 }
 
 ul {
