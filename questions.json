@@ -1,27 +1,272 @@
 [
     {
-    "question": "What is the capital of France?",
-    "options": ["Paris", "London", "Berlin", "Madrid"],
-    "answer": "Paris"
+        "question": "When entering a tunnel during daytime, the driver should:",
+        "options": [
+            "Turn on the regular headlights (low beam) and speed up",
+            "Turn on the regular headlights (low beam) and slow down",
+            "Sound the horn"
+        ],
+        "answer": "Turn on the regular headlights (low beam) and slow down"
     },
     {
-    "question": "What is 2 + 2?",
-    "options": ["3", "4", "5", "6"],
-    "answer": "4"
+        "question": "At night, when driving behind another vehicle, you should:",
+        "options": [
+            "Turn on the normal headlights (low beam)",
+            "Turn on the high beam",
+            "Not use car headlights"
+        ],
+        "answer": "Turn on the normal headlights (low beam)"
     },
     {
-    "question": "Who wrote 'Hamlet'?",
-    "options": ["Shakespearea", "Dickens", "Austen", "Tolkien"],
-    "answer": "Shakespeare"
-    }
-    ,{
-    "question": "michel gay'?",
-    "options": ["Shakespeare", "Dickens", "Austen", "Tolkien"],
-    "answer": "Shakespeare"
+        "question": "If a car approaches from the other direction while your high beam is on, you should:",
+        "options": [
+            "Switch to normal headlights (low beam) immediately",
+            "Turn off lights",
+            "Switch between high and low beam repetitively"
+        ],
+        "answer": "Switch to normal headlights (low beam) immediately"
     },
     {
-    "question": "youssef gay'?",
-    "options": ["Shakespeare", "Dickens", "Austen", "Tolkien"],
-    "answer": "Shakespeare"
+        "question": "When filling up your car with gas, you should:",
+        "options": [
+            "Keep the engine running",
+            "Not care as it does not pose any threat",
+            "Turn off the engine"
+        ],
+        "answer": "Turn off the engine"
+    },
+    {
+        "question": "If the traffic light turns yellow when your vehicle has already entered the intersection, you should:",
+        "options": [
+            "Stop immediately in the middle of the intersection",
+            "Continue forward cautiously",
+            "Stare at the traffic light"
+        ],
+        "answer": "Continue forward cautiously"
+    },
+    {
+        "question": "If you feel sleepy while driving, you should:",
+        "options": [
+            "Take amphetamines and continue driving",
+            "Not be concerned as it will pass",
+            "Stop immediately at the side of the road to get some rest"
+        ],
+        "answer": "Stop immediately at the side of the road to get some rest"
+    },
+    {
+        "question": "When approaching an intersection that has a traffic policeman regulating traffic and an active traffic light and fixed traffic sign, you should:",
+        "options": [
+            "Follow the traffic policeman’s instructions",
+            "Follow the traffic lights",
+            "Heed the fixed traffic sign"
+        ],
+        "answer": "Follow the traffic policeman’s instructions"
+    },
+    {
+        "question": "The moment you enter your vehicle, you should first perform the following necessary adjustments in order:",
+        "options": [
+            "Fasten the seat belt, adjust the mirrors, and adjust your seat",
+            "Fasten the seat belt, adjust the seat, and adjust the mirrors",
+            "Adjust the seat, adjust the mirrors, and fasten the seat belt"
+        ],
+        "answer": "Adjust the seat, adjust the mirrors, and fasten the seat belt"
+    },
+    {
+        "question": "Everyday prior to driving the vehicle, the driver should:",
+        "options": [
+            "Do a routine check of the various vehicle systems",
+            "Should not perform any routine checks as long as the engine is running",
+            "Listen to the weather forecast"
+        ],
+        "answer": "Do a routine check of the various vehicle systems"
+    },
+    {
+        "question": "It is okay while driving for the driver to:",
+        "options": [
+            "Read the newspaper",
+            "Use the phone",
+            "Listen to the radio at a low volume"
+        ],
+        "answer": "Listen to the radio at a low volume"
+    },
+    {
+        "question": "The driver and passengers should fasten their seat belt:",
+        "options": [
+            "Before turning on the car engine",
+            "Prior to setting off",
+            "After a minute from setting off"
+        ],
+        "answer": "Before turning on the car engine"
+    },
+    {
+        "question": "The purpose of the head rest is:",
+        "options": [
+            "To rest the head during the car trip",
+            "To protect the neck in a rear end collision",
+            "To be used as a pillow for sleeping during long trips"
+        ],
+        "answer": "To protect the neck in a rear end collision"
+    },
+    {
+        "question": "The driver's ability to focus is impaired during driving due to:",
+        "options": [
+            "Having an abundance in energy",
+            "Being sleepy and tired",
+            "Driving inside the city"
+        ],
+        "answer": "Being sleepy and tired"
+    },
+    {
+        "question": "Using a cell phone while driving impacts the drivers' ability to drive in a:",
+        "options": [
+            "Positive way",
+            "Negative way",
+            "Both positive and negative way"
+        ],
+        "answer": "Negative way"
+    },
+    {
+        "question": "The first advice for a driver that consumed some alcohol is to:",
+        "options": [
+            "Drive at low speeds",
+            "Refrain from driving until the side effects of alcohol have disappeared",
+            "Not to be bothered"
+        ],
+        "answer": "Refrain from driving until the side effects of alcohol have disappeared"
+    },
+    {
+        "question": "Driving under the influence of sleeping medication is:",
+        "options": [
+            "Delightful",
+            "Not dangerous",
+            "Dangerous"
+        ],
+        "answer": "Dangerous"
+    },
+    {
+        "question": "If the gas pedal gets stuck while driving, the driver should immediately:",
+        "options": [
+            "Pull the handbrake up",
+            "Change to a lower gear",
+            "Put the gear on neutral, turn off the engine and stop on the side of the road"
+        ],
+        "answer": "Put the gear on neutral, turn off the engine and stop on the side of the road"
+    },
+    {
+        "question": "If the car hood accidentally releases while driving down the road, you should immediately:",
+        "options": [
+            "Increase your speed a little",
+            "Reduce your speed gradually and pull to the side of the road",
+            "Press firmly on the brakes"
+        ],
+        "answer": "Reduce your speed gradually and pull to the side of the road"
+    },
+    {
+        "question": "To avoid being late during heavy rain, the driver should start his journey:",
+        "options": [
+            "A bit earlier than usual",
+            "A bit later than usual",
+            "With good spirits"
+        ],
+        "answer": "A bit earlier than usual"
+    },
+    {
+        "question": "Before stepping into the vehicle, the driver should:",
+        "options": [
+            "Make sure he has enough time on his hands",
+            "Look around and under the vehicle",
+            "Fasten the seatbelt"
+        ],
+        "answer": "Look around and under the vehicle"
+    },
+    {
+        "question": "While driving in heavy traffic, the driver should glance at his mirrors every:",
+        "options": [
+            "45 seconds",
+            "30 seconds",
+            "4 to 8 seconds"
+        ],
+        "answer": "4 to 8 seconds"
+    },
+    {
+        "question": "Before turning right, the driver should glance at:",
+        "options": [
+            "The left-side mirror only",
+            "The right-side mirror only",
+            "All the mirrors, especially the right-side mirror and blind spots"
+        ],
+        "answer": "All the mirrors, especially the right-side mirror and blind spots"
+    },
+    {
+        "question": "The biggest threat that vehicles parked on the right-side pavement pose to drivers passing close to them is:",
+        "options": [
+            "Pedestrians, and children, appearing suddenly from between these parked vehicles",
+            "Trash being thrown from them towards the passing vehicles",
+            "Loud sounds from the radios of these vehicles"
+        ],
+        "answer": "Pedestrians, and children, appearing suddenly from between these parked vehicles"
+    },
+    {
+        "question": "The threat that vehicles parked on the right-side pavement bring to drivers passing close to them is:",
+        "options": [
+            "The alarm that would go off as the drivers cross next to these vehicles",
+            "The opening of a car trunk",
+            "The fact that any of these parked vehicles could take off and join traffic at any time"
+        ],
+        "answer": "The fact that any of these parked vehicles could take off and join traffic at any time"
+    },
+    {
+        "question": "As a cautious driver, you should:",
+        "options": [
+            "Take the right of way by force as it is your right",
+            "Yield the right of way to prevent road collisions",
+            "Never yield your right of way"
+        ],
+        "answer": "Yield the right of way to prevent road collisions"
+    },
+    {
+        "question": "While driving and prior to hitting your brakes, you should first look:",
+        "options": [
+            "In the mirrors, namely the rearview mirror",
+            "To your right",
+            "To your left"
+        ],
+        "answer": "In the mirrors, namely the rearview mirror"
+    },
+    {
+        "question": "When strong braking is applied, ABS in modern vehicles:",
+        "options": [
+            "Should not make noise or cause the brake pedal to pulsate",
+            "Would normally make noise and cause the brake pedal to pulsate",
+            "Would normally cause the brake pedal to pulsate"
+        ],
+        "answer": "Would normally make noise and cause the brake pedal to pulsate"
+    },
+    {
+        "question": "One of the benefits of ABS in modern vehicles when strong braking is applied, is:",
+        "options": [
+            "Preventing brakes from locking-up and allows the driver to maintain steering control of the vehicle",
+            "Preventing brakes locking-up only",
+            "Not preventing brakes locking-up and not helping the driver maintain steering control of the vehicle"
+        ],
+        "answer": "Preventing brakes from locking-up and allows the driver to maintain steering control of the vehicle"
+    },
+    {
+        "question": "If your vehicle is beginning to lose traction on a slippery surface, you should spontaneously:",
+        "options": [
+            "Press on the brakes and steer your vehicle in the opposite direction to your vehicle's rear",
+            "Get your foot off the accelerator (don't press on the brakes) and steer your vehicle in the same direction",
+            "Increase your speed"
+        ],
+        "answer": "Get your foot off the accelerator (don't press on the brakes) and steer your vehicle in the same direction"
+    },
+    {
+        "question": "If you leave a safe distance between your vehicle and the vehicle in front, you will be able to:",
+        "options": [
+            "Avoid a collision with that vehicle should it make a sudden stop",
+            "Enjoy the view surrounding you",
+            "Read the plate number of that vehicle"
+        ],
+        "answer": "Avoid a collision with that vehicle should it make a sudden stop"
     }
 ]
