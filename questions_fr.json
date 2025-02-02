@@ -1,0 +1,1498 @@
+    [  
+        {
+            "question": "En conduisant dans un tunnel pendant le jour, le conducteur doit:",
+            "options": [
+                "Allumer les feux de croisement et accélérer",
+                "Allumer les feux de croisement et ralentir",
+                "Klaxonner "
+            ],
+            "answer": "Allumer les feux de croisement et ralentir"
+    },
+    {
+        "question": "La nuit, si vous circulez derrière un autre véhicule, vous devez:",
+        "options": [
+            "Utiliser les feux de croisement",
+            "Utiliser les feux de route",
+            "Ne pas allumer les feux "
+        ],
+        "answer": "Utiliser les feux de croisement"
+},
+{
+    "question": "Si vous croisez un véhicule venant dans l'autre sens alors que vos feux de route sont allumés, vous devez:",
+    "options": [
+        "Utiliser les feux de croisement immédiatement",
+        "Eteindre tous les feux ",
+        "Basculer répétitivement entre feux de route et feux de croisement"
+    ],
+    "answer": "Utiliser les feux de croisement immédiatement"
+},
+{
+    "question": "Lorsque vous faites le plein de votre véhicule,",
+    "options": [
+        "DimiIl n'est pas obligatoire d'arrêter le moteurnution",
+        "Vous pouvez fumer une cigarette",
+        "Il faut arrêter le moteur "
+    ],
+    "answer": "Il faut arrêter le moteur"
+},
+{
+    "question": "Si le feu jaune s’allume au moment de vous engager dans une intersection, vous devez:",
+    "options": [
+        "Vous arrêter immédiatement",
+        "Continuer de rouler avec prudence",
+        "Garder les yeux sur les feux "
+    ],
+    "answer": "Continuer de rouler avec prudence"
+},
+{
+    "question": "Si vous vous sentez fatigué et sur le point de vous endormir en conduisant, vous devez:",
+    "options": [
+        "Prendre des amphétamines et poursuivre votre route",
+        "Ne pas vous préoccuper, ça ira",
+        "Vous arrêter à un endroit convenable au bord de la route et vous reposer"
+    ],
+    "answer": "Vous arrêter à un endroit convenable au bord de la route et vous reposer"
+},
+{
+    "question": "Sur une intersection, en présence simultanée d’un agent de circulation, des feux tricolores et d'un signe fixe de route, vous devez:",
+    "options": [
+        "Suivre les instructions de l'agent de circulation",
+        "Réspecter les feux de circulation",
+        "Réspecter le signe fixe de route "
+    ],
+    "answer": "Suivre les instructions de l'agent de circulation"
+},
+{
+    "question": "Lorsque vous vous installez dans votre véhicule vous devez d'abord:",
+    "options": [
+        "Porter la ceinture de sécurité, ajuster les miroirs, et puis le siège",
+        "Porter la ceinture de sécurité, ajuster le siège, et puis les miroirs",
+        "Ajuster le siège, les miroirs, puis porter la ceinture de sécurité"
+    ],
+    "answer": "Ajuster le siège, les miroirs, puis porter la ceinture de sécurité"
+},
+{
+    "question": "Chaque jour, avant de démarrer le véhicule pour la première fois, le conducteur",
+    "options": [
+        "Doit effectuer une inspection routinère des systèmes du véhicule",
+        "Ne doit pas effectuer une inspection routinère des systèmes du véhicule si le moteur fonctionne bien",
+        "Doit écouter la météo  "
+    ],
+    "answer": "Doit effectuer une inspection routinère des systèmes du véhicule"
+},
+{
+    "question": "En circulant, il est acceptable que le conducteur:",
+    "options": [
+        "Lise le journal ",
+        "Utilise le téléphone ",
+        "Ecoute la radio à bas volume"
+    ],
+    "answer": "Ecoute la radio à bas volume"
+},
+{
+    "question": "Le conducteur doit porter la ceinture de sécurité:",
+    "options": [
+        "Avant de démarrer",
+        "Au moment où un accident a lieu",
+        "Il n'y a pas besoin de porter la ceinture de sécurité quand le véhicule est muni de coussins gonflables"
+    ],
+    "answer": "Avant de démarrer"
+},
+{
+    "question": "Le but de l’appui-tête est de: ",
+    "options": [
+        "Poser la tête pour se relaxer",
+        "Protéger le cou en cas d’une collision à l’arrière du véhicule",
+        "Servir de coussin durant les longs voyages"
+    ],
+    "answer": "Protéger le cou en cas d’une collision à l’arrière du véhicule"
+},
+{
+    "question": "La capacité de concentration diminue chez le conducteur:",
+    "options": [
+        "Quand il est plein d'énergie",
+        "Quand il a sommeil ",
+        "Réduction "
+    ],
+    "answer": "Quand il a sommeil "
+},
+{
+    "question": "Utiliser le téléphone portable en conduisant a des effets:",
+    "options": [
+        "Positifs",
+        "Négatifs",
+        "Positifs et négatifs en même temps"
+    ],
+    "answer": "Négatifs"
+},
+{
+    "question": "Le premier conseil à donner à un conducteur qui boit:",
+    "options": [
+        "conduis lentement ",
+        "Ne conduis pas avant que l'effet de l'alcool n'ait disparu complètement",
+        "Ne t'en préoccupes pas, ça ira"
+    ],
+    "answer": "Ne conduis pas avant que l'effet de l'alcool n'ait disparu complètement"
+},
+{
+    "question": "Conduire sous l’influence des médicaments est:",
+    "options": [
+        "Moins pénible",
+        "Sans danger ",
+        "Dangereux  "
+    ],
+    "answer": "Dangereux "
+},
+{
+    "question": "Quand la pédale de l'accélérateur est bloquée, tu dois:",
+    "options": [
+        "Tirer le frein à main ",
+        "Changer le levier vers une vitesse plus petite",
+        "Mettre le levier au neutre, arrêter le moteur et s'arrêter au bord de la route "
+    ],
+    "answer": "Mettre le levier au neutre, arrêter le moteur et s'arrêter au bord de la route"
+},
+{
+    "question": "Si le capot du moteur s'ouvre de luimême lorsque que vous roulez sur la route, vous devez immédiatement:",
+    "options": [
+        "Accélérer un petit peu ",
+        "Décélérer graduellement pour vous arrêter du côté de la route",
+        "Appuyer fortement sur la pédale de frein "
+    ],
+    "answer": "Décélérer graduellement pour vous arrêter du côté de la route"
+},
+{
+    "question": "Pour éviter d'être en retard quand il pleut, le conducteur doit:",
+    "options": [
+        "Prendre la route un peu plus tôt que d'habitude",
+        "Prendre la route un peu plus tard que d'habitude",
+        "Prendre la route de bonne humeur "
+    ],
+    "answer": "Prendre la route un peu plus tôt que d'habitude"
+},
+{
+    "question": "Avant de prendre le véhicule, le conducteur doit:",
+    "options": [
+        "Vérifier qu'il a assez de temps",
+        "Faire le tour du véhicule",
+        "Porter la ceinture de sécurité "
+    ],
+    "answer": "Faire le tour du véhicule"
+},
+{
+    "question": "Lors d'un embouteillage, le conducteur doit vérifier ses rétroviseurs chaque:",
+    "options": [
+        "45 secondes ",
+        "30 secondes ",
+        "4 à 8 secondes "
+    ],
+    "answer": "4 à 8 secondes"
+},
+{
+    "question": "Avant de virer vers la droite, le conducteur doit jeter un coup d'oeil sur:",
+    "options": [
+        "Le rétroviseur extérieur gauche uniquement",
+        "Le rétroviseur extérieur droit uniquement",
+        "Tous les miroirs, et surtout le rétroviseur extérieur droit et les angles morts"
+    ],
+    "answer": "Tous les miroirs, et surtout le rétroviseur extérieur droit et les angles morts"
+},
+{
+    "question": "Le plus grand danger que les véhicules garés sur la chaussée droite de la route posent sur les véhicules qui les croisent est caractérisé par:",
+    "options": [
+        "Les piétons, et surtout les enfants, qui pourraient surgir d'entre ces véhicules à n'importe quel moment",
+        "Les déchets qui pourraient être jetés de ces véhicules",
+        "Le volume de leur radio  "
+    ],
+    "answer": "Les piétons, et surtout les enfants, qui pourraient surgir d'entre ces véhicules à n'importe quel moment"
+},
+{
+    "question": "Le danger que les véhicules garés sur la chaussée droite de la route posent sur les véhicules qui les croisent est caractérisé par:",
+    "options": [
+        "Les sons émis par les systemes antivol",
+        "La porte du coffre qu'on peut ouvrir",
+        "Le fait que ces véhicules pourraient à n'importe quel moment démarrer et joindre la circulation"
+    ],
+    "answer": "Le fait que ces véhicules pourraient à n'importe quel moment démarrer et joindre la circulation"
+},
+{
+    "question": "En tant que conducteur préventif, tu dois:",
+    "options": [
+        "Insister sur la priorité de passage si elle te revient",
+        "Céder la priorité de passage pour éviter un accident",
+        "Ne jamais céder la priorité de passage"
+    ],
+    "answer": "Céder la priorité de passage pour éviter un accident"
+},
+{
+    "question": "Avant de freiner, vous devez regarder",
+    "options": [
+        "Dans le rétroviseur intérieur",
+        "à droite ",
+        "à gauche "
+    ],
+    "answer": "Dans le rétroviseur intérieur"
+},
+{
+    "question": "En cas de freinage bien appuyé, le système ABS des véhicules modernes:",
+    "options": [
+        "Ne doit causer ni un bruit ni une vibration de la pédale de freins",
+        "Peut causer un bruit et une vibration de la pédale de freins",
+        "Peut causer une vibration de la pédale de freins uniquement"
+    ],
+    "answer": "Peut causer un bruit et une vibration de la pédale de freins"
+},
+{
+    "question": "En cas de freinage bien appuyé, le système ABS dans les véhicules modernes:",
+    "options": [
+        "Empêche le blocage des freins, et permet au conducteur de maintenir le contrôle de son véhicule",
+        "Empêche le blocage des freins uniquement",
+        "N'empêche pas le blocage des freins et ne permet pas au conducteur de maintenir le contrôle de son véhicule"
+    ],
+    "answer": "Empêche le blocage des freins, et permet au conducteur de maintenir le contrôle de son véhicule"
+},
+
+{
+    "question": "En cade de dérapage , vous devez: ",
+    "options": [
+        "Freiner et giriger votre véhicule dans le sens opposé au dérapage",
+        "Retirer le pied de la pédale d'accélération sans appuyer sur la pédale de frein, et diriger le véhicule dans le sens du dérapage",
+        "Augmenter votre vitesse"
+    ],
+    "answer": "Retirer le pied de la pédale d'accélération sans appuyer sur la pédale de frein, et diriger le véhicule dans le sens du dérapage"
+},
+{
+    "question": "Le conducteur doit laisser un espace de sécurité entre son vehicule et le véhicule devant lui pour:",
+    "options": [
+        "Eviter la collision avec ce véhicule au cas où il s'arrête soudainement",
+        "Profiter des vues fabuleuses qui l'entourent",
+        "Lire le numéro inscrit sur la plaque d'immatriculatio n arrière "
+    ],
+    "answer": "Eviter la collision avec ce véhicule au cas où il s'arrête soudainement"
+},
+{
+    "question": "Le véhicule devant vous se lance immédiatement lorsque le feu rouge tourne au vert, dans ce cas vous devez:",
+    "options": [
+        "Vous lancer immédiatement derrière ce véhicule",
+        "Klaxonner",
+        "Attendre deux secondes avant de démarre"
+    ],
+    "answer": "Attendre deux secondes avant de démarre"
+},
+{
+    "question": "Lorsque vous vous approchez d’une intersection où un feu orange clignote, vous devez:",
+    "options": [
+        "Céder la priorité",
+        "Continuer à la même vitesse",
+        "Porter la ceinture de sécurité"
+    ],
+    "answer": "Céder la priorité"
+},
+{
+    "question": "Le port de la ceinture de sécurité",
+    "options": [
+        "Est obligatoire pour tous les passagers",
+        "Est obligatoire pour les passagers devant seulement",
+        "N'est pas nécessaire  "
+    ],
+    "answer": "Est obligatoire pour tous les passagers"
+},
+{
+    "question": "Si ton véhicule tombe en panne sur l'autoroute, tu dois:",
+    "options": [
+        "Te dégager de l'autoroute au premier détour",
+        "T'arrêter immédiatement là où tu es",
+        "Continuer vers ta destination"
+    ],
+    "answer": "Te dégager de l'autoroute au premier détour"
+},
+{
+    "question": "Le conducteur doit tenir le volant avec:",
+    "options": [
+        "Une seule main",
+        "Les deux mains",
+        "Le bout des doigts  "
+    ],
+    "answer": "Les deux mains"
+},
+{
+    "question": "Il n’est pas permis à un camion chargé de prendre:",
+    "options": [
+        "Plus qu'un passager ",
+        "Plus que le nombre permis de passagers",
+        "Il n’est pas permis aux camions chargés de prendre des passagers"
+    ],
+    "answer": "Plus que le nombre permis de passagers"
+},
+{
+    "question": "En attelant la remorque au véhicule le conducteur doit s’assurer que:",
+    "options": [
+        "Les freins de la remorque sont tirés et ses roues touchent le sol",
+        "Les freins de la remorque sont libres et ses roues touchent le sol",
+        "Une seule roue de la remorque touche le sol"
+    ],
+    "answer": "Les freins de la remorque sont tirés et ses roues touchent le sol"
+},
+
+{
+    "question": "Après avoir attelé la remorque au tracteur, le conducteur doit verifier que:",
+    "options": [
+        "les tuyaux d’air et les fils électriques sont connectés convenablement",
+        "seuls les fils électriques sont connectés convenablement",
+        "seuls les tuyaux d’air sont connectés convenablement"
+    ],
+    "answer": "les tuyaux d’air et les fils électriques sont connectés convenablement"
+},
+{
+    "question": "Pour atteler la remorque, le conducteur du tracteur doit:",
+    "options": [
+        "Reculer le tracteur lentement au dessus de la remorque",
+        "Reculer le tracteur lentement au dessous de la remorque",
+        "Reculer le tracteur rapidement au dessous de la remorque"
+    ],
+    "answer": "Reculer le tracteur rapidement au dessous de la remorque"
+},
+{
+    "question": "Pour détacher la remorque du tracteur, le conducteur doit choisir:",
+    "options": [
+        "Une surface plane et molle",
+        "Une surface inclinée et dure",
+        "Une surface inclinée et molle"
+    ],
+    "answer": "Une surface plane et molle"
+},
+{
+    "question": "Pour détacher la remorque du tracteur, le conducteur doit: ",
+    "options": [
+        "Tirer les freins de la remorque et abaisser ses roues au maximum",
+        "Libérer les freins de la remorque et abaisser ses roues au maximum",
+        "Tirer les freins de la remorque et abaisser ses roues à moitié"
+    ],
+    "answer": "Tirer les freins de la remorque et abaisser ses roues au maximum"
+},
+{
+    "question": "Les angles morts du poids lourd sont: ",
+    "options": [
+        "Au minimum quatre",
+        "Au minimum huit ",
+        "Trois "
+    ],
+    "answer": "Au minimum quatre"
+},
+{
+    "question": "Le conducteur du poids lourd doit prendre en considération la hauteur de son véhicule en roulant notamment:",
+    "options": [
+        "Sur l'autoroute ",
+        "Sous un pont ou dans un tunnel",
+        "Sur un pont  "
+    ],
+    "answer": "Sous un pont ou dans un tunnel"
+},
+{
+    "question": "Le conducteur du poids lourd doit prendre en considération la largeur de son véhicule notamment:",
+    "options": [
+        "En dépassant un autre véhicule",
+        "En circulant sur l’autoroute",
+        "Pendant les sièstes  "
+    ],
+    "answer": "En dépassant un autre véhicule"
+},
+{
+    "question": "Le conducteur du poids lourd: ",
+    "options": [
+        "Doit faire marche arrière dans les endroits bondés",
+        "Doit faire marche arrière aux intersections",
+        "Ne doit pas faire marche arrière dans les endroits bondés"
+    ],
+    "answer": "Ne doit pas faire marche arrière dans les endroits bondés"
+},
+{
+    "question": "En virant à droite, le conducteur d'un poids lourd:",
+    "options": [
+        "Ne doit pas laisser une distance suffisante à sa droite",
+        "Doit laisser une distance suffisante devant lu",
+        "Doit laisser une distance suffisante à sa droite"
+    ],
+    "answer": "Doit laisser une distance suffisante à sa droite"
+},
+{
+    "question": "Pour éviter que les roues à gauche à l'arrière du poids lourd ne dépassent la ligne centrale lors d'un virage à gauche, vous devez:",
+    "options": [
+        "Prendre l’extrême gauche",
+        "Prendre un peu votre droite",
+        "Augmenter la vitesse "
+    ],
+    "answer": "Prendre un peu votre droite"
+},
+{
+    "question": "Pour éviter que les roues à droite à l'arrière du poids lourd ne se branlent au bord de la route lors d'un virage à droite, vous devez:",
+    "options": [
+        "Prendre l’extrême droite",
+        "Augmenter la vitesse",
+        "Rouler au milieu de la voie"
+    ],
+    "answer": "Rouler au milieu de la voie"
+},
+{
+    "question": "En vous approchant du sommet d’une pente,",
+    "options": [
+        "vous devez vous attendre à des obstacles",
+        "vous ne devez pas vous attendre à des obstacles",
+        "vous devez vous attendre à une longue route droite"
+    ],
+    "answer": "vous devez vous attendre à des obstacles"
+},
+{
+    "question": "En roulant dans une descente et pour contrôler votre poids lourd, vous devez notamment:",
+    "options": [
+        "Utiliser les freins",
+        "Utiliser le frein à main ",
+        "Changer le levier vers une vitesse plus petite"
+    ],
+    "answer": "Changer le levier vers une vitesse plus petite"
+},
+{
+    "question": "Le freinage continu dans une longue descente diminue l'efficacité des freins à cause:",
+    "options": [
+        "de l'augmentation de leur température",
+        "de la pression hydraulique du système de freinage",
+        "de la forte inclinaison de la pente"
+    ],
+    "answer": "de l'augmentation de leur température"
+},
+{
+    "question": "Lors d'une longue descente, si le conducteur ne diminue pas la vitesse d'embrayage au bon moment, la vitesse du poids lourd augmente et:",
+    "options": [
+        "Il sera facile de passer à une vitesse d'embrayage plus petite",
+        "Il sera impossible de passer à une vitesse d'embrayage plus petite pour contrôler le véhicule",
+        "Il sera possible de dépasser plusieurs véhicules à la fois"
+    ],
+    "answer": "Il sera impossible de passer à une vitesse d'embrayage plus petite pour contrôler le véhicule"
+},
+{
+    "question": "Lorsque vous conduisez votre poids lourd le long d’une montée, vous devez:",
+    "options": [
+        "Eviter d'épuiser le moteur",
+        "Circuler à gauche ",
+        "Empêcher les autres véhicules de vous dépasser "
+    ],
+    "answer": "Eviter d'épuiser le moteur"
+},
+{
+    "question": "Lorsque vous conduisez votre poids lourd pendant longtemps sur une montée, vous devez:",
+    "options": [
+        "Consulter la jauge du carburant",
+        "Rester à l'extrême gauche autant que possible",
+        "Rester à l'extrême droite autant que possible"
+    ],
+    "answer": "Rester à l'extrême droite autant que possible"
+},
+{
+    "question": "Si enconduisant votre poids lourd vous avez besoin de trop de temps pour dépasser un véhicule sur une montée, vous devez:",
+    "options": [
+        "Etre résolu ",
+        "Dépasser la limite de vitesse autorisée",
+        "Annuler le dépassement ou le remettre à plus tard"
+    ],
+    "answer": "Annuler le dépassement ou le remettre à plus tard"
+},
+{
+    "question": "Si vous allez conduire un véhicule sur un terrain rugueux (off-road), vous devez:",
+    "options": [
+        "Augmenter un peu votre vitesse",
+        "Prendre vos précautions et planifier votre route en avance",
+        "Veiller sur ce qui se passe derriere vous"
+    ],
+    "answer": "Prendre vos précautions et planifier votre route en avance"
+},
+{
+    "question": "Le contact visuel entre les conducteurs sur un croisement:",
+    "options": [
+        "Aide les conducteurs à éviter la confusion routière",
+        "Est une sorte d'avertissement",
+        "Est interdit  "
+    ],
+    "answer": "Aide les conducteurs à éviter la confusion routière"
+},
+{
+    "question": "Pour éviter les accidents, le conducteur doit éviter autant que possible:",
+    "options": [
+        "La marche arrière",
+        "La décélération progressive",
+        "De laver son véhicule sur la route "
+    ],
+    "answer": "La marche arrière"
+},
+{
+    "question": "Selon la loi, le conducteur doit céder la priorité:",
+    "options": [
+        "Aux véhicules qui roulent à grande vitesse",
+        "A l'autocar qui a allumé les feux de détresse",
+        "Aux véhicules lents  "
+    ],
+    "answer": "A l'autocar qui a allumé les feux de détresse"
+},
+{
+    "question": "Selon la loi, le conducteur doit céder la priorité:",
+    "options": [
+        "Au véhicule qui est déjà dans le rond point",
+        "Au véhicule qui prend le rond point",
+        "Au véhicule à sa droite "
+    ],
+    "answer": "Au véhicule qui est déjà dans le rond point"
+},
+{
+    "question": "La loi permet de garer le véhicule près de la chaussée sur une route à deux voies de sens opposés:",
+    "options": [
+        "A doite, selon le sens de circulation du véhicule",
+        "N'importe où ,pourvu qu'il ne gêne pas la circulation",
+        "A gauche  "
+    ],
+    "answer": "A doite, selon le sens de circulation du véhicule"
+},
+{
+    "question": "Manger excessivement: ",
+    "options": [
+        "Permet au conducteur de mieux conduire ",
+        "Rend le conducteur passif et diminue son réflexe",
+        "Permet au conducteur de conduire plus vite"
+    ],
+    "answer": "Permet au conducteur de conduire plus vite"
+},
+{
+    "question": "Le manque de sommeil: ",
+    "options": [
+        "Améliore le réflexe du conducteur",
+        "Diminue le réflexe du conducteur et affaiblit sa mémoire",
+        "Permet au conducteur de se concentrer"
+    ],
+    "answer": "Diminue le réflexe du conducteur et affaiblit sa mémoire"
+},
+{
+    "question": "Dans les longs trajets, le conducteur doit s’arrêter chaque: ",
+    "options": [
+        "10 heures ",
+        "8 heures",
+        "4 heures "
+    ],
+    "answer": "4 heures"
+},
+{
+    "question": "Dans les longs trajets, le conducteur doit s’arrêter chaque :",
+    "options": [
+        "250 kilometres ",
+        "750 kilometres",
+        "900 kilometres "
+    ],
+    "answer": "250 kilometres "
+},
+{
+    "question": "Conduire sous l’influence de l’alcool:",
+    "options": [
+        "Met en danger la vie du conducteur et celle des autres usagers de la route",
+        "Met en danger la vie des usagers de la route seulement",
+        "Met en danger la vie du conducteur"
+    ],
+    "answer": "Met en danger la vie du conducteur et celle des autres usagers de la route"
+},
+{
+    "question": "Durant les longs trajets, le conducteur:",
+    "options": [
+        "Doit prendre des amphétamines de façon régulière",
+        "Continuer à rouler sans se reposer",
+        "Ne doit jamais prendre des amphétamines pour rester éveillé"
+    ],
+    "answer": "Ne doit jamais prendre des amphétamines pour rester éveillé"
+},
+{
+    "question": "La meilleure façon de connaître l’effet d’un médicament sur la capacité de conduire est de:",
+    "options": [
+        "Poser la question à un autre conducteur",
+        "Poser la question au médecin ou au pharmacien",
+        "Le tester sur un autre conducteur"
+    ],
+    "answer": "Poser la question au médecin ou au pharmacien"
+},
+{
+    "question": "Rouler sous l’influence de l’alcool et des drogues crée chez le conducteur un faux sentiment:",
+    "options": [
+        "De peur",
+        "De courage et d’audace",
+        "De colère  "
+    ],
+    "answer": "De courage et d’audace"
+},
+{
+    "question": "Lorsque vous êtes sur le point de dépasser un véhicule,",
+    "options": [
+        "Vous devez compter sur les instructions du conducteur de ce véhicule à travers les clignoteurs",
+        "Ne devez jamais compter sur les instructions du conducteur de ce véhicule",
+        "Compter sur les instructions du conducteur du véhicule derrière vous"
+    ],
+    "answer": "Ne devez jamais compter sur les instructions du conducteur de ce véhicule"
+},
+{
+    "question": "Le conducteur du poids lourd doit prendre en considération la largeur de son véhicule",
+    "options": [
+        "Lorsqu'il entre dans un endroit étroit",
+        "Lorsqu'Il s'arrête pour la sièste",
+        "Pendant le chargement du véhicule"
+    ],
+    "answer": "Lorsqu'il entre dans un endroit étroit"
+},
+{
+    "question": "Si le conducteur du poids lourd veut faire marche arrière il doit :",
+    "options": [
+        "Reculer dans les endroits bondés",
+        "Reculer dans un tunnel",
+        "Demander l'aide de quelqu'un"
+    ],
+    "answer": "Demander l'aide de quelqu'un"
+},
+{
+    "question": "Après le remplissage d'un camionciterne, le conducteur doit: ",
+    "options": [
+        "Vérifier que tous les couvercles et toutes les valves de vidange sont bien fermés",
+        "Vérifier que les couvercles sont bien fermées",
+        "Vérifier que les valves de vidange sont bien fermées"
+    ],
+    "answer": "Diminution"
+},
+        {
+                "question": "Quels sont les avantages environnement aux de l'éco-conduite?",
+                "options": [
+                    "Diminution des émissions de gaz à effet de serre (CO2)",
+                    "Augmentation des émissions de gaz à effet de serre (CO2)",
+                    "Réduction de l’embouteillage "
+                ],
+                "answer": "Diminution des émissions de gaz à effet de serre (CO2)"
+        },
+        {
+                "question": "Quels sont les avantages de l'écoconduite en termes de sécurité?",
+                "options": [
+                    "Amélioration de la sécurité routière ",
+                    "Amélioration des compétences de conduite ",
+                    "Tout ce qui précède"
+                ],
+                "answer": "Tout ce qui précède"
+        },
+        {
+                "question": " Quels sont les avantages sociaux de l'éco-conduite? ",
+                "options": [
+                    " Éviter le stress pendant la conduite ",
+                    " L'augmentation du confort des conducteurs et des passagers ",
+                    " Tout ce qui précède"
+                ],
+                "answer": " Tout ce qui précède"
+        },
+        {
+                "question": " Quel outil devez-vous utiliser pour contrôler votre vitesse sur les autoroutes? ",
+                "options": [
+                    " Le régulateur de vitesse",
+                    " Freiner et accélérer à un rythme régulier",
+                    " Le freinage brusque"
+                ],
+                "answer": " Le régulateur de vitesse"
+        },
+        {
+                "question": " Quelle est la vitesse optimale pour l'éco-conduite? ",
+                "options": [
+                    " 80 km/h - 100 km/h",
+                    " 50 km/h - 80 km/h",
+                    " 40 km/h - 50 km/h"
+                ],
+                "answer": "50 km/h – 80km/h"
+        },
+        {
+                "question": " Quel est le nombre maximal de tours par minute du moteur que vous ne devez pas dépasser en conduisant?",
+                "options": [
+                    " 3000 tr/min",
+                    " 4000 tr/min",
+                    " 2000 tr/min"
+                ],
+                "answer": " 2000 tr/min"
+        },
+        {
+                "question": " Que se passe -t- il si vous dépassez 2000 tr/min en conduisant?",
+                "options": [
+                    " La consommation de carburant augmente",
+                    " La consommation de carburant diminue ",
+                    " La température du moteur augmente "
+                ],
+                "answer": " La consommation de carburant augmente"
+        },
+        {
+                "question": " Quel est le résultat des démarrages rapides et des freinages brusques?",
+                "options": [
+                    " Perte de carburant ",
+                    " Détérioration plus rapide des pneus et des freins ",
+                    " Tout ce qui précède"
+                ],
+                "answer": " Tout ce qui précède"
+        },
+        {
+                "question": " De combien la consommation de carburant est- elle réduite lorsque vous changez l'huile et les filtres régulièrement? ",
+                "options": [
+                    " 1% à 2%",
+                    " 1% à 3%",
+                    " 2% à 3%"
+                ],
+                "answer": " 1% à 2%"
+        },
+        {
+                "question": " Quel type d'huile est optimal pour l'environnement? ",
+                "options": [
+                    " L'huile qui conserve l'énergie et qui contient des additifs qui réduisent la friction",
+                    " L'huile qui conserve l'énergie et qui contient des additifs qui ne salissent pas le moteur ",
+                    " L'huile végétale qui conserve l'énergie"
+                ],
+                "answer": " L'huile qui conserve l'énergie et qui contient des additifs qui réduisent la friction"
+        },
+        {
+                "question": " Comment pouvez-vous contribuer à la durabilité des pneus?",
+                "options": [
+                    " Changer les pneus chaque année ",
+                    " Examiner la pression des pneus au moins une fois par mois pour conserver une faible résistance au roulement ",
+                    " Examiner la pression des pneus au moins une fois par an pour conserver une faible résistance au roulement"
+                ],
+                "answer": " Examiner la pression des pneus au moins une fois par mois pour conserver une faible résistance au roulement "
+        },
+        {
+                "question": " Quel est l'avantage de nettoyer vos filtres à air régulièrement?",
+                "options": [
+                    " L’amélioration de la performance du moteur de 6 à 11% ",
+                    " La réduction de la pollution de l'air",
+                    " Tout ce qui précède "
+                ],
+                "answer": " Tout ce qui précède "
+        },
+        {
+                "question": " Que devez-vous faire lorsque la voiture s'arrête pendant plus d'une minute?",
+                "options": [
+                    " L’éteindre ",
+                    " La mettre au point mort ",
+                    " Ne rien faire"
+                ],
+                "answer": " L’éteindre "
+        },
+        {
+                "question": " Comment améliorer la performance de votre moteur et réduire le niveau d'émissions? ",
+                "options": [
+                    " Changer l'eau du moteur régulièrement",
+                    " Utiliser du carburant propre et conforme aux normes internationales",
+                    " Acheter un nouveau moteur "
+                ],
+                "answer": " Utiliser du carburant propre et conforme aux normes internationales"
+        },
+        {
+                "question": " Que devez-vous toujours vérifier après le remplissage de votre réservoir de carburant?",
+                "options": [
+                    " Le bouchon du réservoir de carburant est bien fermé ",
+                    " Le bouchon du réservoir de carburant est ouvert ",
+                    " La température du véhicule est stable"
+                ],
+                "answer": " Le bouchon du réservoir de carburant est bien fermé "
+        },
+        {
+                "question": " Pourquoi est-il préférable de se garer à l'ombre? ",
+                "options": [
+                    " Réduction de la puissance du climatiseur au démarrage ",
+                    " Diminution de la consommation de carburant",
+                    " Tout ce qui précède"
+                ],
+                "answer": " Tout ce qui précède"
+        },
+        {
+                "question": " De combien l'usage fréquent de la climatisation augmente la consommation de carburant?",
+                "options": [
+                    " 0.1",
+                    " 0.2",
+                    " 0.3"
+                ],
+                "answer": " 0.1"
+        },
+        {
+                "question": " Lequel des éléments suivants réduit la consommation de carburant ?",
+                "options": [
+                    " Conduire durant les heures de pointe",
+                    " Voyager léger",
+                    " Conduire rapidement"
+                ],
+                "answer": " Voyager léger "
+        },
+        {
+                "question": " Qu'est-ce que l'éco-conduite? ",
+                "options": [
+                    " L'eco-conduite est l'utilisation efficace du carburant dans le transport routier grâce à des pratiques de conduite facile, intelligente et responsable qui aident à réduire la consommation de carburant et la pollution de l'air ",
+                    " L'eco-conduite est l'utilisation efficace du carburant dans le transport routier grâce à des pratiques de conduite facile, intelligente et responsable qui aident à augmenter la sécurité des routes difficiles ",
+                    " L'eco-conduite est l'utilisation efficace de l'eclairage dans la conduite grâce à une méthode simple et intelligente de la consommation d'eau"
+                ],
+                "answer": " L'eco-conduite est l'utilisation efficace du carburant dans le transport routier grâce à des pratiques de conduite facile, intelligente et responsable qui aident à réduire la consommation de carburant et la pollution de l'air "
+        },
+    
+        {
+        "question": "Quand la voie est délimitée par une ligne continue, ou par autres séparateurs de voies, le conducteur doit:",
+        "options": [
+            "Conduire dans l'autre sens",
+            "Franchir ou chevaucher cette ligne",
+            "Ne doit pas franchir ni chevaucher cette ligne ou ces séparateurs de voies"
+        ],
+        "answer": "Ne doit pas franchir ni chevaucher cette ligne ou ces séparateurs de voies"
+        },
+        {
+        "question": "Lorsque le flux de circulation est normal, le conducteur doit:",
+        "options": [
+            "Rouler à gauche",
+            "Franchir les lignes de séparation des voies pour dépasser les autres véhicules",
+            "Rouler à droite"
+        ],
+        "answer": "Rouler à droite"
+        },
+        {
+        "question": "La chaussée sert à:",
+        "options": [
+            "Stationner le véhicule là où c'est permis",
+            "Ranger de côté toute chose qui empêche la circulation sur la route",
+            "La circulation des piétons, poussettes, personnes malades et handicapées"
+        ],
+        "answer": "La circulation des piétons, poussettes, personnes malades et handicapées"
+        },
+        {
+        "question": "Un conducteur qui veut changer drastiquement de vitesse ou de direction doit:",
+        "options": [
+            "Franchir la ligne continue si cette ligne est directement à sa gauche",
+            "Franchir la ligne discontinue sans donner un signal",
+            "S'assurer qu'il peut le faire sans danger et donner un signal"
+        ],
+        "answer": "S'assurer qu'il peut le faire sans danger et donner un signal"
+        },
+        {
+        "question": "Le conducteur ne doit pas freiner brusquement, sauf:",
+        "options": [
+            "Pour s'arrêter",
+            "Pour essayer les freins",
+            "Pour éviter un danger"
+        ],
+        "answer": "Pour éviter un danger"
+        },
+        {
+        "question": "Le conducteur doit rouler:",
+        "options": [
+            "À gauche, quand un autre conducteur est en train de le dépasser",
+            "À gauche, quand un autre véhicule se dirige vers lui dans l'autre sens",
+            "À droite, quand un autre véhicule se dirige vers lui dans l'autre sens"
+        ],
+        "answer": "À droite, quand un autre véhicule se dirige vers lui dans l'autre sens"
+        },
+        {
+        "question": "Il est interdit au conducteur de:",
+        "options": [
+            "Dépasser un autre véhicule par la gauche quand la visibilité est bonne",
+            "Circuler à droite, quand un autre véhicule se dirige vers lui de l'autre sens",
+            "Dépasser les convois militaires, policiers, ou autres qui sont en état de circulation"
+        ],
+        "answer": "Dépasser les convois militaires, policiers, ou autres qui sont en état de circulation"
+        },
+        {
+        "question": "Il est interdit au conducteur de:",
+        "options": [
+            "Rouler lentement sur le côté gauche de la route",
+            "Circuler dans la direction indiquée",
+            "Conduire au point mort sur une descente"
+        ],
+        "answer": "Conduire au point mort sur une descente"
+        },
+        {
+        "question": "Il est interdit au conducteur de:",
+        "options": [
+            "S'assurer qu'il peut effectuer le dépassement sans aucun danger pour lui ou pour autrui",
+            "Rouler dans le sens indiqué",
+            "Faire demi-tour au milieu de la route dans une zone peuplée"
+        ],
+        "answer": "Faire demi-tour au milieu de la route dans une zone peuplée"
+        },
+        {
+        "question": "Il est interdit au conducteur de:",
+        "options": [
+            "S'assurer qu'il peut effectuer le dépassement sans aucun danger pour lui ou pour autrui",
+            "Rouler dans le sens indiqué",
+            "Rouler dans un sens autre que le sens indiqué"
+        ],
+        "answer": "Rouler dans un sens autre que le sens indiqué"
+        },
+        {
+        "question": "Il est interdit au conducteur de:",
+        "options": [
+            "Rouler à droite",
+            "S'assurer qu'il peut effectuer le dépassement sans aucun danger pour lui ou pour autrui",
+            "Laver son véhicule sur la route"
+        ],
+        "answer": "Laver son véhicule sur la route"
+        },
+        {
+        "question": "Le conducteur doit:",
+        "options": [
+            "Ne pas prendre en considération l'état de la route ni la densité du trafic",
+            "Accélérer quand la visibilité n'est pas bonne",
+            "Ralentir ou même s'arrêter quand les conditions de la circulation le nécessitent, ou quand la visibilité n'est pas bonne"
+        ],
+        "answer": "Ralentir ou même s'arrêter quand les conditions de la circulation le nécessitent, ou quand la visibilité n'est pas bonne"
+        },
+        {
+        "question": "Le conducteur doit:",
+        "options": [
+        "Rouler à droite",
+        "Dépasser par la droite sur les routes à voie unique",
+        "Dépasser par la gauche"
+        ],
+        "answer": "Dépasser par la gauche"
+    },
+    {
+        "question": "En cas de croisement, le conducteur doit:",
+        "options": [
+        "Circuler au milieu de la route sur les routes à voie unique",
+        "Conserver la gauche autant que possible",
+        "Conserver la droite autant que possible"
+        ],
+        "answer": "Conserver la droite autant que possible"
+    },
+    {
+        "question": "Avant d'effectuer un dépassement, le conducteur:",
+        "options": [
+        "Ne doit pas respecter les pratiques de conduite dans les zones peuplées",
+        "Peut se lancer même si un conducteur derrière lui a initié un dépassement lui aussi",
+        "Doit s'assurer que les conducteurs derrière lui n'ont pas initié un dépassement eux aussi"
+        ],
+        "answer": "Doit s'assurer que les conducteurs derrière lui n'ont pas initié un dépassement eux aussi"
+    },
+    {
+        "question": "Avant d'effectuer un dépassement, le conducteur:",
+        "options": [
+        "A la priorité d'effectuer son dépassement, même si le conducteur derrière lui a initié un dépassement lui aussi",
+        "N'est pas obligé de donner un signal au conducteur qui se trouve derrière lui",
+        "Doit donner un signal au conducteur qu'il voudrait dépasser"
+        ],
+        "answer": "Doit donner un signal au conducteur qu'il voudrait dépasser"
+    },
+    {
+        "question": "En cas de dépassement, le conducteur:",
+        "options": [
+        "N'est pas obligé de rester sur la droite juste après le dépassement",
+        "Peut circuler au milieu de la route même s'il dérange les conducteurs qui circulent dans l'autre sens",
+        "Peut circuler sur le côté gauche de la route, à condition de ne pas déranger les conducteurs qui circulent dans l'autre sens"
+        ],
+        "answer": "Peut circuler sur le côté gauche de la route, à condition de ne pas déranger les conducteurs qui circulent dans l'autre sens"
+    },
+    {
+        "question": "Exceptionnellement, il est permis d'effectuer un dépassement par la droite:",
+        "options": [
+        "Si le conducteur a donné un signal qu'il voudrait prendre la droite",
+        "Il est interdit d'effectuer un dépassement par la droite sur une route à plusieurs voies (plus que deux), à condition que le conducteur s'assure que cette manœuvre est sans risque et sans gêne pour les autres"
+        ],
+        "answer": "Il est interdit d'effectuer un dépassement par la droite sur une route à plusieurs voies (plus que deux), à condition que le conducteur s'assure que cette manœuvre est sans risque et sans gêne pour les autres"
+    },
+    {
+        "question": "Il est interdit d'effectuer un dépassement:",
+        "options": [
+        "Par la gauche quand la route est marquée par une ligne discontinue",
+        "Si la route est divisée en plusieurs voies par des lignes discontinues",
+        "Dans les virages"
+        ],
+        "answer": "Dans les virages"
+    },
+    {
+        "question": "Il est interdit d'effectuer un dépassement:",
+        "options": [
+        "Sur les routes à voie unique",
+        "Par la droite dans tous les cas",
+        "Sur les ponts et dans les tunnels"
+        ],
+        "answer": "Sur les ponts et dans les tunnels"
+    },
+    {
+        "question": "Il est interdit d'effectuer un dépassement:",
+        "options": [
+        "Si le côté gauche de la route sera libre après le dépassement",
+        "Si le véhicule que le conducteur voudrait dépasser circule du côté droit de la route",
+        "Si plusieurs véhicules sont arrêtés en raison d'une entrave à la circulation, ou d'un signal d'arrêt"
+        ],
+        "answer": "Si plusieurs véhicules sont arrêtés en raison d'une entrave à la circulation, ou d'un signal d'arrêt"
+    },
+    {
+        "question": "Il est interdit d'effectuer un dépassement:",
+        "options": [
+        "Si la largeur de la route est suffisante pour effectuer le dépassement facilement et sans danger",
+        "Si les voies de la route sont séparées par des lignes discontinues",
+        "Au sommet d'une montée, lorsque la visibilité n'est pas assez bonne, pourvu que le côté gauche de la route soit libre"
+        ],
+        "answer": "Au sommet d'une montée, lorsque la visibilité n'est pas assez bonne, pourvu que le côté gauche de la route soit libre"
+    },
+    {
+        "question": "Si une voiture de police, une ambulance ou un camion de pompiers donne un avertissement qu'il s'approche, les usagers de la route doivent:",
+        "options": [
+        "S'arrêter immédiatement là où ils se trouvent pour faciliter le passage de ce véhicule",
+        "Accélérer pour faciliter le passage de ce véhicule",
+        "Ralentir, ou même s'arrêter de côté pour faciliter le passage de ce véhicule"
+        ],
+        "answer": "Ralentir, ou même s'arrêter de côté pour faciliter le passage de ce véhicule"
+    },
+    {
+        "question": "Il est interdit d'effectuer un dépassement:",
+        "options": [
+        "Sur les routes larges",
+        "Si les voies de la route sont séparées par des lignes discontinues",
+        "Sur les routes montagnardes, étroites, ou à forte pente"
+        ],
+        "answer": "Sur les routes montagnardes, étroites, ou à forte pente"
+    },
+    {
+        "question": "A l'approche d'une intersection, le conducteur doit:",
+        "options": [
+        "Poursuivre son chemin sans vérifier s'il y a d'autres véhicules sur la route",
+        "Prendre sa droite",
+        "Vérifier que la route qu'il désire croiser est libre"
+        ],
+        "answer": "Vérifier que la route qu'il désire croiser est libre"
+    },
+    {
+        "question": "Le conducteur qui s'apprête à prendre une autre route à sa droite doit:",
+        "options": [
+        "Prendre modérément sa gauche sans dépasser le milieu de la route",
+        "Rester du côté gauche de la route",
+        "Rester du côté droit de la route"
+        ],
+        "answer": "Rester du côté droit de la route"
+    },
+    {
+        "question": "Le conducteur qui s'apprête à prendre une autre route à sa gauche doit:",
+        "options": [
+        "Rester au milieu de la route sans dévier ni à gauche ni à droite",
+        "Prendre modérément sa droite sans dépasser le milieu de la route",
+        "Prendre modérément sa gauche sans dépasser le milieu de la route"
+        ],
+        "answer": "Prendre modérément sa gauche sans dépasser le milieu de la route"
+    },
+    {
+        "question": "Le conducteur qui s'apprête à prendre une autre route doit:",
+        "options": [
+        "Prendre la droite lentement",
+        "Tourner très rapidement pour ne pas déranger les autres",
+        "Tourner à vitesse modérée après avoir vérifié qu'il ne dérange pas les autres ni ne les met en danger"
+        ],
+        "answer": "Tourner à vitesse modérée après avoir vérifié qu'il ne dérange pas les autres ni ne les met en danger"
+    },
+    {
+        "question": "Il est préférable de garder une distance de sécurité:",
+        "options": [
+        "A gauche et à droite du véhicule seulement",
+        "Devant et derrière le véhicule seulement",
+        "De tous les côtés du véhicule"
+        ],
+        "answer": "De tous les côtés du véhicule"
+        },
+        {
+            "question": "Il est important de garder une distance de sécurité, parce qu'elle:",
+            "options": [
+            "Permet aux autres véhicules d'intégrer la circulation",
+            "Empêche le conducteur de se distraire",
+            "Donne un espace pour réagir"
+            ],
+            "answer": "Donne un espace pour réagir"
+        },
+        {
+            "question": "Un feu vert continu sur l'intersection signifie:",
+            "options": [
+            "qu'il faut s'arrêter et vérifier que la route est libre avant de continuer",
+            "qu'il est impossible de tourner vers la droite",
+            "qu'il est possible de franchir l'intersection si il n'y a pas d'empêchement"
+            ],
+            "answer": "qu'il est possible de franchir l'intersection si il n'y a pas d'empêchement"
+        },
+        {
+            "question": "Un feu jaune discontinu signifie:",
+            "options": [
+            "qu'il est possible d'avancer si la route est libre",
+            "qu'il faut s'arrêter et vérifier que la route est libre avant de continuer",
+            "qu'il faut ralentir et avancer prudemment"
+            ],
+            "answer": "qu'il faut ralentir et avancer prudemment"
+        },
+        {
+            "question": "Un feu jaune sur l'intersection signifie qu'il faut:",
+            "options": [
+            "Démarrer",
+            "Ralentir et se préparer à s'arrêter",
+            "S'arrêter"
+            ],
+            "answer": "Ralentir et se préparer à s'arrêter"
+        },
+        {
+            "question": "Lorsqu'un pneu éclate sur la route, il faut:",
+            "options": [
+            "Abandonner le volant",
+            "Enlever le pieds délicatement de la pédale d’accélérateur pour permettre au véhicule de ralentir, retenir le volant des deux mains, et se dégager de la route",
+            "Appuyer sur la pédale de frein pour ralentir, et se dégager de la route"
+            ],
+            "answer": "Enlever le pieds délicatement de la pédale d’accélérateur pour permettre au véhicule de ralentir, retenir le volant des deux mains, et se dégager de la route"
+        },
+        {
+            "question": "Si les feux du véhicule d'en face dérangent le conducteur, le conducteur doit tourner son regard vers:",
+            "options": [
+            "Le milieu de la route",
+            "Le côté gauche de la route",
+            "Le bas et du côté droit de la route"
+            ],
+            "answer": "Le bas et du côté droit de la route"
+        },
+        {
+            "question": "En cas de panne sur l'autoroute, le conducteur doit:",
+            "options": [
+            "Attendre le véhicule d'assistance",
+            "Placer le triangle de présignalisation et allumer les feux pour alerter les autres conducteurs",
+            "Placer le Triangle de présignalisation et allumer les clignoteurs pour alerter les autres conducteurs"
+            ],
+            "answer": "Placer le triangle de présignalisation et allumer les feux pour alerter les autres conducteurs"
+        },
+        {
+            "question": "Après avoir pris l'autoroute, le conducteur doit:",
+            "options": [
+            "Ralentir",
+            "Circuler à une vitesse inférieure à la vitesse indiquée",
+            "Circuler à une vitesse proche de celle de la circulation sur cette autoroute"
+            ],
+            "answer": "Circuler à une vitesse proche de celle de la circulation sur cette autoroute"
+        },
+        {
+            "question": "Si la voie est délimitée par deux lignes adjacentes, l'une continue et l'autre discontinue:",
+            "options": [
+            "Il est permis au conducteur de franchir la ligne discontinue si cette ligne est directement à sa gauche",
+            "Il n'est pas permis au conducteur de franchir la ligne continue si cette ligne est directement à sa gauche",
+            "Il n'est pas permis au conducteur de franchir la ligne discontinue si cette ligne est directement à sa gauche"
+            ],
+            "answer": "Il n'est pas permis au conducteur de franchir la ligne continue si cette ligne est directement à sa gauche"
+        },
+        {
+            "question": "Si le conducteur derrière toi est pressé alors que tu es sur la voie gauche d'une autoroute, tu dois:",
+            "options": [
+            "Accélérer",
+            "Appuyer sur la pédale de frein de façon intermittante pour qu'il se dégage",
+            "Prendre la voie de droite en ajustant la vitesse de ta voiture pour qu'elle corresponde au rythme de la circulation sur cette voie"
+            ],
+            "answer": "Prendre la voie de droite en ajustant la vitesse de ta voiture pour qu'elle corresponde au rythme de la circulation sur cette voie"
+        },
+        {
+            "question": "Quand les freins ne fonctionnent plus alors que le conducteur est sur la route, le conducteur doit:",
+            "options": [
+            "Arrêter le moteur",
+            "Se diriger immédiatement vers le garage",
+            "Appuyer répétitivement sur la pédale de frein"
+            ],
+            "answer": "Appuyer répétitivement sur la pédale de frein"
+        },
+        {
+            "question": "Quand il fait mauvais temps, le conducteur doit:",
+            "options": [
+            "Rouler à la vitesse maximale",
+            "Rouler en dessous de la vitesse maximale, selon les conditions de la route",
+            "Rouler à la vitesse maximale et allumer les feux"
+            ],
+            "answer": "Rouler en dessous de la vitesse maximale, selon les conditions de la route"
+        },
+        {
+            "question": "Le conducteur doit maintenir un espace de sécurité plus grand quand il roule:",
+            "options": [
+            "Derrière d'autres véhicules",
+            "Sur une route sèche",
+            "Sur un route humide"
+            ],
+            "answer": "Sur un route humide"
+        },
+        {
+            "question": "La chaussée sert à:",
+            "options": [
+            "Ranger de côté toute chose qui empêche la circulation sur la route",
+            "Stationner le véhicule là où c'est permis",
+            "La circulation des piétons, poussettes, personnes malades et handicapées"
+            ],
+            "answer": "La circulation des piétons, poussettes, personnes malades et handicapées"
+        },
+        {
+            "question": "Les feux stop arrière servent à indiquer aux autres conducteurs que tu:",
+            "options": [
+            "Prends un virage",
+            "Changes de voie",
+            "Ralentis ou tu t'arrêtes"
+            ],
+            "answer": "Ralentis ou tu t'arrêtes"
+        },
+        {
+            "question": "Sur une intersection à quatre sens, la priorité revient au véhicule qui:",
+            "options": [
+            "Arrive le premier",
+            "Tourne vers la droite",
+            "Arrive le premier et qui est déjà entré dans l'intersection"
+            ],
+            "answer": "Arrive le premier et qui est déjà entré dans l'intersection"
+        },
+        {
+            "question": "Le conducteur doit s'arrêter au feu:",
+            "options": [
+            "Jaune continu",
+            "Jaune clignotant",
+            "Rouge clignotant"
+            ],
+            "answer": "Rouge clignotant"
+        },
+        {
+            "question": "Lorsque le conducteur partage la route avec un camion, il est bon de se rappeler que les camions:",
+            "options": [
+            "Ont besoin d'un rayon plus petit pour tourner",
+            "Ont besoin de moins de temps pour dépasser sur une descente",
+            "Ont besoin d'un espace plus grand pour stationner"
+            ],
+            "answer": "Ont besoin d'un espace plus grand pour stationner"
+        },
+        {
+            "question": "En tournant à droite au feu vert, le conducteur doit:",
+            "options": [
+            "Ralentir pour tourner",
+            "Continuer sur la même voie",
+            "Céder le passage aux piétons"
+            ],
+            "answer": "Céder le passage aux piétons"
+        },
+        {
+            "question": "Le conducteur a le droit de refuser de se soumettre au test de dépistage d'alcool ou de drogues:",
+            "options": [
+            "Dans les cas d'urgence",
+            "S'il a moins de 21 ans",
+            "Il n'a pas le droit de refuser le test en aucun cas"
+            ],
+            "answer": "Il n'a pas le droit de refuser le test en aucun cas"
+        },
+        {
+            "question": "En cas de brouillard, le conducteur doit utiliser:",
+            "options": [
+            "Les feux de route",
+            "Les feux de brouillard et/ ou les feux de croisement",
+            "Les feux de brouillard et/ ou les feux de route"
+            ],
+            "answer": "Les feux de brouillard et/ ou les feux de croisement"
+        },
+        {
+            "question": "Si les feux de freinage ne fontionnent pas:",
+            "options": [
+            "Le véhicule peut être confisqué",
+            "Ceci est considéré comme contravention de classe 2",
+            "Toutes les réponses précédentes sont correctes"
+            ],
+            "answer": "Toutes les réponses précédentes sont correctes"
+        },
+        {
+            "question": "La durée de vie maximale du pneu est atteinte:",
+            "options": [
+            "à 4 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm - lequel arrive en premier",
+            "à 5 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm - lequel arrive en premier",
+            "à 6 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm - lequel arrive en premier"
+            ],
+            "answer": "à 6 ans depuis sa date de fabrication, ou à une épaisseur de gomme de 1.6 mm - lequel arrive en premier"
+        },
+        {
+            "question": "Au feu vert, lors d'un embouteillage, le conducteur doit:",
+            "options": [
+            "Rouler lentement",
+            "Traverser rapidement au feu vert",
+            "S'abstenir de traverser afin de ne pas bloquer la circulation"
+            ],
+            "answer": "S'abstenir de traverser afin de ne pas bloquer la circulation"
+        },
+        {
+            "question": "Une procuration pour la vente d'un véhicule est valide pour une période de:",
+            "options": [
+            "Un mois",
+            "Trois mois",
+            "Deux mois"
+            ],
+            "answer": "Deux mois"
+        },
+        {
+            "question": "Les lignes discontinues au milieu de la route:",
+            "options": [
+            "Peuvent être chevauchées",
+            "Ne doivent pas être franchies",
+            "Peuvent être franchies"
+            ],
+            "answer": "Peuvent être franchies"
+        },
+        {
+            "question": "Il est strictement interdit que les feux à l'avant d'un véhicule, soient de couleur autre que:",
+            "options": [
+            "Le bleu ou le jaune",
+            "Le blanc ou le bleu",
+            "Le blanc ou le jaune"
+            ],
+            "answer": "Le blanc ou le jaune"
+        },
+        {
+            "question": "Si la route est divisée en deux voies par une ligne jaune, le conducteur doit, en cas de circulation normale:",
+            "options": [
+            "Circuler au milieu de la route",
+            "Circuler à gauche",
+            "Circuler à droite"
+            ],
+            "answer": "Circuler à droite"
+        },
+        {
+            "question": "Quand la voie est délimitée par deux lignes jaunes adjacentes, une ligne continue, et une ligne discontinue:",
+            "options": [
+            "Le conducteur peut franchir les deux lignes du côté de la ligne continue et ne peut pas les franchir du côté de la ligne discontinue",
+            "Le conducteur ne peut pas franchir les deux lignes ni du côté de la ligne discontinue ni du côté de la ligne continue",
+            "Le conducteur peut franchir les deux lignes du côté de la ligne discontinue et ne peut pas les franchir du côté de la ligne continue"
+            ],
+            "answer": "Le conducteur peut franchir les deux lignes du côté de la ligne discontinue et ne peut pas les franchir du côté de la ligne continue"
+        },
+        {
+            "question": "Le conducteur est tenu de céder la priorité aux:",
+            "options": [
+            "Voitures",
+            "Camions",
+            "Piétons"
+            ],
+            "answer": "Piétons"
+        },
+        {
+            "question": "Sur les routes à forte pente, la priorité:",
+            "options": [
+            "dépend de la route elle-même",
+            "est donnée au véhicule qui monte",
+            "est donnée au véhicule qui descend"
+            ],
+            "answer": "est donnée au véhicule qui monte"
+        },
+        {
+            "question": "Dans les villes, il faut maintenir un espace de sécurité:",
+            "options": [
+            "d'une seconde",
+            "de deux mètres",
+            "de deux secondes"
+            ],
+            "answer": "de deux secondes"
+        },
+        {
+            "question": "Dans un rond point, la priorité est toujours:",
+            "options": [
+            "au véhicule qui arrive de la gauche",
+            "au véhicule qui arrive de la droite",
+            "au véhicule qui est déjà dans le rond point"
+            ],
+            "answer": "au véhicule qui est déjà dans le rond point"
+        },
+        {
+            "question": "Il est interdit de dépasser dans un tunnel:",
+            "options": [
+            "à plusieurs voies",
+            "à deux voies",
+            "à voie unique"
+            ],
+            "answer": "à voie unique"
+        },
+        {
+            "question": "En cas de travaux publics sur la route, le conducteur doit:",
+            "options": [
+            "Allumer les feux",
+            "Accélérer",
+            "Ralentir"
+            ],
+            "answer": "Ralentir"
+        },
+        {
+            "question": "Les enfants de moins de 5 ans doivent s'asseoir:",
+            "options": [
+            "Sur les genoux de leurs parents",
+            "Sur le siège arrière",
+            "Dans un siège auto pour enfant"
+            ],
+            "answer": "Dans un siège auto pour enfant"
+        },
+        {
+            "question": "En approchant d'une intersection, la priorité est toujours au conducteur qui est:",
+            "options": [
+            "Déjà dans l'intersection",
+            "A gauche",
+            "A droite"
+            ],
+            "answer": "Déjà dans l'intersection"
+        },
+        {
+            "question": "En dépassant une bicyclette ou une motocyclette, le conducteur doit maintenir une distance latérale d'au moins:",
+            "options": [
+            "65 cm",
+            "70 cm",
+            "75 cm"
+            ],
+            "answer": "75 cm"
+        },
+        {
+            "question": "En dépassant une voiture ou tout autre véhicule, le conducteur doit maintenir une distance latérale d'au moins:",
+            "options": [
+            "45 cm",
+            "60 cm",
+            "50 cm"
+            ],
+            "answer": "50 cm"
+        },
+        {
+            "question": "Il est interdit au conducteur de bloquer la circulation:",
+            "options": [
+            "en stationnant lentement",
+            "en circulant à une vitesse inférieure à la vitesse de la circulation sur la route",
+            "en s'arrêtant soudain sans raison"
+            ],
+            "answer": "en s'arrêtant soudain sans raison"
+        },
+        {
+            "question": "En cas de croisement sur une route à deux sens, qui doit faire la marche arrière?",
+            "options": [
+            "Plusieurs poids lourds pour une seule voiture dans le sens opposé",
+            "Plusieurs véhicules pour une seule voiture dans le sens opposé",
+            "Une seule voiture pour plusieurs voitures dans le sens opposé"
+            ],
+            "answer": "Une seule voiture pour plusieurs voitures dans le sens opposé"
+        },
+        {
+            "question": "Qui a la priorité dans une intersection à trois voies?",
+            "options": [
+            "Le conducteur qui roule avec prudence",
+            "Le conducteur qui vient de droite",
+            "Le conducteur qui est sur la voie directe"
+            ],
+            "answer": "Le conducteur qui est sur la voie directe"
+        },
+        {
+            "question": "Lorsqu'il voit sur l'autoroute une plaque de signalisation qui indique un détournement de la route, ou une nouvelle direction, le conducteur doit:",
+            "options": [
+            "Se ranger rapidement au milieu, selon la direction à suivre",
+            "Se ranger rapidement vers la gauche ou vers la droite, selon la direction à suivre",
+            "Se ranger progressivement vers la gauche ou vers la droite, selon la direction à suivre"
+            ],
+            "answer": "Se ranger progressivement vers la gauche ou vers la droite, selon la direction à suivre"
+        },
+        {
+            "question": "La ceinture de sécurité est obligatoire sur l'autoroute, pour les passagers occupant les sièges avant et arrière, dans tous genres de véhicules:",
+            "options": [
+            "Pour les passagers occupant les sièges avant uniquement, dans tous genres de véhicules",
+            "Pour les passagers occupant les sièges avant et arrière, dans tous genres de véhicules et sur toutes les routes",
+            "Pour les passagers occupant les sièges avant et arrière, dans tous genres de véhicules"
+            ],
+            "answer": "Pour les passagers occupant les sièges avant et arrière, dans tous genres de véhicules et sur toutes les routes"
+        },
+        {
+            "question": "Si la main du gendarme est levée vers le haut (verticalement), cela signifie:",
+            "options": [
+            "Ralentissez rapidement",
+            "Attention, la circulation est bloquée",
+            "Attention, arrêtez-vous (s'applique à tous les usagers de la route)"
+            ],
+            "answer": "Attention, arrêtez-vous (s'applique à tous les usagers de la route)"
+        }
+    ]

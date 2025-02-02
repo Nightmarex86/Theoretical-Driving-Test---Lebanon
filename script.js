@@ -1,12 +1,14 @@
-let questions = []; // Array to store questions loaded from JSON
-let currentQuestionIndex = 0; // Tracks the current question
-let selectedAnswers = {}; // Stores user answers
-let selectedQuestions = []; // Subset of questions for the quiz
-let pictureQuestions = []; // Array to store picture-based questions
-let selectedPictureQuestions = []; // Subset of picture questions for the quiz
+// Global variables initialization
+let questions = [];
+let pictureQuestions = [];
+let currentQuestionIndex = 0;
+let selectedAnswers = {}; 
+let selectedQuestions = []; 
+let selectedPictureQuestions = []; 
 
-let timer;
-let timeLeft = 15 * 60; // 1 minute in seconds
+let timerInterval;
+let timeLeft = 5; // Set timer to 10 seconds for testing
+let selectedLanguage = 'en'; // Default language
 
 // Add animations to buttons
 document.querySelectorAll('button').forEach(button => {
@@ -18,30 +20,83 @@ document.querySelectorAll('button').forEach(button => {
     });
 });
 
-// Fetch questions from JSON file
-async function loadQuestions() {
+// Fetch normal questions based on selected language
+async function loadQuestions(language) {
     try {
-        const textResponse = await fetch('questions.json');
-        questions = await textResponse.json();
-
-        const pictureResponse = await fetch('pictureQuestions.json');
-        pictureQuestions = await pictureResponse.json();
+        console.log(`Loading normal questions for language: ${language}`);
+        const response = await fetch(`questions_${language}.json`);
+        if (!response.ok) {
+            throw new Error(`Failed to load questions_${language}.json - Status: ${response.status}`);
+        }
+        questions = await response.json();
+        console.log("Normal questions loaded:", questions);
     } catch (error) {
-        console.error("Error loading questions:", error);
+        console.error("Error loading normal questions:", error);
     }
 }
 
-// Start the quiz
-function startQuiz() {
+// Fetch picture questions based on selected language
+async function loadPictureQuestions(language) {
+    try {
+        let pictureQuestionsFile = `pictureQuestions_${language}.json`; // Default to plural form
+        
+        // Handle Arabic language where the file uses singular form
+        if (language === 'ar') {
+            pictureQuestionsFile = `pictureQuestions_${language}.json`; // Use singular for Arabic
+        }
+        const response = await fetch(pictureQuestionsFile);
+        if (!response.ok) {
+            throw new Error(`Failed to load ${pictureQuestionsFile} - Status: ${response.status}`);
+        }
+        pictureQuestions = await response.json();
+        console.log("Picture questions loaded:", pictureQuestions);
+    } catch (error) {
+        console.error("Error loading picture questions:", error);
+    }
+}
+
+// Change language based on user selection
+document.getElementById('language').addEventListener('change', function () {
+    selectedLanguage = this.value;
+    console.log(`Language changed to: ${selectedLanguage}`);
+
+    // Reload questions and picture questions for the selected language
+    loadQuestions(selectedLanguage);
+    loadPictureQuestions(selectedLanguage);
+
+    // Reset timer to ensure it's fresh after language change
+    timeLeft = 30;
+    document.getElementById('time').textContent = "00:00";
+    clearInterval(timerInterval);
+    document.getElementById('timer').classList.add('hidden');
+
+    // Make sure the start button is visible after language change
+    document.getElementById('startQuiz').classList.remove('hidden');
+});
+
+// Wait for both sets of questions to be loaded before starting the quiz
+async function startQuiz() {
+    console.log("Start Quiz triggered...");
+    
     const questionCount = parseInt(document.getElementById('questionCount').value);
     const pictureQuestionCount = parseInt(document.getElementById('pictureQuestionCount').value);
 
-    if (questionCount >= 15 && questionCount <= 212 && pictureQuestionCount >= 15 && pictureQuestionCount <= 100) {
+    if (questionCount >= 1 && questionCount <= 100 && pictureQuestionCount >= 1 && pictureQuestionCount <= 100) {
+        // Hide the start button and show the quiz container
+        document.getElementById('startQuiz').classList.add('hidden');
         document.getElementById('timer').classList.remove('hidden');
-        startTimer();
+        startTimer(); // Start the timer when quiz begins
 
+        // Ensure both sets of questions are loaded
+        await Promise.all([loadQuestions(selectedLanguage), loadPictureQuestions(selectedLanguage)]);
+
+        // Select random questions
         selectedQuestions = questions.sort(() => Math.random() - 0.5).slice(0, questionCount);
         selectedPictureQuestions = pictureQuestions.sort(() => Math.random() - 0.5).slice(0, pictureQuestionCount);
+
+        // Combine and shuffle all questions
+        const allQuestions = [...selectedQuestions, ...selectedPictureQuestions];
+        selectedQuestions = allQuestions.sort(() => Math.random() - 0.5);
 
         currentQuestionIndex = 0;
         document.getElementById("quizContainer").classList.remove("hidden");
@@ -49,19 +104,15 @@ function startQuiz() {
         displayQuestion();
         document.getElementById("returnButton").classList.remove("hidden");
     } else {
-        alert("Please enter valid numbers for the questions and signs.");
+        alert("Please enter valid numbers for the questions and picture questions.");
     }
 }
 
 // Display the current question
 function displayQuestion() {
     const quizElement = document.getElementById("quiz");
-    const isPictureQuestion = currentQuestionIndex >= selectedQuestions.length;
-    const question = isPictureQuestion
-        ? selectedPictureQuestions[currentQuestionIndex - selectedQuestions.length]
-        : selectedQuestions[currentQuestionIndex];
+    const question = selectedQuestions[currentQuestionIndex];
 
-    // Build the HTML for the current question
     quizElement.innerHTML = `
         <h2>Question ${currentQuestionIndex + 1}</h2>
         ${question.image ? `<img src="${question.image}" alt="Question Image">` : ""}
@@ -70,22 +121,21 @@ function displayQuestion() {
             ${question.options.map((option, index) => `
                 <li>
                     <label>
-                        <input type="radio" name="answer" value="${option}" 
-                        ${selectedAnswers[currentQuestionIndex] === option ? "checked" : ""}>
+                        <input type="radio" name="answer" value="${option}" ${selectedAnswers[currentQuestionIndex] === option ? 'checked' : ''}>
                         ${option}
                     </label>
                 </li>
-            `).join("")}
+            `).join('')}
         </ul>
     `;
 
     // Show/hide navigation buttons
     document.getElementById("prevQuestion").classList.toggle("hidden", currentQuestionIndex === 0);
-    document.getElementById("nextQuestion").classList.toggle("hidden", currentQuestionIndex === selectedQuestions.length + selectedPictureQuestions.length - 1);
-    document.getElementById("submitQuiz").classList.toggle("hidden", currentQuestionIndex !== selectedQuestions.length + selectedPictureQuestions.length - 1);
+    document.getElementById("nextQuestion").classList.toggle("hidden", currentQuestionIndex === selectedQuestions.length - 1);
+    document.getElementById("submitQuiz").classList.toggle("hidden", currentQuestionIndex !== selectedQuestions.length - 1);
 }
 
-// Navigate through questions
+// Navigation through questions
 document.getElementById("prevQuestion").addEventListener("click", () => {
     currentQuestionIndex--;
     displayQuestion();
@@ -95,17 +145,22 @@ document.getElementById("nextQuestion").addEventListener("click", () => {
     displayQuestion();
 });
 
-// Submit the quiz
+// Submit the quiz function
 function submitQuiz() {
-    clearInterval(timer); // Stop the timer
+    clearInterval(timerInterval);
     const resultContainer = document.getElementById("result");
     let score = 0;
 
-    // Build the result HTML
-    const resultHTML = [...selectedQuestions, ...selectedPictureQuestions].map((question, index) => {
-        const isCorrect = selectedAnswers[index] === question.answer;
-        if (isCorrect) score++;
+    // Ensure selected answers are correctly assigned before checking
+    selectedQuestions.forEach((question, index) => {
+        if (selectedAnswers[index] === question.answer) {
+            score++;
+        }
+    });
 
+    document.getElementById("quizContainer").classList.add("hidden");
+    const resultHTML = selectedQuestions.map((question, index) => {
+        const isCorrect = selectedAnswers[index] === question.answer;
         return `
             <div class="result-question">
                 <p><strong>Question ${index + 1}:</strong> ${question.question}</p>
@@ -116,93 +171,127 @@ function submitQuiz() {
         `;
     }).join("");
 
-    // Display the results
     resultContainer.innerHTML = `
-        <h2>Quiz Results</h2>
-        <p>You scored ${score} out of ${selectedQuestions.length + selectedPictureQuestions.length}!</p>
+        <p style="font-size: 2em;">You scored ${score} out of ${selectedQuestions.length}!</p>
+        <p>لقد حصلت على ${score} من أصل ${selectedQuestions.length}!</p>
         <div class="result-content">
             ${resultHTML}
         </div>
-        <button id="restartQuiz">Restart Quiz</button>
+        <button id="restartQuiz" class="btn">Restart Quiz</button>
     `;
+
     resultContainer.classList.remove("hidden");
-    document.getElementById("quizContainer").classList.add("hidden");
 
-    // Add event listener for the restart button
+    // Attach the restart button click event
     document.getElementById("restartQuiz").addEventListener("click", () => {
-        // Reset variables
-        currentQuestionIndex = 0;
-        score = 0;
-        selectedAnswers = {};
-
-        // Hide result container and show config container
-        resultContainer.classList.add("hidden");
-        document.querySelector(".config").classList.remove("hidden");
-        document.getElementById("quizContainer").classList.add("hidden");
+        window.location.href = 'quiztab.html';
     });
 }
 
+// Restart quiz function
+function restartQuiz() {
+    // Reset necessary variables and UI elements
+    selectedAnswers = [];
+    currentQuestionIndex = 0;
+    document.getElementById("result").classList.add("hidden");
+    document.getElementById("quizContainer").classList.remove("hidden");
+    document.getElementById("startQuiz").classList.remove("hidden");
+    document.getElementById("timer").classList.add("hidden");
+    document.getElementById("returnButton").classList.add("hidden");
+    document.querySelector(".config").classList.remove("hidden");
+}
+
+// Timeout handler function
+function timeOut() {
+    clearInterval(timerInterval);
+    const resultContainer = document.getElementById("result");
+    let score = 0;
+
+    // Ensure selected answers are correctly assigned before checking
+    selectedQuestions.forEach((question, index) => {
+        if (selectedAnswers[index] === question.answer) {
+            score++;
+        }
+    });
+
+    const resultHTML = selectedQuestions.map((question, index) => {
+        const isCorrect = selectedAnswers[index] === question.answer;
+        return `
+            <div class="result-question">
+                <p><strong>Question ${index + 1}:</strong> ${question.question}</p>
+                ${question.image ? `<img src="${question.image}" alt="Question Image">` : ""}
+                <p>Your Answer: <span class="${isCorrect ? 'correct' : 'wrong'}">${selectedAnswers[index] || "No Answer"}</span></p>
+                <p>Correct Answer: <span class="correct">${question.answer}</span></p>
+            </div>
+        `;
+    }).join("");
+
+    resultContainer.innerHTML = `
+        <h2>Quiz Results</h2>
+        <p>You scored ${score} out of ${selectedQuestions.length}!</p>
+        <p>لقد حصلت على ${score} من أصل ${selectedQuestions.length}!</p>
+        <p style="color: red;"><strong>Time's Up! You didn't finish in time.</strong></p>
+        <p style="color: red;"><strong>انتهى الوقت! لم تتمكن من إكمال الاختبار في الوقت المحدد.</strong></p>
+        <div class="result-content">
+            ${resultHTML}
+        </div>
+        <button id="restartQuiz" class="btn">Restart Quiz</button>
+    `;
+
+    resultContainer.classList.remove("hidden");
+    document.getElementById("quizContainer").classList.add("hidden");
+
+    // Attach the restart button click event
+    document.getElementById("restartQuiz").addEventListener("click", () => {
+        window.location.href = 'quiztab.html';
+    });
+}
+
+// Timer functionality
+function startTimer() {
+    let timer = timeLeft, minutes, seconds;
+    timerInterval = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        let timeText = minutes + ":" + seconds;
+        if (selectedLanguage === 'ar') {
+            // ...existing code...
+        }
+
+        document.getElementById("timer").textContent = timeText;
+
+        if (--timer < 0) {
+            timeOut();
+        }
+    }, 1000);
+}
+
 // Start quiz button event listener
-document.getElementById("startQuiz").addEventListener("click", startQuiz);
+document.getElementById("startQuiz").addEventListener("click", function() {
+    startQuiz();
+    document.getElementById('startQuiz').classList.add('hidden');
+    document.getElementById('timer').classList.remove('hidden'); // Ensure the timer is visible
+});
+
+// Attach the submit button click event
+document.getElementById('submitQuiz').addEventListener('click', submitQuiz);
 
 // Save selected answers
 document.getElementById("quiz").addEventListener("change", (event) => {
     selectedAnswers[currentQuestionIndex] = event.target.value;
 });
 
-// Load questions on page load
-loadQuestions();
 
-document.getElementById("startQuiz").addEventListener("click", () => {
-    document.querySelector(".config").classList.add("hidden");
-    document.getElementById("quizContainer").classList.remove("hidden");
+// Load questions on page load (default language is 'en')
+loadQuestions('en');
+loadPictureQuestions('en');
+
+// Event listener for the next question button
+document.getElementById("nextQuestion").addEventListener("click", () => {
+    currentQuestionIndex++;
+    displayQuestion();
 });
-
-// Show the return button when the quiz starts
-document.getElementById("startQuiz").addEventListener("click", () => {
-    document.getElementById("returnButton").classList.remove("hidden");
-});
-
-function startTimer() {
-    clearInterval(timer); // Clear any existing timer
-    timeLeft = 15 * 60; // Reset the timer
-    updateTimerDisplay();
-    updatePulseAnimation();
-    timer = setInterval(function() {
-        if (timeLeft <= 0) {
-            clearInterval(timer);
-            alert("Time's up! Do you want to restart the quiz?");
-            if (confirm("Press OK to restart the quiz.")) {
-                resetToConfig();
-            }
-        } else {
-            timeLeft--;
-            updateTimerDisplay();
-            updatePulseAnimation();
-        }
-    }, 1000);
-}
-
-function updateTimerDisplay() {
-    const minutes = Math.floor(timeLeft / 60);
-    const seconds = timeLeft % 60;
-    document.getElementById('time').textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-}
-
-function updatePulseAnimation() {
-    const timerElement = document.getElementById('timer');
-    const animationDuration = Math.max(0.5, timeLeft / 60); // Adjust the duration based on remaining time
-    timerElement.style.animationDuration = `${animationDuration}s`;
-}
-
-function resetToConfig() {
-    timeLeft = 15 * 60; // Reset the timer
-    updateTimerDisplay();
-    clearInterval(timer); // Stop the timer
-    document.getElementById("quizContainer").classList.add("hidden");
-    document.querySelector(".config").classList.remove("hidden");
-    document.getElementById("timer").classList.add("hidden");
-}
-
-document.getElementById('startQuiz').addEventListener('click', startQuiz);
-document.getElementById('submitQuiz').addEventListener('click', submitQuiz);

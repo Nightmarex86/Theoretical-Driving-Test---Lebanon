@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theoretical Driving Test - Lebanon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="taskbar">
+        <a href="about.html" id="aboutLink">About us</a>
+        <a href="about_ar.html" id="aboutLink">من نحن</a>
+    </div>
+    <div class="container">
+        <h1 id="quizTitle">Quiz</h1>
+
+        <!-- Timer Section -->
+        <div id="timer" class="hidden">Timer <span id="time">15:00</span></div>
+
+        <!-- Quiz Configuration Section -->
+        <div class="config">
+            <label for="questionCount" id="questionCountLabel">Number of Questions:</label>
+            <input type="number" id="questionCount" min="1" max="100" placeholder="Enter a number 1-100">
+
+            <label for="pictureQuestionCount" id="pictureQuestionCountLabel">Number of Signs:</label>
+            <input type="number" id="pictureQuestionCount" min="1" max="100" placeholder="Enter a number 1-100">
+
+            <label for="language" id="languageLabel">Select Language:</label>
+            <label>اختر اللغة</label>
+            <select id="language" onchange="updateLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="fr">French</option>
+            </select>
+
+            <div class="button-container">
+                <button id="startQuiz">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- The quiz section which includes the questions and the buttons -->
+        <div id="quizContainer" class="hidden">
+            <div id="quiz"></div>
+            <div class="button-container">
+                <button id="prevQuestion" class="hidden">Previous</button>
+                <button id="nextQuestion" class="hidden">Next</button>
+                <button id="submitQuiz" class="hidden">Submit</button>
+            </div>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result" class="hidden"></div>
+    </div>
+
+    <!-- About and Contact Sections -->
+    <div id="about" class="hidden">
+        <h2 id="aboutText">About</h2>
+        <p>This is a driving quiz application to help you prepare for your driving test.</p>
+    </div>
+
+    <div id="contact" class="hidden">
+        <h2 id="contactText">Contact</h2>
+        <p>If you have any questions, please reach out to us.</p>
+    </div>
+
+    <!-- Including the JavaScript files -->
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script src="timerTranslation.js"></script>
+
+</body>
+</html>

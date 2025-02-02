@@ -3,54 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theoretical Driving Test - Lebanon</title>
+    <title>Login</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="taskbar">
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="about.html" id="aboutLink">About us</a>
+        <a href="about_ar.html" id="aboutLink">من نحن</a>
     </div>
-    <div class="container">
-        <h1>Driving Quiz</h1>
-        <div id="timer" class="hidden">Time Left: <span id="time">15:00</span></div>
-        <div class="config">
-            <label for="questionCount">Number of Questions:</label>
-            <input type="number" id="questionCount" min="15" max="212" placeholder="Enter a number 15-212">
 
-            <label for="pictureQuestionCount">Number of Signs:</label>
-            <input type="number" id="pictureQuestionCount" min="15" max="100" placeholder="Enter a number 15-100">
-
-            <div class="button-container">
-                <button id="startQuiz">Start Quiz</button>
+    <div class="login-container">
+        <h1 id="loginTitle">Login to Access the Quiz</h1>
+        <h1>تسجيل الدخول للوصول إلى الاختبار</h1>
+        <form id="loginForm">
+            <label for="loginCode" id="enterCodeLabel">Enter Access Code:</label>
+            <div class="help-container">
+                <input type="text" id="loginCode" required placeholder="Enter the code">
             </div>
+            <button type="submit" id="loginSubmitButton">Submit</button>
+            <p id="loginMessage"></p> <!-- Error or Success message will appear here -->
+        </form>
+    </div>
+    <span class="help-bubble">Need help</span>
+    <span class="help-icon" onclick="openPopup()">?</span>
+    <!-- Help Popup -->
+    <div id="helpPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>English :</p>
+            <p>If you need help accessing the quiz, you should contact the office you are associated with to obtain the access code. Otherwise, if you are not affiliated with any office, you may reach out to one of the website creators via their Instagram page. You can find the page in the "About Us" section.</p>
+            <p>Arabic (العربية):</p>
+            <p>إذا كنت بحاجة إلى مساعدة في الوصول إلى الاختبار، فيجب عليك التواصل مع المكتب الذي تنتمي إليه للحصول على رمز الدخول. أما إذا لم تكن تابعًا لأي مكتب، فيمكنك التواصل مع أحد منشئي هذا الموقع عبر صفحتهم على إنستغرام. يمكنك العثور على الصفحة في قسم "من نحن.</p>
         </div>
-
-        <!-- The quiz section which includes the buttons -->
-        <div id="quizContainer" class="hidden">
-            <div id="quiz"></div>
-            <!-- These buttons will be shown after the quiz starts -->
-            <div class="button-container">
-                <button id="prevQuestion" class="hidden">Previous</button>
-                <button id="nextQuestion" class="hidden">Next</button>
-                <button id="submitQuiz" class="hidden">Submit</button>
-            </div>
-        </div>
-
-        <div id="result" class="hidden"></div>
     </div>
 
-    <div id="about" class="hidden">
-        <h2>About</h2>
-        <p>This is a driving quiz application to help you prepare for your driving test.</p>
-    </div>
-
-    <div id="contact" class="hidden">
-        <h2>Contact</h2>
-        <p>If you have any questions, please reach out to us.</p>
-    </div>
-
-    <script src="script.js"></script>
+    <!-- Link to external JS files -->
+    <script src="login.js"></script>
+    <script src="translations.js"></script>
+    <script>
+        function openPopup() {
+            document.getElementById("helpPopup").style.display = "block";
+        }
+        function closePopup() {
+            document.getElementById("helpPopup").style.display = "none";
+        }
+    </script>
 </body>
 </html>

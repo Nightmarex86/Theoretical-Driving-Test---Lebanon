@@ -1,15 +1,163 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Taskbar at the top */
+.taskbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: right;
+    color: white;
+    font-size: 14px;
+}
+
+.taskbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Language selector label */
+#languageLabel {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Select dropdown styling */
+select {
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* Login container */
+.login-container {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Title of login */
+#loginTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form fields */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Specific styling for Submit button */
+#loginSubmitButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#loginSubmitButton:hover {
+    background-color: #007bff;
+}
+/* Error or success message */
+#loginMessage {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Help popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.popup-content {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Popup text */
+.popup p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+
 /* Define color palette */
 :root {
     --dark-brown: #1D1616; /* 20% */
-    --dark-red: #8E1616;   /* 20% */
-    --red: #D84040;        /* 10% */
+    --dark-red: #0670fa;   /* 20% */
+    --red: #0670fa;        /* 10% */
     --light-grey: #EEEEEE; /* 50% */
     --white: #FFFFFF;      /* Additional color for better contrast */
 }
 
 /* General styles */
 body {
-    background-color: #f4f4f4;
+    background-color: #00d9ff;
     color: var(--dark-brown); /* 20% */
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -20,6 +168,202 @@ body {
     height: 100vh;
     flex-direction: column;
 }
+.hidden {
+    display: none;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.language-selector label {
+    font-weight: bold;
+}
+
+#language {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#language:hover {
+    border-color: #007bff;
+}
+
+#language:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0px 0px 5px rgba(0, 91, 187, 0.5);
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button Styling */
+.dropbtn {
+    background: linear-gradient(45deg, #007bff, #00c3ff);
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5);
+}
+
+.dropbtn:hover {
+    background: linear-gradient(45deg, #0056b3, #0099ff);
+    transform: scale(1.05);
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Ensure help icon is visible */
+.help-icon {
+    display: inline-flex; /* Ensures it appears next to the input */
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 3px;
+    margin-right: 3px;
+    user-select: none;
+}
+
+/* Keep the need help bubble inline */
+.help-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Popup fixes */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0670fa;
+    background: none;
+    border: none;
+    z-index: 1001;
+}
+
+.close:hover {
+    color: black;
+}
+
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Ensure the dropdown button is large and easy to tap on mobile */
+.dropbtn {
+    font-size: 16px;
+    padding: 10px;
+    min-width: 120px;
+}
+
+/* Responsive dropdown for mobile */
+@media only screen and (max-width: 768px) {
+    .dropdown-content {
+        width: 100%;  /* Full width on mobile */
+    }
+
+    .dropdown-content a {
+        font-size: 16px; /* Make text larger on mobile */
+        padding: 12px;   /* Larger clickable area */
+    }
+
+    .language-selector select {
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;  /* Make the select element full width on mobile */
+    }
+}
+/* Make sure there’s enough padding for easy tapping on mobile */
+.dropdown .dropbtn, .language-selector select {
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.dropdown-content a:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 
 /* Header styles */
 header {
@@ -144,14 +488,14 @@ button:hover {
 }
 
 .taskbar a:hover {
-    color: #ffcc00;
+    color: #0670fa;
     text-decoration: underline;
 }
 
 .container {
     background: #fff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
@@ -254,7 +598,7 @@ input[type="radio"] {
     font-size: 1.2em;
     font-weight: bold;
     color: #ffffff;
-    background-color: var(--dark-brown);
+    background-color: #0670fa;
     padding: 10px 20px;
     border-radius: 50px;
     margin: 20px 0;
