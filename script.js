@@ -7,7 +7,7 @@ let selectedQuestions = [];
 let selectedPictureQuestions = []; 
 
 let timerInterval;
-let timeLeft = 900; // Set timer to 10 seconds for testing
+let timeLeft = 5; // Set timer to 10 seconds for testing
 let selectedLanguage = 'en'; // Default language
 
 // Add animations to buttons
