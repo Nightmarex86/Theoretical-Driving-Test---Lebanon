@@ -41,7 +41,7 @@ async function loadPictureQuestions(language) {
         let pictureQuestionsFile = `pictureQuestions_${language}.json`; // Default to plural form
         
         // Handle Arabic language where the file uses singular form
-        if (language === 'ar') {
+        if (language === 'en') {
             pictureQuestionsFile = `pictureQuestions_${language}.json`; // Use singular for Arabic
         }
         const response = await fetch(pictureQuestionsFile);
@@ -65,7 +65,7 @@ document.getElementById('language').addEventListener('change', function () {
     loadPictureQuestions(selectedLanguage);
 
     // Reset timer to ensure it's fresh after language change
-    timeLeft = 30;
+    timeLeft = 5;
     document.getElementById('time').textContent = "00:00";
     clearInterval(timerInterval);
     document.getElementById('timer').classList.add('hidden');

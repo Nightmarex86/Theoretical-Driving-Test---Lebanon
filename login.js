@@ -24,7 +24,7 @@ async function handleLogin(event) {
     const userCode = document.getElementById("loginCode").value;
     const messageElement = document.getElementById("loginMessage");
 
-    const ACCESS_CODE = "1234567890"; // Example access code, replace with dynamic or secure method
+    const ACCESS_CODE = "1234567890" ; // Example access code, replace with dynamic or secure method
 
     if (userCode === ACCESS_CODE) {
         console.log("Access code is correct, logging in");
