@@ -25,6 +25,7 @@ async function loadQuestions(language) {
     try {
         console.log(`Loading normal questions for language: ${language}`);
         const response = await fetch(`questions_${language}.json`);
+        console.log(`Fetch response status for normal questions: ${response.status}`);
         if (!response.ok) {
             throw new Error(`Failed to load questions_${language}.json - Status: ${response.status}`);
         }
@@ -45,11 +46,17 @@ async function loadPictureQuestions(language) {
             pictureQuestionsFile = `pictureQuestions_${language}.json`; // Use singular for Arabic
         }
         const response = await fetch(pictureQuestionsFile);
+        console.log(`Fetch response status for picture questions: ${response.status}`);
         if (!response.ok) {
             throw new Error(`Failed to load ${pictureQuestionsFile} - Status: ${response.status}`);
         }
         pictureQuestions = await response.json();
         console.log("Picture questions loaded:", pictureQuestions);
+        
+        // Check if pictureQuestions is an array
+        if (!Array.isArray(pictureQuestions)) {
+            throw new Error("pictureQuestions is not an array");
+        }
     } catch (error) {
         console.error("Error loading picture questions:", error);
     }
@@ -57,6 +64,7 @@ async function loadPictureQuestions(language) {
 
 // Change language based on user selection
 document.getElementById('language').addEventListener('change', function () {
+
     selectedLanguage = this.value;
     console.log(`Language changed to: ${selectedLanguage}`);
 
@@ -66,7 +74,12 @@ document.getElementById('language').addEventListener('change', function () {
 
     // Reset timer to ensure it's fresh after language change
     timeLeft = 5;
+<<<<<<< HEAD
     document.getElementById('time').textContent = "00:00";
+=======
+    
+    document.getElementById('time').textContent = "15:00";
+>>>>>>> 53dba97b9d14e5df0b0076a7b4ebd72d3e3c62d1
     clearInterval(timerInterval);
     document.getElementById('timer').classList.add('hidden');
 
@@ -259,7 +272,7 @@ function startTimer() {
 
         let timeText = minutes + ":" + seconds;
         if (selectedLanguage === 'ar') {
-            // ...existing code...
+            timeText = convertToArabicNumerals(timeText);
         }
 
         document.getElementById("timer").textContent = timeText;
@@ -284,7 +297,6 @@ document.getElementById('submitQuiz').addEventListener('click', submitQuiz);
 document.getElementById("quiz").addEventListener("change", (event) => {
     selectedAnswers[currentQuestionIndex] = event.target.value;
 });
-
 
 // Load questions on page load (default language is 'en')
 loadQuestions('en');

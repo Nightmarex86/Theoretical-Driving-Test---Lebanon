@@ -7,7 +7,7 @@
 
 /* Overall body styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Noto Sans Arabic', 'Cairo', 'Amiri', 'Arial', sans-serif;
     background-color: #f4f7fc;
     color: #333;
     display: flex;
