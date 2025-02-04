@@ -64,6 +64,7 @@ async function loadPictureQuestions(language) {
 
 // Change language based on user selection
 document.getElementById('language').addEventListener('change', function () {
+
     selectedLanguage = this.value;
     console.log(`Language changed to: ${selectedLanguage}`);
 
@@ -73,6 +74,7 @@ document.getElementById('language').addEventListener('change', function () {
 
     // Reset timer to ensure it's fresh after language change
     timeLeft = 5;
+    
     document.getElementById('time').textContent = "15:00";
     clearInterval(timerInterval);
     document.getElementById('timer').classList.add('hidden');
@@ -266,7 +268,7 @@ function startTimer() {
 
         let timeText = minutes + ":" + seconds;
         if (selectedLanguage === 'ar') {
-            // ...existing code...
+            timeText = convertToArabicNumerals(timeText);
         }
 
         document.getElementById("timer").textContent = timeText;
