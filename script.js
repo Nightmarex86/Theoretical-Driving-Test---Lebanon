@@ -72,8 +72,8 @@ document.getElementById('language').addEventListener('change', function () {
     loadPictureQuestions(selectedLanguage);
 
     // Reset timer to ensure it's fresh after language change
-    timeLeft = 30;
-    document.getElementById('time').textContent = "00:00";
+    timeLeft = 5;
+    document.getElementById('time').textContent = "15:00";
     clearInterval(timerInterval);
     document.getElementById('timer').classList.add('hidden');
 
