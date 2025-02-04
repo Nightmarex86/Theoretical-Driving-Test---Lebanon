@@ -25,6 +25,7 @@ async function loadQuestions(language) {
     try {
         console.log(`Loading normal questions for language: ${language}`);
         const response = await fetch(`questions_${language}.json`);
+        console.log(`Fetch response status for normal questions: ${response.status}`);
         if (!response.ok) {
             throw new Error(`Failed to load questions_${language}.json - Status: ${response.status}`);
         }
@@ -45,11 +46,17 @@ async function loadPictureQuestions(language) {
             pictureQuestionsFile = `pictureQuestions_${language}.json`; // Use singular for Arabic
         }
         const response = await fetch(pictureQuestionsFile);
+        console.log(`Fetch response status for picture questions: ${response.status}`);
         if (!response.ok) {
             throw new Error(`Failed to load ${pictureQuestionsFile} - Status: ${response.status}`);
         }
         pictureQuestions = await response.json();
         console.log("Picture questions loaded:", pictureQuestions);
+        
+        // Check if pictureQuestions is an array
+        if (!Array.isArray(pictureQuestions)) {
+            throw new Error("pictureQuestions is not an array");
+        }
     } catch (error) {
         console.error("Error loading picture questions:", error);
     }
@@ -284,7 +291,6 @@ document.getElementById('submitQuiz').addEventListener('click', submitQuiz);
 document.getElementById("quiz").addEventListener("change", (event) => {
     selectedAnswers[currentQuestionIndex] = event.target.value;
 });
-
 
 // Load questions on page load (default language is 'en')
 loadQuestions('en');
