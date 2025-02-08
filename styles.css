@@ -15,6 +15,9 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    background-size: cover; /* Cover the whole screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
 }
 
 /* Taskbar at the top */

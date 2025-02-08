@@ -763,25 +763,25 @@
                 "question": "It is prohibited to overtake:",
                 "options": [
                 "When the width of the road makes for a very easy and safe overtake",
-                "If the road is divided into multiple lanes with broken lines",
-                "At the top of ascents when visibility is limited, and the left side of the road is unclear"
+                "If the road is broken into multiple lanes with broken lines",
+                "At the top edge of ascents, when there is not enough visibility ahead, and when the left side of the road will be clear after the takeover"
                 ],
-                "answer": "At the top of ascents when visibility is limited, and the left side of the road is unclear"
+                "answer": "At the top edge of ascents, when there is not enough visibility ahead, and when the left side of the road will be clear after the takeover"
             },
             {
-                "question": "If a police car, ambulance, or fire truck gives a signal of approach, road users should:",
+                "question": "If a police car, ambulance, or fire truck gives a signal of approach, other road users should:",
                 "options": [
-                "Stop immediately where they are",
-                "Increase their speed to make way",
-                "Reduce their speed, and if needed, stop or move aside"
+                "Stop immediately where they are so as to ease the movement of such vehicle",
+                "Reduce their speed, and if need be, stop or move aside so as to ease the movemen of such vehicle",
+                "Increase their speed so as to ease the movement of such vehicle"
                 ],
-                "answer": "Reduce their speed, and if needed, stop or move aside"
+                "answer": "Reduce their speed, and if need be, stop or move aside so as to ease the movemen of such vehicle"
             },
             {
                 "question": "It is prohibited to overtake:",
                 "options": [
                 "On wide roads",
-                "If the road is divided into multiple lanes with broken lines",
+                "If the road is broken into multiple lanes with broken lines",
                 "On narrow or steep mountain roads"
                 ],
                 "answer": "On narrow or steep mountain roads"
@@ -789,44 +789,44 @@
             {
                 "question": "On approaching an intersection, the driver should:",
                 "options": [
-                "Keep moving without checking if the road is clear",
+                "Keep moving without checking first that the road is clear",
                 "Keep to the right side of the road",
                 "Check that the road he is about to cross is clear"
                 ],
                 "answer": "Check that the road he is about to cross is clear"
             },
             {
-                "question": "A driver about to leave the road to another road on the right should:",
+                "question": "A driver who is about to leave the road he is on to another road on the right should:",
                 "options": [
-                "Tilt slightly to the left but remain on the road",
+                "Tilt a little to the left but remain on the road",
                 "Keep to the left side of the road",
                 "Keep to the right side of the road"
                 ],
                 "answer": "Keep to the right side of the road"
             },
             {
-                "question": "A driver about to leave the road to another road on the left should:",
+                "question": "A driver who is about to leave the road he is on to another road on the left should:",
                 "options": [
-                "Keep to the middle without tilting",
-                "Tilt slightly to the right but remain on the road",
-                "Tilt slightly to the left but remain on the road"
+                "Keep to the middle without tilting  left or right",
+                "Tilt  a little to the right but remain on the road",
+                "Tilt  a little to the left but remain on the road"
                 ],
-                "answer": "Tilt slightly to the left but remain on the road"
+                "answer": "Tilt  a little to the left but remain on the road"
             },
             {
-                "question": "When about to leave one road and enter another, the driver should:",
+                "question": "When driver is about to leave on road and get on another one, the driver should:",
                 "options": [
                 "Tilt slowly to the right",
-                "Make the turn at maximum speed to avoid slowing others",
-                "Make the turn with moderate speed after ensuring it's safe"
+                "Make the appropriate turn with utmost speed so as not to misaccommodate others",
+                "Make the turn with moderate speed, after having checked that it is possible to do so withoout misaccommodating or putting others at risk"
                 ],
-                "answer": "Make the turn with moderate speed after ensuring it's safe"
+                "answer": "Make the turn with moderate speed, after having checked that it is possible to do so withoout misaccommodating or putting others at risk"
             },
             {
                 "question": "It is best to keep a \"safe distance\":",
                 "options": [
                 "From the left and right sides only",
-                "From the front and rear sides only",
+                "From the front and end sides only",
                 "From all sides of the vehicle"
                 ],
                 "answer": "From all sides of the vehicle"
@@ -836,90 +836,90 @@
                 "options": [
                 "It gives other vehicles a chance to enter the lane",
                 "It prevents distraction with other vehicles",
-                "It gives drivers time to react to events"
+                "It gives drivers time to react to what happens"
                 ],
-                "answer": "It gives drivers time to react to events"
+                "answer": "It gives drivers time to react to what happens"
             },
             {
                 "question": "A solid green light at an intersection means:",
                 "options": [
-                "Stop and check traffic in other directions",
+                "You can cross the intersetion if it is posisble",
                 "You cannot turn right",
-                "You can cross the intersection if possible"
+                "You should stop and check traffic in the other direction before you carry on"
                 ],
-                "answer": "You can cross the intersection if possible"
+                "answer": "You can cross the intersetion if it is posisble"
             },
             {
                 "question": "A flashing yellow light means:",
                 "options": [
-                "Carry on if the road is clear",
+                "You can carry on if the road is clear",
                 "Stop and proceed only if clear",
-                "Reduce your speed and proceed cautiously"
+                "Reduce your speed and carry on cautiously"
                 ],
-                "answer": "Reduce your speed and proceed cautiously"
+                "answer": "Reduce your speed and carry on cautiously"
             },
             {
                 "question": "A yellow light at an intersection means:",
                 "options": [
                 "Go ahead",
-                "Reduce your speed and prepare to stop",
+                "Reduce your speed and be ready to stop",
                 "Stop"
                 ],
-                "answer": "Reduce your speed and prepare to stop"
+                "answer": "Reduce your speed and be ready to stop"
             },
             {
-                "question": "If you have a flat tire while traveling:",
+                "question": "If you have a flat tyre while traveling:",
                 "options": [
-                "Let the steering wheel move freely",
-                "Release the accelerator, keep the wheel straight, and pull off the road",
-                "Press the brakes and pull off the road"
+                "Let the steering wheel take the reigns",
+                "Release the accelerator to allow the vehicle to slow down, keep the steering wheel straight, and pull off the road",
+                "Press on the brakes to slow down, and pull off the road"
                 ],
-                "answer": "Release the accelerator, keep the wheel straight, and pull off the road"
+                "answer": "Release the accelerator to allow the vehicle to slow down, keep the steering wheel straight, and pull off the road"
             },
             {
-                "question": "If the lights of an oncoming vehicle are blinding you, you should:",
+                "question": "If the lights of the vehicle traveling on the opposite direction are bothering you, you should:",
                 "options": [
                 "Look towards the middle of the road",
                 "Look towards the left side of the road",
-                "Look down towards the right side of the road"
+                "Look down, towards the right side of the road"
                 ],
-                "answer": "Look down towards the right side of the road"
+                "answer": "Look down, towards the right side of the road"
             },
             {
-                "question": "In case of a vehicle breakdown on the highway:",
+                "question": "In case of a vehicle break-down on the highway:",
                 "options": [
-                "Wait inside the vehicle for assistance",
-                "Place a warning triangle and turn on headlights",
-                "Place a warning triangle and activate all signal lights"
+                "Wait inside the vehicle until the road assistance vehicle reaches you",
+                "Place the warning triangle and activate all four signal lights to warn other drivers",
+                "Place the warning triangle and turn on the headlights to warn other drivers"
                 ],
-                "answer": "Place a warning triangle and activate all signal lights"
+                "answer": "Place the warning triangle and activate all four signal lights to warn other drivers"
             },
             {
-                "question": "When entering a highway, you should:",
+                "question": "When you enter a highway, you should:",
                 "options": [
                 "Slow down",
                 "Drive below the speed limit",
-                "Drive at the highway traffic speed"
+                "Drive within the highway traffic speed"
                 ],
-                "answer": "Drive at the highway traffic speed"
+                "answer": "Drive within the highway traffic speed"
             },
             {
                 "question": "If the road is marked with one solid line and one broken line:",
                 "options": [
-                "You may change lanes if the broken line is on the left",
-                "You may not change lanes if the broken line is on the right",
-                "You may not change lanes if the broken line is on the left"
+                "The driver may change lanes if the broken line is on the left",
+                "The driver may not change lanes if the broken line is on the right",
+                "The driver may not change lanes if the broken line is on the left"
                 ],
-                "answer": "You may not change lanes if the broken line is on the left"
+                "answer": "The driver may not change lanes if the broken line is on the left"
             },
             {
-                "question": "If a vehicle is tailgating you in the left lane on a freeway, you should:",
+                "question": " If a vehicle is pressing behind you, and you are on the left lane on a freeway, you should:",
                 "options": [
                 "Speed up",
-                "Press the brakes intermittently",
-                "Move to the right lane and adjust your speed"
+                "Move to the right lane, and adjust your speed to the traffic speed on that lane",
+                "Press the brakes intermittently to drive the other vehicle to move away"
                 ],
-                "answer": "Move to the right lane and adjust your speed"
+                "answer": "Move to the right lane, and adjust your speed to the traffic speed on that lane"
             },
             {
                 "question": "If your brakes stop working while you are on the road, you should:",
@@ -1007,9 +1007,9 @@
                 "options": [
                 "In emergency cases",
                 "If you are under 21",
-                "No, you cannot in any case"
+                "No, you cannot in any case it may be"
                 ],
-                "answer": "No, you cannot in any case"
+                "answer": "No, you cannot in any case it may be"
             },
             {
                 "question": "When driving in the fog, you should turn on the:",
@@ -1471,13 +1471,13 @@
                 "answer": "The driver who is on the straight lane"
             },
             {
-                "question": "When you see on the freeway a sign indicating a road diversion, drivers wishing to exit should:",
+                "question": "When you see on the freeway a sign that indicates that there is a road diversion or that the lane you are on will lead you to another direction, all drivers wishing to exist the lane should",
                 "options": [
-                "Swerve very quickly to the desired lane",
-                "Swerve immediately left or right to the desired direction",
-                "Swerve gradually left or right to the desired direction"
+                "Swerve very quickly to the lane that will take them to the desired direction to avoid obstructing traffic",
+                "Swerve gradually left or right to the lane that will take them to the desired direction",
+                "Swerve immediately left or right to the lane that will take them to the desired direction to avoid obstructing traffic "
                 ],
-                "answer": "Swerve gradually left or right to the desired direction"
+                "answer": "Swerve gradually left or right to the lane that will take them to the desired direction"
             },
             {
                 "question": "Seat belts should be fastened by passengers sitting:",
@@ -1500,20 +1500,20 @@
             {
                 "question": "When the traffic policeman's hands are stretched horizontally, it means:",
                 "options": [
-                "\"Slow down\" for road users coming from crossing directions",
-                "\"Make way\" for crossing road users",
-                "\"Stop\" for all road users coming from crossing directions"
+                "\"Slow down\"  -- for all road users coming from directions that cross with the strecthed hands directions",
+                "\"Make way\" -- for all road users coming from directions that cross with the strecthed hands directions",
+                "\"Stop\" -- for all road users coming from directions that cross with the strecthed hands directions"
                 ],
-                "answer": "\"Stop\" for all road users coming from crossing directions"
+                "answer": "\"Stop\" -- for all road users coming from directions that cross with the strecthed hands directions"
             },
             {
                 "question": "Every vehicle should be fitted with:",
                 "options": [
                 "A registration plate at the back side of the vehicle",
-                "Two registration plates at front or back",
-                "Two registration plates at the front and back sides"
+                "Two registration plates with the vehicle number, at front or back side of the vehicles",
+                "Two registration plates with the vehicle number, at the front and back sides of the vehicles"
                 ],
-                "answer": "Two registration plates at the front and back sides"
+                "answer": "Two registration plates with the vehicle number, at the front and back sides of the vehicles"
             },
             {
                 "question": "Up until the age of 50, the driver should renew his driving license every:",
@@ -1527,23 +1527,23 @@
             {
                 "question": "Warning sounds can be used only:",
                 "options": [
-                "To alert other drivers to move quickly",
+                "To alert other drivers  that they should move quickly",
                 "To escape heavy traffic",
-                "To alarm other road users to avoid accidents"
+                "To alarm other road users so as to avoid accidents"
                 ],
-                "answer": "To alarm other road users to avoid accidents"
+                "answer": "To alarm other road users so as to avoid accidents"
             },
             {
-                "question": "In case there is no sign indicating which side to step out of a vehicle, passengers should:",
+                "question": "In case there is no sign that indicates which side of the vehicle should be used to step out of the vehicle",
                 "options": [
-                "Step out from the easiest side for movement",
-                "Step in/out from the same side of traffic",
-                "Step in/out from the opposite side of traffic"
+                "The passenger should step out from the side that is easier for his movement and that he deems appropriate",
+                "The passenger should step in and out of the vehicle from the door that is on the same side of traffic",    
+                "The passenger should step in and out of the vehicle from the door that is on the other side of traffic"
                 ],
-                "answer": "Step in/out from the opposite side of traffic"
+                "answer": "The passenger should step in and out of the vehicle from the door that is on the other side of traffic"
             },
             {
-                "question": "When the driver waives their hand up and down, it means:",
+                "question": "When the driver waives his hand up and down, it means:",
                 "options": [
                 "Car breakdown",
                 "Direction to the left",
@@ -1552,7 +1552,7 @@
                 "answer": "Slow down and stop"
             },
             {
-                "question": "When the driver stretches their hand horizontally, it means:",
+                "question": "When the driver streches his hand horizontally, it means the driver is: ",
                 "options": [
                 "Reversing",
                 "Slowing down",
@@ -1561,7 +1561,7 @@
                 "answer": "Turning left"
             },
             {
-                "question": "When the driver stretches their hand vertically, it means:",
+                "question": "When the driver streches his hand vertically, it means: ",
                 "options": [
                 "Stop",
                 "Direction to the left",
@@ -1573,16 +1573,16 @@
                 "question": "Vehicles turning right can cross a red light provided:",
                 "options": [
                 "They do it quickly",
-                "They cannot cross a red light",
-                "They stop, ensure safety, and proceed"
+                "Vehicles turning right cannot cross a red light",
+                "They stop at the traffic light, make sure they can cross without putting pedestrians and vehicles at risk"
                 ],
-                "answer": "They stop, ensure safety, and proceed"
+                "answer": "They stop at the traffic light, make sure they can cross without putting pedestrians and vehicles at risk"
             },
             {
                 "question": "When the road is marked with solid lines:",
                 "options": [
-                "The driver can change lanes quickly",
-                "The driver can change lanes if there's a gap",
+                "The driver can change lanes, but has to do it quickly",
+                "The driver can change lanes, provided he makes sure there is enough gap in the other lane",
                 "The driver cannot change lanes"
                 ],
                 "answer": "The driver cannot change lanes"
@@ -1594,25 +1594,25 @@
                 "12 years",
                 "8 years"
                 ],
-                "answer": "12 years"
+                "answer": "10 years"
             },
             {
-                "question": "Throwing objects from the vehicle is prohibited because it:",
+                "question": "It is strictly prohibited to throw stuff from the vehicle as this would:",
                 "options": [
                 "Obstructs policemen",
-                "Fades road markings",
-                "Causes accidents and clogs drainage"
+                "Cause road markings to fade away",
+                "Cause accidents, and clog water drainage system"
                 ],
-                "answer": "Causes accidents and clogs drainage"
+                "answer": "Cause accidents, and clog water drainage system"
             },
             {
                 "question": "What is the difference between yellow and white lines in the middle of the road?",
                 "options": [
-                "Yellow lines mark road sides, white lines mark lanes",
-                "Yellow lines are for one-way roads, white for two-way roads",
-                "White lines demarcate same-direction lanes, yellow for opposite"
+                "Yellow lines are used on road sides only, whereas white lines are used to mark vehicle lanes",
+                "Yellow lines are used for one-way roads whereas white lines are used for two-way streets",
+                "White lines demarcate lanes that go in the same direction, yellow lines are demarcate lanes that go in opposite directions"
                 ],
-                "answer": "White lines demarcate same-direction lanes, yellow for opposite"
+                "answer": "White lines demarcate lanes that go in the same direction, yellow lines are demarcate lanes that go in opposite directions"
             },
             {
                 "question": "Drivers cannot stop or park within ____ from intersections or traffic lights:",
@@ -1626,18 +1626,18 @@
             {
                 "question": "Drivers are prohibited to:",
                 "options": [
-                "Transport expired alcohol bottles",
-                "Transport sealed alcohol bottles",
-                "Transport unsealed alcohol bottles"
+                "Transport expired bottles or cans o alcohol",
+                "Transport in their vehicles bottles or cans of alcohol that have the manufacturer seal",
+                "Transport in their vehicles unsealed bottles or cans of alcohol"
                 ],
-                "answer": "Transport unsealed alcohol bottles"
+                "answer": "Transport in their vehicles unsealed bottles or cans of alcohol"
             },
             {
                 "question": "Drivers should stop and park:",
                 "options": [
-                "On pedestrian crossing stripes",
-                "After crossing stripes",
-                "Before crossing stripes"
+                "On white pedestrian crossing stripes",
+                "After white crossing stripes",
+                "Before white crossing stripes"
                 ],
                 "answer": "Before crossing stripes"
             },
@@ -1650,8 +1650,6 @@
                 ],
                 "answer": "Travel on white lines"
             },
-
-
             {
                 "question": "The driver and passengers should fasten their seat belt:",
                 "options": [

@@ -7,7 +7,7 @@ let selectedQuestions = [];
 let selectedPictureQuestions = []; 
 
 let timerInterval;
-let timeLeft = 5; // Set timer to 10 seconds for testing
+let timeLeft = 30; // Set timer to 10 seconds for testing
 let selectedLanguage = 'en'; // Default language
 
 // Add animations to buttons
@@ -73,13 +73,9 @@ document.getElementById('language').addEventListener('change', function () {
     loadPictureQuestions(selectedLanguage);
 
     // Reset timer to ensure it's fresh after language change
-    timeLeft = 5;
-<<<<<<< HEAD
-    document.getElementById('time').textContent = "00:00";
-=======
+    timeLeft = 30;
     
     document.getElementById('time').textContent = "15:00";
->>>>>>> 53dba97b9d14e5df0b0076a7b4ebd72d3e3c62d1
     clearInterval(timerInterval);
     document.getElementById('timer').classList.add('hidden');
 

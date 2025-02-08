@@ -547,6 +547,12 @@
     },
     {
         "question": "Quel est le sens de ce signe de route?",
+        "image": "images/127.png",
+        "options": ["Zone de stationnement ", "Stationnement à durée limitée ", "Stationnement interdit "],
+        "answer": "Zone de stationnement "
+    },
+    {
+        "question": "Quel est le sens de ce signe de route?",
         "image": "images/128.png",
         "options": ["Hotel ", "Restaurant ", "Garage"],
         "answer": "Hotel "

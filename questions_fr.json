@@ -29,7 +29,7 @@
 {
     "question": "Lorsque vous faites le plein de votre véhicule,",
     "options": [
-        "DimiIl n'est pas obligatoire d'arrêter le moteurnution",
+        "Il n'est pas obligatoire d'arrêter le moteur",
         "Vous pouvez fumer une cigarette",
         "Il faut arrêter le moteur "
     ],
@@ -112,7 +112,7 @@
     "options": [
         "Quand il est plein d'énergie",
         "Quand il a sommeil ",
-        "Réduction "
+        "Quand il roule dans la ville"
     ],
     "answer": "Quand il a sommeil "
 },
@@ -410,7 +410,7 @@
     "question": "En virant à droite, le conducteur d'un poids lourd:",
     "options": [
         "Ne doit pas laisser une distance suffisante à sa droite",
-        "Doit laisser une distance suffisante devant lu",
+        "Doit laisser une distance suffisante devant lui",
         "Doit laisser une distance suffisante à sa droite"
     ],
     "answer": "Doit laisser une distance suffisante à sa droite"
@@ -656,10 +656,10 @@
         "Vérifier que les couvercles sont bien fermées",
         "Vérifier que les valves de vidange sont bien fermées"
     ],
-    "answer": "Diminution"
+    "answer": "Vérifier que tous les couvercles et toutes les valves de vidange sont bien fermés"
 },
         {
-                "question": "Quels sont les avantages environnement aux de l'éco-conduite?",
+                "question": "Quels sont les avantages environnementaux de l'éco-conduite?",
                 "options": [
                     "Diminution des émissions de gaz à effet de serre (CO2)",
                     "Augmentation des émissions de gaz à effet de serre (CO2)",
@@ -928,6 +928,15 @@
             "Laver son véhicule sur la route"
         ],
         "answer": "Laver son véhicule sur la route"
+        },
+        {
+            "question": "Le conducteur ",
+            "options": [
+            "ne doit pas prendre en considération l'état de la route et ni la densité du trafic sur la route",
+            "doit accélérer quand la visibilité n'est pas bonne",
+            "doit ralentir ou même s'arrêter quand les conditions de la circulation le nécessitent, ou quand la visibilité n'est pas bonne"
+            ],
+            "answer": "doit ralentir ou même s'arrêter quand les conditions de la circulation le nécessitent, ou quand la visibilité n'est pas bonne"
         },
         {
         "question": "Le conducteur doit:",
@@ -1280,6 +1289,267 @@
             "answer": "Les feux de brouillard et/ ou les feux de croisement"
         },
         {
+            "question": "En effectuant un dépassement sur une autoroute à voies multiples, le conducteur:",
+            "options": [
+            "N'est pas obligé de donner un signal",
+            "Doit vérifier qu'il y a un espace suffisant sur la voie qu'il voudrait joindre",
+            "Doit jeter un regard sur les véhicules circulant dans l'autre sens"
+            ],
+            "answer": "Doit vérifier qu'il y a un espace suffisant sur la voie qu'il voudrait joindre"
+        },
+        {
+            "question": "En effectuant un virage, le conducteur doit:",
+            "options": [
+            "Ralentir",
+            "Accélérer ",
+            "Maintenir sa vitesse "
+            ],
+            "answer": "Ralentir"
+        },
+        {
+            "question": "Quand les feux tricolores sont en panne, le conducteur doit:",
+            "options": [
+            "Donner la priorité au conducteur qui se trouve à gauche",
+            "Agir comme s'il était sur une intersection sans feux",
+            "S'arrêter et attendre la police routière "
+            ],
+            "answer": "Agir comme s'il était sur une intersection sans feux"
+        },
+        {
+            "question": "Un camion essaie de dépasser ton véhicule, tu dois",
+            "options": [
+            "Maintenir ta vitesse ou ralentir",
+            "Accélérer ",
+            "Changer de voie"
+            ],
+            "answer": "Maintenir ta vitesse ou ralentir"
+        },
+        {
+            "question": "Tu roules derrière une une motocyclette, tu dois:",
+            "options": [
+            "Permettre à la motocyclette de circuler sur la moitié de la voie",
+            "Permettre à la motocyclette de circuler sur toute la largeur de la voie",
+            "Dépasser la motocyclette sur la voie même"
+            ],
+            "answer": "Permettre à la motocyclette de circuler sur toute la largeur de la voie"
+        },
+        {
+            "question": "Deux conducteurs venant de deux sens différents s'approchent d'une intersection:",
+            "options": [
+            "Chacun passe sans céder la priorité à l'autre conducteur",
+            "Le conducteur venant de la gauche doit céder le passage à l'autre conducteur",
+            "Le conducteur venant de la droite doit céder le passage à l'autre conducteur"
+            ],
+            "answer": "Le conducteur venant de la gauche doit céder le passage à l'autre conducteur"
+        },
+        {
+            "question": "Avant de dépasser, d'être dépassé, ou d'effectuer un virage, le conducteur doit:",
+            "options": [
+            "Ralentir, activer le clignotant bien en avance pour avertir les autres usagers de la route, vérifier les miroirs et les angles morts",
+            "Ralentir, activer les clignotants pour avertir les autres conducteurs, et vérifier les miroirs",
+            "Ralentir et activer le clignotant au moment du virage "
+            ],
+            "answer": "Ralentir, activer le clignotant bien en avance pour avertir les autres usagers de la route, vérifier les miroirs et les angles morts"
+        },
+        {
+            "question": "Il est interdit au conducteur qui effectue un dépassement ",
+            "options": [
+            "de déranger les conducteurs à sa droite",
+            "d'utiliser la voie de gauche",
+            "d'utiliser la voie de droite"
+            ],
+            "answer": "d'utiliser la voie de gauche"
+        },
+        {
+            "question": "En l'absence d'un feu de signalisation, si un véhicule prend un virage alors qu'un piéton voudrait franchir la route, à qui revient la priorité?",
+            "options": [
+            "A celui qui a la plus grande vitesse",
+            "Au piéton ",
+            "Au véhicule"
+            ],
+            "answer": "Au piéton"
+        },
+        {
+            "question": "Le gel se forme plus rapidement sur les routes:",
+            "options": [
+            "Planes",
+            "Sinueuses",
+            "Qui sont dans l'ombre"
+            ],
+            "answer": "Qui sont dans l'ombre"
+        },
+        {
+            "question": "Il est interdit au conducteur de:",
+            "options": [
+            "Circuler dans une direction autre que la direction indiquée",
+            "Rester éveillé et en contrôle de son véhicule",
+            "Vérifier qu'il peut effectuer le dépassement sans aucun danger"
+            ],
+            "answer": "Circuler dans une direction autre que la direction indiquée"
+        },
+        {
+            "question": "Il est interdit au conducteur de:",
+            "options": [
+            "Circuler sur le côté droit de la route",
+            "Laver les véhicules sur la route",
+            "Vérifier qu'il peut effectuer le dépassement sans aucun danger"
+            ],
+            "answer": "Laver les véhicules sur la route"
+        },
+        {
+            "question": "Il est interdit au conducteur de: ",
+            "options": [
+            "Circuler dans la direction indiquée",
+            "Effectuer un demi tour au milieu de la route",
+            "Vérifier qu'il peut effectuer le dépassement sans aucun danger"
+            ],
+            "answer": "Effectuer un demi tour au milieu de la route"
+        },
+        {
+            "question": "Logiquement, le conducteur ne dois pas:",
+            "options": [
+            "Rouler au delà de la vitesse maximale de 80 km/heure",
+            "Rouler au delà de la vitesse de circulation des autres véhicules sur la route",
+            "Rouler au delà de la vitesse maximale"
+            ],
+            "answer": "Rouler au delà de la vitesse de circulation des autres véhicules sur la route"
+        },
+        {
+            "question": "Tu peux sortir de la route pour dépasser un autre véhicule:",
+            "options": [
+            "Ceci n'est pas permis en aucun cas",
+            "S'il y a assez de place pour ton véhicule sur la rue ou sur le passage piéton",
+            "Si le véhicule devant toi se dirige vers la gauche"
+            ],
+            "answer": "Ceci n'est pas permis en aucun cas"
+        },
+        {
+            "question": "Le conducteur peut continuer à rouler avec prudence au feu jaune:",
+            "options": [
+            "S'il est derrière un véhicule prioritaire (ambulance, camion pompier",
+            "S'il est déjà entré dans l'intersection",
+            "S'il se dirige vers la droite"
+            ],
+            "answer": "S'il est déjà entré dans l'intersection"
+        },
+        {
+            "question": "Il est interdit au conducteur de: ",
+            "options": [
+            "Circuler sur le côté droit de la route",
+            "Reparer les véhicules sur l'autoroute sauf dans le cas d'urgence extrême",
+            "Vérifier qu'il peut effectuer le dépassement sans aucun danger"
+            ],
+            "answer": "Reparer les véhicules sur l'autoroute sauf dans le cas d'urgence extrême"
+        },
+        {
+            "question": "Le conducteur doit prendre son extrême droite:",
+            "options": [
+            "Quand il roule à une vitesse inférieure à la vitesse applicable sur cette route",
+            "Quand il veut dépasser un autre véhicule",
+            "Quand la visibilité est bonne"
+            ],
+            "answer": "Quand il roule à une vitesse inférieure à la vitesse applicable sur cette route"
+        },
+        {
+            "question": "Il est interdit au conducteur qui dispose d'un permis de conduire depuis plus de trois ans de conduire avec un taux d'alcoolémie supérieur à:",
+            "options": [
+            "0.3 grammes/litre ",
+            "0.4 grammes/litre ",
+            "0.5 grammes/litre"
+            ],
+            "answer": "0.5 grammes/litre"
+        },
+        {
+            "question": "Il est interdit au conducteur qui dispose d'un permis de conduire depuis moins de trois ans de conduire avec un taux d'alcoolémie supérieur à:",
+            "options": [
+            "0 grammes/litre ",
+            "0.3 grammes/litre ",
+            "0.5 grammes/litre "
+            ],
+            "answer": "0 grammes/litre "
+        },
+        {
+            "question": "Il est interdit au conducteur qui roule sur la route de:",
+            "options": [
+            "Utiliser tous les moyens de télécommunication",
+            "Tenir le volant d'une main, et prendre un appel téléphonique de l'autre",
+            "Conduire avec les deux mains, et répondre aux appels téléphoniques via bluetooth"
+            ],
+            "answer": "Utiliser tous les moyens de télécommunication"
+        },
+        {
+            "question": "En l'absence d'un panneau de signalisation, la vitesse maximale autorisée sur l'autoroute est de:",
+            "options": [
+            "80 km/heure ",
+            "100 km/heure",
+            "120 km/heure "
+            ],
+            "answer": "100 km/heure"
+        },
+        {
+            "question": "En l'absence d'un panneau de signalisation, la vitesse maximale autorisée en dehors des zones peuplées est de:",
+            "options": [
+            "50 km/heure ",
+            "60 km/heure ",
+            "70 km/heure "
+            ],
+            "answer": "70 km/heure "
+        },
+        {
+            "question": "En l'absence d'un panneau de signalisation, la vitesse maximale autorisée dans les zones peuplées est de:",
+            "options": [
+            "40 km/heure ",
+            "50 km/heure ",
+            "60 km/heure "
+            ],
+            "answer": "50 km/heure "
+        },
+        {
+            "question": "Le conducteur peut faire marche arrière sur l'autoroute si la sortie est à:",
+            "options": [
+            "10 metres",
+            "20 metres ",
+            "La marche arrière est absolument interdite"
+            ],
+            "answer": "La marche arrière est absolument interdite"
+        },
+        {
+            "question": "Sur les routes ordinaires, Le triangle de présignalisation doit être placé devant ou derrière le véhicule, selon la direction de la circulation, à ____ du véhicule:",
+            "options": [
+            "20 metres",
+            "30 metres",
+            "40 metres "
+            ],
+            "answer": "30 metres"
+        },
+        {
+            "question": "Sur l'autoroute, Le triangle de présignalisation doit être placé devant ou derrière le véhicule, selon la direction de la circulation, à ____ du véhicule:",
+            "options": [
+            "50 metres",
+            "60 metres",
+            "70 metres"
+            ],
+            "answer": "50 metres"
+        },
+        {
+            "question": "Les piétons sont tenus à utiliser les chaussées, les ponts et les passages piétons qui sont à une distance de:",
+            "options": [
+            "130 metres",
+            "150 metres",
+            "170 metres"
+            ],
+            "answer": "150 metres"
+        },
+        {
+            "question": "Si le conducteur cause un accident de route, et même lorsque les dégâts sont limités aux dégâts materiels, le conducteur est tenu à:",
+            "options": [
+            "Quitter les lieux et fuire toute résponsabilité",
+            "Continuer à rouler",
+            "S'arrêter et suivre les modalités appropriées"
+            ],
+            "answer": "S'arrêter et suivre les modalités appropriées"
+        },
+        {    
             "question": "Si les feux de freinage ne fontionnent pas:",
             "options": [
             "Le véhicule peut être confisqué",
@@ -1494,5 +1764,158 @@
             "Attention, arrêtez-vous (s'applique à tous les usagers de la route)"
             ],
             "answer": "Attention, arrêtez-vous (s'applique à tous les usagers de la route)"
+        },
+        {
+            "question": "Si les deux bras du gendarme sont tendus horizontalement, cela signifie:",
+            "options": [
+            "Ralentissez, s'applique à tous les usagers de la route qui viennent des deux sens qui se croisent avec les bras du gendarme",
+            "Cédez la voie, s'applique à tous les usagers de la route qui viennent des deux sens qui se croisent avec les bras du gendarme",
+            "Arrêtez-vous, s'applique à tous les usagers de la route qui viennent des deux sens qui se croisent avec les bras du gendarme"
+            ],
+            "answer": "Arrêtez-vous, s'applique à tous les usagers de la route qui viennent des deux sens qui se croisent avec les bras du gendarme"
+        },
+        {
+            "question": "Tout véhicule doit être muni: ",
+            "options": [
+            "D'une plaque d'immatriculation arrière",
+            "D'une plaque d'immatriculation à l'avant et d'une autre à l'arrière portant le numéro d'enregistrement du véhicule",
+            "De deux plaques d'immatriculation à l'avant ou à l'arrière, portant le numéro d'enregistrement du véhicule"
+            ],
+            "answer": "D'une plaque d'immatriculation à l'avant et d'une autre à l'arrière portant le numéro d'enregistrement du véhicule"
+        },
+        {
+            "question": "Jusqu'à l'âge de 50 ans, le conducteur de véhicules privés doit renouveler son permis de conduire :",
+            "options": [
+            "Tous les 20 ans",
+            "Tous les 5 ans ",
+            "Tous les 10 ans"
+            ],
+            "answer": "Tous les 10 ans"
+        },
+        {
+            "question": "Il est permis au conducteur d'utiliser une alarme sonore uniquement :",
+            "options": [
+            "Pour dire aux autres conducteurs qu'il faut aller plus vite",
+            "Pour éviter les embouteillages",
+            "Pour éviter les accidents"
+            ],
+            "answer": "Pour éviter les accidents"
+        },
+        {
+            "question": "En cas d'absence d'un panneau qui indique de quel côté sortir de la voiture:",
+            "options": [
+            "il faut sortir / monter du côté le plus convenable",
+            "il faut sortir / monter du côté gauche du véhicule",
+            "il faut sortir / monter du côté droit du véhicule"
+            ],
+            "answer": "il faut sortir / monter du côté droit du véhicule"
+        },
+        {
+            "question": "Lorque le conducteur bouge sa main vers le haut et vers le bas, cela signifie:",
+            "options": [
+            "que la voiture est en panne",
+            "qu'il se dirige vers la gauche",
+            "Ralentis et arrêtes-toi "
+            ],
+            "answer": "Ralentis et arrêtes-toi "
+        },
+        {
+            "question": "Lorsque le conducteur tend sa main horizontalement, cela signifie:",
+            "options": [
+            "qu'il veut faire marche arrière",
+            "qu'il ralentit ",
+            "qu'il se dirige vers la gauche"
+            ],
+            "answer": "qu'il se dirige vers la gauche"
+        },
+        {
+            "question": "Lorsque le conducteur lève sa main vers le haut, cela signifie:",
+            "options": [
+            "qu'il s'arrête ",
+            "qu'il se dirige vers la gauche",
+            "qu'il se dirige vers la droite"
+            ],
+            "answer": "qu'il se dirige vers la droite"
+        },
+        {
+            "question": "Les véhicules qui se dirigent vers la droite peuvent franchir un feu rouge à condition:",
+            "options": [
+            "que le conducteur le fasse rapidement",
+            "Il est absolument interdit aux véhicules qui se dirigent vers la droite de franchir un feu rouge",
+            "que le conducteur s'arrête et vérifie qu'il peut le faire sans aucun danger sur les piétons et la circulation"
+            ],
+            "answer": "que le conducteur s'arrête et vérifie qu'il peut le faire sans aucun danger sur les piétons et la circulation"
+        },
+        {
+            "question": "Quand la voie est marquée par une ligne contine,",
+            "options": [
+            "Il est permis de franchir la ligne à condition que le conducteur le fasse rapidement",
+            "Il est permis de franchir la ligne pour passer d'une file à une autre, à condition que le conducteur franchisse prudemment",
+            "Il est interdit de franchir la ligne pour passer d'une file à une autre"
+            ],
+            "answer": "Il est interdit de franchir la ligne pour passer d'une file à une autre"
+        },
+        {
+            "question": "Les sièges à l'avant sont interdits aux enfants de moins de:",
+            "options": [
+            "12 ans",
+            "10 ans",
+            "8 ans"
+            ],
+            "answer": "10 ans"
+        },
+        {
+            "question": "Il est interdit de jeter quoi que ce soit de la voiture parce ça risque:",
+            "options": [
+            "Déranger la police routière dans son travail",
+            "De causer des accidents routiers, et de bloquer les drainages",
+            "D'effacer le marquage du sol"
+            ],
+            "answer": "De causer des accidents routiers, et de bloquer les drainages"
+        },
+        {
+            "question": "Quelle est la différence entre une ligne blanche et une ligne jaune au milieu de la route?",
+            "options": [
+            "On utilise les lignes blanches pour délimiter les voies allant dans un même sens, et on utilise les lignes jaunes pour délimiter deux voies allant dans deux sens opposés",
+            "On utilise les lignes jaunes sur les routes à sens unique et les lignes blances sur les routes à deux sens",
+            "On utilise les lignes jaunes sur les bords de la route alors qu'on utilise les lignes blanches pour délimiter les voies"
+            ],
+            "answer": "On utilise les lignes blanches pour délimiter les voies allant dans un même sens, et on utilise les lignes jaunes pour délimiter deux voies allant dans deux sens opposés"
+        },
+        {
+            "question": "Il est interdit de s'arrêter et de stationner à une distance de moins de _____ des sommets des montées, des virages, des intersections, des ronds points, et des feux.",
+            "options": [
+            "25 mètres",
+            "30 mètres ",
+            "50 mètres "
+            ],
+            "answer": "25 mètres"
+        },
+        {
+            "question": "Il est interdit au conducteur de: ",
+            "options": [
+            "Transporter dans son véhicule des bouteilles d'alcool non scellées par le fabricant",
+            "Transporter dans son véhicule des bouteilles d'alcool scellées par le fabricant",
+            "Transporter dans son véhicule des bouteilles d'alcool ayant dépassé la date d'expiration "
+            ],
+            "answer": "Transporter dans son véhicule des bouteilles d'alcool non scellées par le fabricant"
+        },
+        {
+            "question": "Le conducteur doit s'arrêter ou stationner:",
+            "options": [
+            "Avant les lignes blanches des passages piétons",
+            "Sur les lignes blanches des passages piétons",
+            "Après les lignes blanches des passages piétons"
+            ],
+            "answer": "Avant les lignes blanches des passages piétons"
+        },
+        {
+            "question": "Il est interdit au conducteur de:",
+            "options": [
+            "Franchir les lignes blanches discontinues",
+            "Rouler sur les lignes blanches",
+            "Circuler entre les lignes blanches"
+            ],
+            "answer": "Rouler sur les lignes blanches"
         }
     ]
