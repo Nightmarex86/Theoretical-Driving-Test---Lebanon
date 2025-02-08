@@ -76,7 +76,6 @@ document.getElementById('language').addEventListener('change', function () {
     timeLeft = 900;
     
     document.getElementById('time').textContent = "15:00";
->>>>>>> 53dba97b9d14e5df0b0076a7b4ebd72d3e3c62d1
     clearInterval(timerInterval);
     document.getElementById('timer').classList.add('hidden');
 
