@@ -42,7 +42,7 @@ async function loadPictureQuestions(language) {
         let pictureQuestionsFile = `pictureQuestions_${language}.json`; // Default to plural form
         
         // Handle Arabic language where the file uses singular form
-        if (language === 'ar') {
+        if (language === 'en') {
             pictureQuestionsFile = `pictureQuestions_${language}.json`; // Use singular for Arabic
         }
         const response = await fetch(pictureQuestionsFile);
@@ -76,6 +76,7 @@ document.getElementById('language').addEventListener('change', function () {
     timeLeft = 900;
     
     document.getElementById('time').textContent = "15:00";
+>>>>>>> 53dba97b9d14e5df0b0076a7b4ebd72d3e3c62d1
     clearInterval(timerInterval);
     document.getElementById('timer').classList.add('hidden');
 
