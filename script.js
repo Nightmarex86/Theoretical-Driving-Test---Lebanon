@@ -7,7 +7,11 @@ let selectedQuestions = [];
 let selectedPictureQuestions = []; 
 
 let timerInterval;
+<<<<<<< HEAD
 let timeLeft = 30; // Set timer to 10 seconds for testing
+=======
+let timeLeft = 900; // Set timer to 10 seconds for testing
+>>>>>>> 821d7e4882ecb3904974eb69c0933b38266da44f
 let selectedLanguage = 'en'; // Default language
 
 // Add animations to buttons
@@ -73,7 +77,11 @@ document.getElementById('language').addEventListener('change', function () {
     loadPictureQuestions(selectedLanguage);
 
     // Reset timer to ensure it's fresh after language change
+<<<<<<< HEAD
     timeLeft = 30;
+=======
+    timeLeft = 900;
+>>>>>>> 821d7e4882ecb3904974eb69c0933b38266da44f
     
     document.getElementById('time').textContent = "15:00";
     clearInterval(timerInterval);
@@ -169,6 +177,7 @@ function submitQuiz() {
 
     document.getElementById("quizContainer").classList.add("hidden");
     const resultHTML = selectedQuestions.map((question, index) => {
+        const userAnswer = selectedAnswers[index] || "No Answer";
         const isCorrect = selectedAnswers[index] === question.answer;
         return `
             <div class="result-question">
@@ -298,8 +307,4 @@ document.getElementById("quiz").addEventListener("change", (event) => {
 loadQuestions('en');
 loadPictureQuestions('en');
 
-// Event listener for the next question button
-document.getElementById("nextQuestion").addEventListener("click", () => {
-    currentQuestionIndex++;
-    displayQuestion();
-});
+// Note: The duplicate event listener for "nextQuestion" has been removed.
