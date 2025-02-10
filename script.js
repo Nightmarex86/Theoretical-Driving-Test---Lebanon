@@ -217,8 +217,7 @@ function submitQuiz() {
     }).join("");
 
     resultContainer.innerHTML = `
-        <p style="font-size: 2em;">You scored ${score} out of ${selectedQuestions.length}!</p>
-        <p style="font-size: 2em;">لقد حصلت على ${score} من أصل ${selectedQuestions.length}!</p>
+        <p style="font-size: 2em; text-align: center;"> ${score}/ ${selectedQuestions.length}</p>
         <div class="result-content">
             ${resultHTML}
         </div>
@@ -273,8 +272,7 @@ function timeOut() {
 
     resultContainer.innerHTML = `
         <h2>Quiz Results</h2>
-        <p>You scored ${score} out of ${selectedQuestions.length}!</p>
-        <p>لقد حصلت على ${score} من أصل ${selectedQuestions.length}!</p>
+        <p style="font-size: 2em; text-align: center;"> ${score}/ ${selectedQuestions.length}</p>
         <p style="color: red;"><strong>Time's Up! You didn't finish in time.</strong></p>
         <p style="color: red;"><strong>انتهى الوقت! لم تتمكن من إكمال الاختبار في الوقت المحدد.</strong></p>
         <div class="result-content">
