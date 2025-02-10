@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         .help-bubble {
             display: inline-block;
@@ -65,15 +66,16 @@
         <h1 id="loginTitle">Login to Access the Quiz</h1>
         <h1>تسجيل الدخول للوصول إلى الاختبار</h1>
         <form id="loginForm">
-            <label for="loginCode" id="enterCodeLabel">Enter Access Code:</label>
+            <label for="loginCode" id="enterCodeLabel"></label>
             <div class="help-container">
-                <input type="text" id="loginCode" required placeholder="Enter the code">
+                <input type="text" id="loginCode" required placeholder="Enter the Access code">
             </div>
             <button type="submit" id="loginSubmitButton">Submit</button>
             <p id="loginMessage"></p> <!-- Error or Success message will appear here -->
         </form>
     </div>
-    <span class="help-bubble" onclick="openPopup()">Need help</span>
+    
+    <span class="help-bubble" onclick="openPopup()">Need help? click here</span>
     <!-- Help Popup -->
     <div id="helpPopup" class="popup">
         <div class="popup-content">

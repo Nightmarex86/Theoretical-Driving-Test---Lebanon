@@ -20,6 +20,40 @@ document.querySelectorAll('button').forEach(button => {
     });
 });
 
+// script.js
+
+// Get the language select element and message div
+const languageSelect = document.getElementById('language');
+const message = document.getElementById('sorry');
+
+// Function to update direction and show message based on selected language
+function changeDirection() {
+    const selectedLanguage = languageSelect.value;
+
+    if (selectedLanguage === 'ar') {
+        // Apply RTL for Arabic
+        document.documentElement.setAttribute('lang', 'ar');
+        document.body.style.direction = 'rtl';
+
+        // Show the message
+        message.style.display = 'block';
+    } else {
+        // Apply LTR for other languages (like English)
+        document.documentElement.setAttribute('lang', 'en');
+        document.body.style.direction = 'ltr';
+
+        // Hide the message
+        message.style.display = 'none';
+    }
+}
+
+// Add an event listener to detect language change
+languageSelect.addEventListener('change', changeDirection);
+
+// Run the function initially to set the default direction (LTR or RTL) and message visibility
+changeDirection();
+
+
 // Fetch normal questions based on selected language
 async function loadQuestions(language) {
     try {
@@ -123,19 +157,20 @@ function displayQuestion() {
     const question = selectedQuestions[currentQuestionIndex];
 
     quizElement.innerHTML = `
-        <h2>Question ${currentQuestionIndex + 1}</h2>
+        <h2 id="ok2"><u>Question ${currentQuestionIndex + 1}</u></h2>
         ${question.image ? `<img src="${question.image}" alt="Question Image">` : ""}
-        <p>${question.question}</p>
-        <ul>
-            ${question.options.map((option, index) => `
-                <li>
-                    <label>
-                        <input type="radio" name="answer" value="${option}" ${selectedAnswers[currentQuestionIndex] === option ? 'checked' : ''}>
-                        ${option}
-                    </label>
-                </li>
-            `).join('')}
-        </ul>
+        <h3>${question.question}</h3>
+    <ul class="clickable-list">
+    ${question.options.map((option, index) => `
+        <li class="clickable-item">
+            <label>
+                <input type="radio" name="answer" value="${option}" ${selectedAnswers[currentQuestionIndex] === option ? 'checked' : ''}>
+                <span>${option}</span> <!-- Wrap the option text in a span -->
+            </label>
+        </li>
+    `).join('')}
+</ul>
+
     `;
 
     // Show/hide navigation buttons
@@ -183,7 +218,7 @@ function submitQuiz() {
 
     resultContainer.innerHTML = `
         <p style="font-size: 2em;">You scored ${score} out of ${selectedQuestions.length}!</p>
-        <p>لقد حصلت على ${score} من أصل ${selectedQuestions.length}!</p>
+        <p style="font-size: 2em;">لقد حصلت على ${score} من أصل ${selectedQuestions.length}!</p>
         <div class="result-content">
             ${resultHTML}
         </div>
