@@ -1,4 +1,42 @@
 // Translation object for different languages
+document.addEventListener("DOMContentLoaded", () => {
+    updateLanguage(currentLanguage);
+
+    // Ensure that all DOM elements are available before attaching event listeners
+    const languageSelect = document.getElementById('language');
+    const selectedLanguageText = document.getElementById("selected-language");
+    const dropdownItems = document.querySelectorAll(".dropdown-content a");
+
+    // Check if the elements exist before proceeding
+    if (languageSelect && selectedLanguageText && dropdownItems.length > 0) {
+        // Event listener for language change via <select> dropdown
+        languageSelect.addEventListener('change', function() {
+            updateLanguage(this.value);
+
+            // Update the dropdown button text
+            selectedLanguageText.textContent = this.options[this.selectedIndex].text;
+        });
+
+        // Event listeners for language selection from the dropdown links
+        dropdownItems.forEach(item => {
+            item.addEventListener("click", function (event) {
+                event.preventDefault();
+                const selectedLanguage = this.getAttribute("data-lang");
+
+                // Update the language on the page
+                updateLanguage(selectedLanguage);
+
+                // Update the dropdown button text
+                selectedLanguageText.textContent = this.textContent.trim();
+
+                // Sync the <select> element's value with the dropdown selection
+                languageSelect.value = selectedLanguage;
+            });
+        });
+    }
+});
+
+// Translation object for different languages
 const translations = {
     en: {
         quizTitle: "Quiz",
@@ -69,67 +107,67 @@ let currentLanguage = 'en';
 function updateLanguage(language) {
     currentLanguage = language;
 
+    // Ensure the elements exist before updating
+    const elements = {
+        quizTitle: document.getElementById('quizTitle'),
+        startQuiz: document.getElementById('startQuiz'),
+        submitQuiz: document.getElementById('submitQuiz'),
+        prevQuestion: document.getElementById('prevQuestion'),
+        nextQuestion: document.getElementById('nextQuestion'),
+        questionCount: document.getElementById('questionCount'),
+        pictureQuestionCount: document.getElementById('pictureQuestionCount'),
+        questionCountLabel: document.getElementById('questionCountLabel'),
+        pictureQuestionCountLabel: document.getElementById('pictureQuestionCountLabel'),
+        enterValidNumber: document.getElementById('enterValidNumber'),
+        timeUp: document.getElementById('timeUp'),
+        timer: document.getElementById('timer'),
+        time: document.getElementById('time')
+    };
 
-    
-    // Update the page title and all text content
-    document.getElementById('quizTitle').textContent = translations[language].quizTitle;
-    document.getElementById('startQuiz').textContent = translations[language].startQuiz;
-    document.getElementById('submitQuiz').textContent = translations[language].submit;
-    document.getElementById('prevQuestion').textContent = translations[language].prev;
-    document.getElementById('nextQuestion').textContent = translations[language].next;
+    // Update the page title and all text content if elements are found
+    if (elements.quizTitle) elements.quizTitle.textContent = translations[language].quizTitle;
+    if (elements.startQuiz) elements.startQuiz.textContent = translations[language].startQuiz;
+    if (elements.submitQuiz) elements.submitQuiz.textContent = translations[language].submit;
+    if (elements.prevQuestion) elements.prevQuestion.textContent = translations[language].prev;
+    if (elements.nextQuestion) elements.nextQuestion.textContent = translations[language].next;
 
-    // Update labels for number of questions and signs
-    document.getElementById('questionCount').placeholder = translations[language].enterNumber;
-    document.getElementById('pictureQuestionCount').placeholder = translations[language].enterNumber;
+    // Update placeholders if elements are found
+    if (elements.questionCount) elements.questionCount.placeholder = translations[language].enterNumber;
+    if (elements.pictureQuestionCount) elements.pictureQuestionCount.placeholder = translations[language].enterNumber;
 
+    // Update text for the number of questions and signs if elements are found
+    if (elements.questionCountLabel) elements.questionCountLabel.textContent = translations[language].numberOfQuestions;
+    if (elements.pictureQuestionCountLabel) elements.pictureQuestionCountLabel.textContent = translations[language].numberOfSigns;
 
-    // Update text for the number of questions and signs
-    document.getElementById('questionCountLabel').textContent = translations[language].numberOfQuestions;
-    document.getElementById('pictureQuestionCountLabel').textContent = translations[language].numberOfSigns;
-
-    // Update additional texts
-    document.getElementById('enterValidNumber').textContent = translations[language].enterValidNumber;
-    document.getElementById('timeUp').textContent = translations[language].timeUp;
+    // Update additional texts if elements are found
+    if (elements.enterValidNumber) elements.enterValidNumber.textContent = translations[language].enterValidNumber;
+    if (elements.timeUp) elements.timeUp.textContent = translations[language].timeUp;
 
     // Update the "Time Left:" label (specific for timer)
-    document.getElementById('timer').textContent = translations[language].timeLeft;
-
+    if (elements.timer) elements.timer.textContent = translations[language].timeLeft;
 
     // If language is Arabic, convert the timer numbers to Arabic numerals
-    const timeElement = document.getElementById('time');
-    if (language === 'ar') {
-        timeElement.textContent = convertToArabicNumerals(timeElement.textContent);  // Convert the current time to Arabic numerals
-    } else {
-        timeElement.textContent = convertToEnglishNumerals(timeElement.textContent);  // Convert the current time to English numerals
+    if (elements.time) {
+        if (language === 'ar') {
+            elements.time.textContent = convertToArabicNumerals(elements.time.textContent);  // Convert the current time to Arabic numerals
+        } else {
+            elements.time.textContent = convertToEnglishNumerals(elements.time.textContent);  // Convert the current time to English numerals
+        }
     }
 }
 
-// Event listener for language selection from the dropdown
-document.querySelectorAll(".dropdown-content a").forEach(item => {
-    item.addEventListener("click", function (event) {
-        event.preventDefault();
-        const selectedLanguage = this.getAttribute("data-lang");
-
-        // Update the language on the page
-        updateLanguage(selectedLanguage);
-
-        // Update the dropdown button text
-        document.getElementById("selected-language").textContent = this.textContent.trim();
-
-        // Sync the <select> element's value with the dropdown selection
-        document.getElementById("language").value = selectedLanguage;
+// Example function to convert numbers to Arabic numerals
+function convertToArabicNumerals(number) {
+    return number.replace(/[0-9]/g, function(match) {
+        const arabicNumerals = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+        return arabicNumerals[parseInt(match)];
     });
-});
+}
 
-// Event listener for language selection from the <select> dropdown
-document.getElementById('language').addEventListener('change', function() {
-    updateLanguage(this.value);
-
-    // Update the dropdown button text
-    document.getElementById("selected-language").textContent = this.options[this.selectedIndex].text;
-});
-
-// Initial page load - apply the default language (English)
-document.addEventListener("DOMContentLoaded", () => {
-    updateLanguage(currentLanguage);
-});
+// Example function to convert numbers to English numerals
+function convertToEnglishNumerals(number) {
+    return number.replace(/[٠-٩]/g, function(match) {
+        const englishNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+        return englishNumerals[parseInt(match)];
+    });
+}
