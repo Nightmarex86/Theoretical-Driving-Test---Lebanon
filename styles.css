@@ -4,22 +4,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap');
 
 /* Overall body styles */
 body {
-    font-family: 'Noto Sans Arabic', 'Cairo', 'Amiri', 'Arial', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    background: url('wp2057932.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
     background-color: #f4f7fc;
-    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    background-size: cover; /* Cover the whole screen */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating */
 }
+/* Container Styling */
+.container {
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin-top: 150px; /* Adjust for taskbar height */
+    animation: fadeInUp 0.5s ease-in-out;
+}
 
+#nextQuestion{
+    background-color: rgb(67, 167, 49);
+}
+#prevQuestion{
+    background-color: #6c757d;
+}
+#sorry{
+    color: #f70000;
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 /* Taskbar at the top */
 .taskbar {
     position: fixed;
@@ -151,26 +180,13 @@ input[type="text"] {
 
 /* Define color palette */
 :root {
-    --dark-brown: #1D1616; /* 20% */
+    --dark-brown: #b4b4b4; /* 20% */
     --dark-red: #0670fa;   /* 20% */
     --red: #0670fa;        /* 10% */
     --light-grey: #EEEEEE; /* 50% */
-    --white: #FFFFFF;      /* Additional color for better contrast */
+    --white: #000000;      /* Additional color for better contrast */
 }
 
-/* General styles */
-body {
-    background-color: #00d9ff;
-    color: var(--dark-brown); /* 20% */
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
 .hidden {
     display: none;
 }
@@ -380,24 +396,35 @@ header {
 
 /* Quiz container styles */
 #quizContainer {
-    background-color: var(--light-grey); /* 50% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 30% opacity */
     border: 1px solid var(--dark-brown); /* 20% */
     border-radius: 8px;
     margin: 20px auto;
     padding: 20px;
-    width: 80%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 400px; /* Set a fixed height for the container */
+    height: 500px; /* Stable height */
+    width: 90%; /* Adjust the width to fit your design, e.g., 90% of the viewport */
+    max-width: 1200px; /* Optional: Set a maximum width to avoid making it too wide */
     overflow: auto; /* Allow scrolling if content overflows */
+    
 }
+
 
 /* Label styles within the quiz container */
 #quizContainer label {
-    font-size: 1.2em; /* Increase font size */
+    font-size: 1.0em; /* Increase font size */
     color: var(--dark-brown); /* Set a darker color for better contrast */
     font-weight: bold; /* Make the text bold */
     margin-bottom: 10px; /* Add some margin for spacing */
+    margin-top: 10px;
     display: block; /* Ensure labels are block elements */
+}
+
+#ok2{
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    margin-bottom: 20px;
 }
 
 /* Button styles */
@@ -495,18 +522,6 @@ button:hover {
     text-decoration: underline;
 }
 
-.container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 800px;
-    box-sizing: border-box;
-    margin-top: 60px; /* Adjust for taskbar height */
-    animation: fadeInUp 0.5s ease-in-out;
-}
-
 @keyframes fadeInUp {
     from { transform: translateY(20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
@@ -569,14 +584,35 @@ p {
     font-weight: bold;
 }
 
+/* Ensure that the container is a flex container */
+#quiz {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center;     /* Vertically center the image */
+    flex-direction: column;  /* Stack content vertically */
+    text-align: center;      /* Optional: ensures text and image are centered */
+}
+
+#quizTitle {
+    font-size: 3rem; /* Large but balanced */
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke; /* Dark gray for a modern look */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Subtle spacing */
+    margin-top: 20px;
+    }
+
+
 /* Image inside quiz box */
 #quiz img {
     max-width: 100%; /* Ensures the image will never overflow its container */
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add spacing below the image */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 /* General content container inside quiz box */
 .quiz-content {
@@ -595,6 +631,7 @@ li {
 
 input[type="radio"] {
     margin-right: 10px;
+    size: -10px;
 }
 
 #timer {
@@ -632,6 +669,8 @@ input[type="radio"] {
     margin: 5px 0;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    
 }
 
 #result {
@@ -647,4 +686,88 @@ input[type="radio"] {
 .result-content {
     max-height: 60vh; /* Adjust the height as needed */
     overflow-y: auto;
+}
+.clickable-list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the items horizontally */
+}
+
+.clickable-item {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    position: relative;
+}
+
+.clickable-item input[type="radio"] {
+    display: none; /* Hide the actual radio button */
+}
+
+.clickable-item input[type="radio"]:checked + span {
+    background-color: #007bff; /* Background turns blue when checked */
+    color: white;
+    border: 2px solid #007bff; /* Optional: border turns blue as well */
+}
+
+.clickable-item:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+.clickable-item label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.clickable-item span {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center; /* Center the text inside each box */
+    color: #000000;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .taskbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 50px auto;
+    }
+
+    #quizTitle {
+        font-size: 1.8em;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 30px;
+        padding: 10px;
+    }
+
+    #quizTitle {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 12px;
+    }
 }

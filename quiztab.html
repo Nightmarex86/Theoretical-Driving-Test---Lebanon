@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theoretical Driving Test - Lebanon</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
-<body background="traffic.jpg">
+<body >
     <div class="taskbar">
         <a href="about.html" id="aboutLink">About us</a>
         <a href="about_ar.html" id="aboutLink">من نحن</a>
     </div>
-    <div class="container">
+    <div id="BG" class="container">
         <h1 id="quizTitle">Quiz</h1>
 
         <!-- Timer Section -->
@@ -34,6 +34,24 @@
                 <option value="ar">Arabic</option>
                 <option value="fr">French</option>
             </select>
+            <div id="sorry">
+                <h4>قد تلاحظ بعض الأخطاء اللغوية أو الإملائية في الأسئلة، بعضها قد تكون ناتجًا عن خطأ غير مقصود أثناء نقل المحتوى، بينما البعض الآخر قد تكون مطابقًا للنص الأصلي في ملف الـ PDF. إذا لا تمانع، نرجو منك مشاركتها معنا عبر إنستغرام لمساعدتنا في تصحيحها.
+                    <a href="https://www.instagram.com/tarek_houry?igsh=ZjczZDlzamlhank5" target="_blank">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="url(#grad1)" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#fccc63;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#e4405f;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#833ab4;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M7 2C3.686 2 1 4.686 1 8V16C1 19.314 3.686 22 7 22H17C20.314 22 23 19.314 23 16V8C23 4.686 20.314 2 17 2H7ZM7 4H17C19.206 4 21 5.794 21 8V16C21 18.206 19.206 20 17 20H7C4.794 20 3 18.206 3 16V8C3 5.794 4.794 4 7 4ZM17.5 6C16.672 6 16 6.672 16 7.5C16 8.328 16.672 9 17.5 9C18.328 9 19 8.328 19 7.5C19 6.672 18.328 6 17.5 6ZM12 7C9.243 7 7 9.243 7 12C7 14.757 9.243 17 12 17C14.757 17 17 14.757 17 12C17 9.243 14.757 7 12 7ZM12 9C13.654 9 15 10.346 15 12C15 13.654 13.654 15 12 15C10.346 15 9 13.654 9 12C9 10.346 10.346 9 12 9Z"/>
+                        </svg>
+                    </a>
+                    
+                    </svg>
+                </h4>
+            </div>
 
             <div class="button-container">
                 <button id="startQuiz">Start Quiz</button>
@@ -54,16 +72,6 @@
         <div id="result" class="hidden"></div>
     </div>
 
-    <!-- About and Contact Sections -->
-    <div id="about" class="hidden">
-        <h2 id="aboutText">About</h2>
-        <p>This is a driving quiz application to help you prepare for your driving test.</p>
-    </div>
-
-    <div id="contact" class="hidden">
-        <h2 id="contactText">Contact</h2>
-        <p>If you have any questions, please reach out to us.</p>
-    </div>
 
     <!-- Including the JavaScript files -->
     <script src="translations.js"></script>
